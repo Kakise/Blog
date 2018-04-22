@@ -15,8 +15,7 @@ social_links:
   twitter: https://twitter.com/Kakise_
   mail: me@kakise.xyz 
 
-# Includes
-exclude:
+skip_render:
   - admin/config.yml
   
 # URL
