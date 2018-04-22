@@ -178,3 +178,9 @@ uncss:
 
 # Minimifer & concator
 all_minifier: false
+
+# Flowchart params
+flowchart:
+  # raphael:   # optional, the source url of raphael.js
+  # flowchart: # optional, the source url of flowchart.js
+  options: # options used for `drawSVG`
