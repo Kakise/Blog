@@ -38,6 +38,7 @@ production:
     repo: Kakise/Blog
     branch: master
   publish_mode: editorial_workflow
+publish_mode: editorial_workflow
 media_folder: "source/images" # Folder where user uploaded files should go
 public_folder: "source"
 collections: # A list of collections the CMS should be able to edit
@@ -52,7 +53,7 @@ collections: # A list of collections the CMS should be able to edit
     meta: # Meta data fields. Just like fields, but without any preview element
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Categories", name: "categories", widget: "string"}
-      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Tags", name: "tags", widget: "list", default: [""]}
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
   </script>
   <script type="text/x-handlebars" data-template-name='cms/preview/posts'>
