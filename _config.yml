@@ -17,7 +17,7 @@ social_links:
 
 # Includes
 include:
-  - .htaccess
+  - admin/config.yml
   
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
