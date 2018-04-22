@@ -14,9 +14,6 @@ social_links:
   github: https://github.com/Kakise 
   twitter: https://twitter.com/Kakise_
   mail: me@kakise.xyz 
-
-skip_render:
-  - admin/config.yml
   
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -34,6 +31,7 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+  - admin/config.yml
 
 # Writing
 new_post_name: :title.md # File name of new posts
