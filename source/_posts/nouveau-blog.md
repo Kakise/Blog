@@ -5,6 +5,7 @@ categories:
   - Code
 tags:
   - seo
+  - code
 layout: post
 ---
 
