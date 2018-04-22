@@ -11,7 +11,7 @@ layout: false
   <%- css('css/style') %>
   <link rel="stylesheet" href="https://unpkg.com/netlify-cms@^1.0.0/dist/cms.css" />
   <script>
-  CMS.registerPreviewStyle("/css/style.css");
+  CMS.registerPreviewStyle('<%- css('css/style') %>'.split('"')[3]);
   </script>
 </head>
 <body>
