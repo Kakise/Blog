@@ -10,11 +10,11 @@ layout: false
   <!-- Include the stylesheets from your site here -->
   <%- css('css/style') %>
   <link rel="stylesheet" href="https://unpkg.com/netlify-cms@^1.0.0/dist/cms.css" />
-  <script>
-  CMS.registerPreviewStyle('<%- css('css/style') %>'.split('"')[3]);
-  </script>
 </head>
 <body>
   <script src="https://unpkg.com/netlify-cms@^1.0.0/dist/cms.js"></script>
+  <script>
+  CMS.registerPreviewStyle('<%- css('css/style') %>'.split('"')[3]);
+  </script>
 </body>
 </html>
