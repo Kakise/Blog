@@ -6,61 +6,15 @@ layout: false
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Admin Space</title>
   <!-- Include the stylesheets from your site here -->
-  <link rel="stylesheet" href="https://unpkg.com/netlify-cms@^1.0.0/dist/cms.css" />
-  <!-- Include a CMS specific stylesheet here -->
-
-  <base href="/admin/">
   <link rel="stylesheet" href="/css/style.css">
-  <style>
-    .container {
-      width: auto;
-      max-width: 1200px;
-    }
-    body.ember-application .cms-list-entry {
-      background: #fff;
-    }
-  </style>
-  <script>window.CMS_ENV = "<%= process.env.CMS_ENV || 'development' %>"</script>
+  <link rel="stylesheet" href="https://unpkg.com/netlify-cms@^1.0.0/dist/cms.css" />
+  <script>
+  CMS.registerPreviewStyle("/css/style.css");
+  </script>
 </head>
 <body>
-  {% raw %}
-  <script type="text/x-handlebars" data-template-name='cms/preview/posts'>
-    <div id="main-wrapper">
-        <div class="container">
-            <!--Content-->
-            <article class="box post">
-                {{#if entry.banner }}
-                {{cms-preview field='banner'}}
-                {{/if}}
-                <header>
-                    <h2>{{ entry.title }}</h2>
-                    <p>{{ entry.shortdesc}}</p>
-                </header>
-                {{cms-preview field='body'}}
-            </article>
-        </div>
-    </div>
-  </script>
-
-  <script type="text/x-handlebars" data-template-name='cms/preview/characters'>
-    <div id="main-wrapper">
-        <div class="container">
-            {{#cms-preview field="list" as |character| }}
-              <section class="box">
-                  <span class="image featured">{{cms-preview field="image" from=character}}</span>
-                  <header>
-                      <h3>{{character.name}}</h3>
-                  </header>
-                  <p>{{character.description}}</p>
-              </section>
-            {{/cms-preview}}
-        </div>
-    </div>
-  </script>
-  {% endraw %}
   <script src="https://unpkg.com/netlify-cms@^1.0.0/dist/cms.js"></script>
 </body>
 </html>
