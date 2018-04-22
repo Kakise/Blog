@@ -1,12 +1,12 @@
 ---
-title: Mon nouveau blog statique propulsé par netlify !
-tags: seo
-id: 2079
+title: "Mon nouveau blog statique propulsé par netlify !"
+cmsUserSlug: mon-nouveau-blog-statique-propuls-par-netlify
+date: 2018-04-21T15:21:03.000Z
 categories:
   - Code
-date: 2018-04-21 15:21:03
+tags: []
+layout: post
 ---
-
 
 Bon bah voilà. J'ai fini par en avoir marre de Wordpress et de ses résultats passables niveau vitesse et SEO. Du coup j'ai décidé de changer pour quelque chose qui me semblait plus proches de mes besoins: un site statique généré par *[Hexo](https://hexo.io)*.
 
