@@ -16,7 +16,7 @@ social_links:
   mail: me@kakise.xyz 
 
 # Includes
-include:
+exclude:
   - admin/config.yml
   
 # URL
