@@ -47,21 +47,20 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Banner", name: "banner", widget: "image", class: "image featured"}
-      - {label: "Short Description", name: "shortdesc", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
     meta: # Meta data fields. Just like fields, but without any preview element
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Categories", name: "categories", widget: "string"}
+      - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
   - name: "data"
     label: "Data"
     files:
-      - name: "characters"
-        label: "Characters"
-        file: "source/_data/characters.yml"
+      - name: "projects"
+        label: "Projects"
+        file: "source/_data/projects.json"
         fields:
-          - label: "Characters"
+          - label: "Projects"
             name: "list"
             widget: "list"
             fields:
