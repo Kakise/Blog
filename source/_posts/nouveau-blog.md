@@ -1,10 +1,10 @@
 ---
-title: "Mon nouveau blog statique propulsé par netlify !"
-cmsUserSlug: mon-nouveau-blog-statique-propuls-par-netlify
+title: Mon nouveau blog statique propulsé par netlify !
 date: 2018-04-21T15:21:03.000Z
 categories:
   - Code
-tags: []
+tags:
+  - seo
 layout: post
 ---
 
