@@ -16,10 +16,15 @@ layout: false
   <script src="https://unpkg.com/netlify-cms@^1.0.0/dist/cms.js"></script>
   <script>
 var PostPreview = createClass({
+  var date = new Date(this.props.widgetFor('date'));
   render: function render() {
     return h(
       "div",
       {className: "content index my4"},
+      h(
+        "link",
+        {rel: "stylesheet", href: "/lib/font-awesome/css/fontawesome-all.min.css"}
+      ),
       h(
         "h1",
         { className: "posttitle", itemprop: "name headline" },
@@ -33,8 +38,8 @@ var PostPreview = createClass({
           { className: "postdate" },
           h(
             "time",
-            { itemprop: "datePublished" },
-            this.props.widgetFor('date')
+            { itemprop: "datePublished", datetime: this.props.widgetFor('date') },
+            date.getUTCFullYear() + '-' + pad( date.getUTCMonth() + 1 ) + '-' + pad( date.getUTCDate() )
           )
         ),
         h(
@@ -54,6 +59,7 @@ var PostPreview = createClass({
 });
   CMS.registerPreviewTemplate("posts", PostPreview);
   CMS.registerPreviewStyle('/css/style.css');
+  CMS.registerPreviewStyle('/lib/font-awesome/css/fontawesome-all.min.css');
   </script>
 </body>
 </html>
