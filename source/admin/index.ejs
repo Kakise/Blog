@@ -18,7 +18,7 @@ layout: false
     render: function() {
     var entry = this.props.entry;
     return h('div', {},
-      h('h1', {"className": "posttitle"}, entry.getIn(['data', 'title'])),
+      h('h1', {"className": "posttitle", "itemprop":"name headline"}, entry.getIn(['data', 'title'])),
       h('div', {"className": "content"}, this.props.widgetFor('body'))
     );
     }
