@@ -13,14 +13,14 @@ layout: false
 </head>
 <body>
   <script src="https://unpkg.com/netlify-cms@^1.0.0/dist/cms.js"></script>
-  <script>
+  <script type="text/babel">
     var PostPreview = createClass({
-    render: function() {
-    return (
-      <h1 class="posttitle" itemprop="name headline">entry.getIn(['data', 'title'])</h1>
-      h('div', {"className": "content"}, this.props.widgetFor('body'))
-    );
-    }
+      render() {
+        return (
+          <h1 className="posttitle" itemprop="name headline">{entry.getIn(['data', 'title'])}</h1>
+          <div className="content">{this.props.widgetFor('body')}</div>
+        );
+      }
     });
   CMS.registerPreviewTemplate("posts", PostPreview);
   CMS.registerPreviewStyle('/css/style.css');
