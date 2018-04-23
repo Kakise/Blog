@@ -13,8 +13,13 @@ collections:
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Categories", name: "categories", widget: "string"}
+            - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+  - name: "projects"
+    label: "Projects"
+    file: "source/_data/projects.json"
+    - {label: "Name", name: "name", widget: "string"}
+    - {label: "Url", name: "url", widget: "string"}
+    - {label: "Description", name: "desc", widget: "string"}
