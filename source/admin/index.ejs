@@ -19,7 +19,7 @@ var PostPreview = createClass({
   render: function render() {
     return h(
       "div",
-      null,
+      {className: "content index my4"},
       h(
         "h1",
         { className: "posttitle", itemprop: "name headline" },
@@ -41,6 +41,7 @@ var PostPreview = createClass({
           "div",
           { className: "article-tag" },
           h("i", { className: "fas fa-tag" })
+      })
         )
       ),
       h(
