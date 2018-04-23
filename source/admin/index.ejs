@@ -16,9 +16,8 @@ layout: false
   <script>
     var PostPreview = createClass({
     render: function() {
-    var entry = this.props.entry;
-    return h('div', {},
-      h('h1', {"className": "posttitle", "itemprop":"name headline"}, entry.getIn(['data', 'title'])),
+    return (
+      <h1 class="posttitle" itemprop="name headline">entry.getIn(['data', 'title'])</h1>
       h('div', {"className": "content"}, this.props.widgetFor('body'))
     );
     }
