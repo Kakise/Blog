@@ -22,10 +22,10 @@ layout: false
       return number;
     }
  
-var PostPreview = createClass({
-  var date = new Date(this.props.entry.getIn(['data', 'date']));
-  var fdate = date.getUTCFullYear() + '-' + pad( date.getUTCMonth() + 1 ) + '-' + pad( date.getUTCDate() );
+var PostPreview = createClass({ 
   render: function render() {
+    var date = new Date(this.props.entry.getIn(['data', 'date']));
+    var fdate = date.getUTCFullYear() + '-' + pad( date.getUTCMonth() + 1 ) + '-' + pad( date.getUTCDate() );
     return h(
       "div",
       {className: "content index my4"},
