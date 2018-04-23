@@ -15,8 +15,16 @@ layout: false
 <body>
   <script src="https://unpkg.com/netlify-cms@^1.0.0/dist/cms.js"></script>
   <script>
+      function pad(number) {
+      if ( number < 10 ) {
+        return '0' + number;
+      }
+      return number;
+    }
+ 
 var PostPreview = createClass({
-  var date = new Date(this.props.widgetFor('date'));
+  var date = new Date(this.props.entry.getIn(['data', 'date']));
+  var fdate = date.getUTCFullYear() + '-' + pad( date.getUTCMonth() + 1 ) + '-' + pad( date.getUTCDate() );
   render: function render() {
     return h(
       "div",
@@ -39,7 +47,7 @@ var PostPreview = createClass({
           h(
             "time",
             { itemprop: "datePublished", datetime: this.props.widgetFor('date') },
-            date.getUTCFullYear() + '-' + pad( date.getUTCMonth() + 1 ) + '-' + pad( date.getUTCDate() )
+            fdate
           )
         ),
         h(
