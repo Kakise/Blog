@@ -40,7 +40,11 @@ var PostPreview = createClass({
         h(
           "div",
           { className: "article-tag" },
-          h("i", { className: "fas fa-tag" })
+          h("i", { className: "fas fa-tag" }),
+          this.props.widgetsFor('tags').map(function(tag, index) {
+        return h('a', {key: index},
+          tag.getIn(['widgets', 'description'])
+        );
       })
         )
       ),
