@@ -18,8 +18,10 @@ layout: false
     var PostPreview = createClass({
       render() {
         return (
-          <h1 className="posttitle" itemprop="name headline">{entry.getIn(['data', 'title'])}</h1>
-          <div className="content">{this.props.widgetFor('body')}</div>
+          <div>
+            <h1 className="posttitle" itemprop="name headline">{entry.getIn(['data', 'title'])}</h1>
+            <div className="content">{this.props.widgetFor('body')}</div>
+          </div>
         );
       }
     });
