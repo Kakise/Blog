@@ -31,7 +31,7 @@ layout: false
                 <i className="fas fa-tag"></i>
                 {this.props.widgetsFor('tags').map(function(tag, index) {
                 return(
-          			  <a>{tag.getIn(['data', 'tags'])}</a>
+          			  <a className="tag-link">{tag.getIn(['data', 'tags'])}</a>
         		    );
       			})}
               </div>
