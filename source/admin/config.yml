@@ -4,7 +4,7 @@ backend:
   branch: master
 publish_mode: editorial_workflow
 media_folder: "source/images"
-public_folder: "source"
+public_folder: "images"
 collections:
   - name: "posts"
     label: "Post"
