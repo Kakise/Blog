@@ -26,42 +26,57 @@ var PostPreview = createClass({
   render: function render() {
     var date = new Date(this.props.entry.getIn(['data', 'date']));
     var fdate = date.getUTCFullYear() + '-' + pad( date.getUTCMonth() + 1 ) + '-' + pad( date.getUTCDate() );
-    return h(
-      "div",
-      {className: "content index my4"},
+    return h( "article", {className: "post", itemtype: "http://schema.org/BlogPosting"},
+      h(
+        "div",
+        {className: "content index my4"},
       h(
         "link",
         {rel: "stylesheet", href: "/lib/font-awesome/css/fontawesome-all.min.css"}
       ),
       h(
-        "h1",
-        { className: "posttitle", itemprop: "name headline" },
-        this.props.entry.getIn(['data', 'title'])
-      ),
-      h(
-        "div",
-        { className: "meta" },
+        "header",
+        {},
         h(
-          "div",
-          { className: "postdate" },
-          h(
-            "time",
-            { itemprop: "datePublished", datetime: this.props.widgetFor('date') },
-            fdate
-          )
+          "h1",
+          { className: "posttitle", itemprop: "name headline" },
+          this.props.entry.getIn(['data', 'title'])
         ),
         h(
           "div",
-          { className: "article-tag" },
-          h("i", { className: "fas fa-tag" }),
-          this.props.entry.getIn(['data', 'tags'])._tail.array.map(function(tag, index) {return h('a', {className: "tag-link", href: "#"},tag);})
+          { className: "meta" },
+          h(
+            "span",
+            { className: "author", itemprop: "author", itemtype: "http://schema.org/Person"},
+            h(
+              "span",
+              { itemprop: "name" },
+              "Le Blog de Kakise"
+            )
+          ),
+          h(
+            "div",
+            { className: "postdate" },
+            h(
+              "time",
+              { itemprop: "datePublished", datetime: fdate },
+              fdate
+            )
+          ),
+          h(
+            "div",
+            { className: "article-tag" },
+            h("i", { className: "fas fa-tag" }),
+            this.props.entry.getIn(['data', 'tags'])._tail.array.map(function(tag, index) {return h('a', {className: "tag-link", href: "#"},tag);})
+          )
         )
       ),
       h(
         "div",
-        { className: "content" },
+        { className: "content", itemprop: "articleBody" },
         this.props.widgetFor('body')
       )
+    )
     );
   }
 });
