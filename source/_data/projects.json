@@ -1,0 +1,17 @@
+[
+    {
+       "name":"Kaki-Blog",
+       "url":"https://github.com/Kakise/Kaki-Blog",
+       "desc":"Mon ancien système de blog fait en nodejs."
+    },
+    {
+       "name": "Kaki-Static",
+       "url":"https://github.com/Kakise/Kaki-Static",
+       "desc":"Un nouveau blog engine dérivé de Kaki-Blog mais plus puissant et modulaire."
+    },
+    {
+      "name": "Blog",
+      "url":"https://github.com/Kakise/Blog",
+      "desc":"Le code source complet de mon blog actuel."
+    }
+]
