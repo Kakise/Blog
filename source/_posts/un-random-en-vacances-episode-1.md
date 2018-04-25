@@ -1,6 +1,7 @@
 ---
 title: 'Un random en vacances, épisode #1.'
 date: 2017-07-23T00:26:51.000Z
+author: Kakise
 tags:
   - vacances
 ---
