@@ -51,7 +51,7 @@ var PostPreview = createClass({
             h(
               "span",
               { itemprop: "name" },
-              <%- config.title %>
+              this.props.entry.getIn(['data', 'author'])
             )
           ),
           h(
