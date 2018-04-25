@@ -15,6 +15,6 @@ collections:
       - {label: "Title", name: "title", widget: "string", tagname: "h1", default: "Untitled"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Author", name: "author", widget: "string", default: "Author"}
-      - {label: "Tags", name: "tags", widget: "list", default: "post"}
+      - {label: "Tags", name: "tags", widget: "list", default: ["news"]}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
