@@ -1,5 +1,5 @@
 # Blog
-[![Maintainability](https://api.codeclimate.com/v1/badges/de96f52fc4c398710a1a/maintainability)](https://codeclimate.com/github/Kakise/Blog/maintainability) [![Build Status](https://travis-ci.org/Kakise/Blog.svg?branch=master)](https://travis-ci.org/Kakise/Blog)
+[![Maintainability](https://api.codeclimate.com/v1/badges/de96f52fc4c398710a1a/maintainability)](https://codeclimate.com/github/Kakise/Blog/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/de96f52fc4c398710a1a/test_coverage)](https://codeclimate.com/github/Kakise/Blog/test_coverage) [![Build Status](https://travis-ci.org/Kakise/Blog.svg?branch=master)](https://travis-ci.org/Kakise/Blog)
 
 My blog's source code
 
