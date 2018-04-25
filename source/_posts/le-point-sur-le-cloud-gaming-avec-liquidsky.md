@@ -25,11 +25,11 @@ Le système se base sur les "SkyCredits", une monnaie imaginaire qui est conserv
 
 Néanmoins, tout cela est amené à changé avec l'arrivée d'un nouveau système sans "rollover" des crédits:
 
-![Option A](/source/pricing.png)
+![Option A](/images/pricing.png)
 
 Ou encore: 
 
-![Option B](/source/image-1-.png)
+![Option B](/images/image-1-.png)
 
 Cette deuxième option offrant un usage illimité de LiquidSky.
 
@@ -43,7 +43,7 @@ Subsiste encore un énorme problème: le client LiquidSky !
 
 Afin d'accéder à son "SkyComputer", LiquidSky met à disposition des usagers un client perso disponible sur Mac et Android:
 
-![LiquidSky Client tournant sous Crossover et Mac](/source/b8d41bf7d1fb12e6c4534d10d739452e.png)
+![LiquidSky Client tournant sous Crossover et Mac](/images/b8d41bf7d1fb12e6c4534d10d739452e.png)
 
 Je vous l'assure, j'ai tout essayé pour le faire fonctionner. Que ce soit un patch CPU pour augmenter la priorité du streamer ou encore une multitude de PC (doit-être noté que le client fonctionné mieux émulé que sous Windows 10 lui-même !), le client est instable. La disposition du clavier ne peut pas être changée et j'en passe et des meilleurs. Et dieu vous garde de tester l'application Android !
 
