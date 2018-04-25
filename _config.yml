@@ -14,14 +14,10 @@ social_links:
   github: https://github.com/Kakise 
   twitter: https://twitter.com/Kakise_
   mail: me@kakise.xyz 
-
-# Includes
-include:
-  - .htaccess
   
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://kakise.xyz
+url: https://kakise.me
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -35,6 +31,7 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+  - admin/config.yml
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -178,3 +175,9 @@ uncss:
 
 # Minimifer & concator
 all_minifier: false
+
+# Flowchart params
+flowchart:
+  # raphael:   # optional, the source url of raphael.js
+  # flowchart: # optional, the source url of flowchart.js
+  options: # options used for `drawSVG`
