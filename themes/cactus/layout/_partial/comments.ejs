@@ -1,6 +1,6 @@
 <% if(page.comments && theme.disqus.enabled){ %>
     <div class="blog-post-comments">
-        <div id='disqus-load'>Charger les commentaires !</div>
+        <div id='disqus-load'><%= __('comments.load') %></div>
         <div id="disqus_thread">
             <noscript><%= __('comments.no_js') %></noscript>
         </div>
