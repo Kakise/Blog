@@ -18,6 +18,5 @@ Don't forget to setup github's OAuth credentials
 
 [![Button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Kakise/Blog)
 
-
 ## License
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FKakise%2FBlog.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FKakise%2FBlog?ref=badge_large)
