@@ -1,5 +1,6 @@
 # Blog
 [![Maintainability](https://api.codeclimate.com/v1/badges/de96f52fc4c398710a1a/maintainability)](https://codeclimate.com/github/Kakise/Blog/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/de96f52fc4c398710a1a/test_coverage)](https://codeclimate.com/github/Kakise/Blog/test_coverage) [![Build Status](https://travis-ci.org/Kakise/Blog.svg?branch=master)](https://travis-ci.org/Kakise/Blog) [![Coverage Status](https://coveralls.io/repos/github/Kakise/Blog/badge.svg?branch=master)](https://coveralls.io/github/Kakise/Blog?branch=master)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FKakise%2FBlog.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FKakise%2FBlog?ref=badge_shield)
 
 My blog's source code
 
@@ -17,5 +18,5 @@ Don't forget to setup github's OAuth credentials
 
 [![Button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Kakise/Blog)
 
-
+## License
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FKakise%2FBlog.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FKakise%2FBlog?ref=badge_large)
