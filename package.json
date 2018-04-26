@@ -9,7 +9,7 @@
     "build": "hexo clean && hexo generate",
     "test": "mocha",
     "cover": "node ./node_modules/.bin/istanbul cover _mocha",
-    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
   },
   "dependencies": {
     "hexo": "^3.7.1",
@@ -33,7 +33,7 @@
     "hexo-renderer-marked": "^0.3.0",
     "hexo-renderer-sass": "^0.3.2",
     "hexo-renderer-stylus": "^0.3.1",
-    "hexo-server": "^0.2.2",
+    "hexo-server": "^0.3.1",
     "hexo-uncss": "^0.1.4",
     "js-yaml": "^3.11.0"
   },
