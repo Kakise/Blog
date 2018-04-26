@@ -89,20 +89,6 @@ nav:
   Writing: /archives/
   Projects: /projets/
 
-# AMP
-#generator_amp:
-#  templateDir:  amp-template
-#  assetDistDir: amp-dist
-#  logo:
-#    path:   sample/sample-logo.png
-#    width:  600
-#    height: 60
-#  substituteTitleImage:
-#    path:   sample/sample-substituteTitleImage.png
-#    width:  1024
-#    height: 800
-#  warningLog: false   # To display warning, please set true.
-
 sitemap:
     path: sitemap.xml
     template: ./sitemap_template.xml
@@ -147,9 +133,9 @@ pwa:
     opts:
       networkTimeoutSeconds: 5
     routes:
-      - pattern: !!js/regexp /.*\.(js|css|jpg|jpeg|png|gif)$/
+      - pattern: "!!js/regexp /.*\\.(js|css|jpg|jpeg|png|gif)$/"
         strategy: cacheFirst
-      - pattern: !!js/regexp /\//
+      - pattern: "!!js/regexp /\\//"
         strategy: networkFirst
   priority: 5
 
@@ -171,13 +157,6 @@ uncss:
   media: ["(min-width: 700px) handheld and (orientation: landscape)"]
   priority: 10
   timeout: 1000
-  uncssrc: .uncssrc
 
 # Minimifer & concator
 all_minifier: false
-
-# Flowchart params
-flowchart:
-  # raphael:   # optional, the source url of raphael.js
-  # flowchart: # optional, the source url of flowchart.js
-  options: # options used for `drawSVG`
