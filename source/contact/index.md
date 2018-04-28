@@ -6,13 +6,13 @@ Utilisez le formulaire si dessous afin de m'envoyer un message !
 {% raw %}
 <form name="contact" netlify>
 <label>
-Name
+Nom
 </label><br>
-<input type="text" name="name" />
+<input type="text" name="name" /><br>
 <label>
 Email
 </label><br>
-<input type="email" name="email" />
+<input type="email" name="email" /><br>
 <label>
 Message
 </label><br>

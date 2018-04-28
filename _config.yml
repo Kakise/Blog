@@ -158,5 +158,23 @@ uncss:
   priority: 10
   timeout: 1000
 
-# Minimifer & concator
-all_minifier: false
+lazyload:
+  enable: true 
+  onlypost: true
+  loadingImg: "./images/loading.gif" # Image found here: https://gfycat.com/fr/gifs/detail/SkinnySeveralAsianlion
+  
+feed:
+  type: atom
+  path: atom.xml
+  limit: false
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+
+asciinema:
+  enable: true
+
+nofollow:
+	enable: true
+	exclude:
