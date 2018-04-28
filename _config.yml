@@ -155,7 +155,7 @@ uncss:
   enable: true
   ignore: "#added_at_runtime"
   media: ["(min-width: 700px) handheld and (orientation: landscape)"]
-  priority: 10
+  priority: 100
   timeout: 1000
 
 lazyload:
