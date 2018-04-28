@@ -1,6 +1,33 @@
 {
-  "name": "hexo-site",
-  "version": "0.0.0",
+  "name": "kakises-blog",
+  "description": "My personal blog",
+  "version": "1.0.0",
+  "maintainers": [
+    {
+      "name": "Kakise",
+      "email": "mail@kakise.me",
+      "web": "https://kakise.me"
+    }
+  ],
+  "demos": [
+    "https://kakise.me"
+  ],
+  "bugs": {
+    "web": "https://github.com/Kakise/Blog/issues"
+  },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/Kakise/Blog.git"
+    }
+  ],
+  "licenses": [
+    {
+      "name": "GPL-3.0",
+      "url": "https://raw.githubusercontent.com/Kakise/Blog/master/LICENSE"
+    }
+  ],
+  "homepage": "https://kakise.me",
   "private": true,
   "hexo": {
     "version": "3.7.1"
@@ -38,7 +65,7 @@
     "hexo-renderer-sass": "^0.3.2",
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.2.2",
-    "hexo-uncss": "^0.1.4",
+    "hexo-uncss": "git+https://github.com/Kakise/hexo-uncss.git",
     "js-yaml": "^3.11.0"
   },
   "devDependencies": {
