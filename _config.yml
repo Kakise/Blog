@@ -161,7 +161,7 @@ uncss:
 lazyload:
   enable: true 
   onlypost: true
-  loadingImg: "./images/loading.gif" # Image found here: https://gfycat.com/fr/gifs/detail/SkinnySeveralAsianlion
+  loadingImg: # "./images/loading.gif" # Image found here: https://gfycat.com/fr/gifs/detail/SkinnySeveralAsianlion
   
 feed:
   type: atom
