@@ -25,13 +25,10 @@ collections:
     editor:
       preview: false
     files:
-      - name: ""
-        label: "Projects list"
+      - label: "Projects list"
         file: "source/_data/projects.json"
         fields:
-          - {label: "Global title", name: "site_title", widget: "string"}
           - label: "Post Settings"
-            name: posts
             widget: "object"
             fields:
               - {label: "Name", name: name, widget: string}
