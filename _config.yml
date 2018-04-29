@@ -119,8 +119,9 @@ pwa:
           sizes: 512x512
           type: image/png
       display: standalone
-      theme-color: "#E2E0DE"
-      background-color: "#E2E0DE"
+      theme_color: "#E2E0DE"
+      background_color: "#E2E0DE"
+      start_url: /
   serviceWorker:
     path: /sw.js
     preload:
