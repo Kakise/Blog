@@ -24,14 +24,8 @@ collections:
     - name: "projects"
       label: "Projects"
       file: "source/_data/projects.json"
-      editor:
-        preview: false
       widget: "list"
       fields:
-        - label: "Project"
-          name: "prj"
-          widget: "object"
-          fields:
-            - {label: "Name", name: name, widget: string}
-            - {label: "Url", name: url, widget: string}
-            - {label: "Description", name: desc, widget: string}
+        - {label: "Name", name: name, widget: string}
+        - {label: "Url", name: url, widget: string}
+        - {label: "Description", name: desc, widget: string}
