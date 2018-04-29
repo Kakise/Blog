@@ -1,9 +1,9 @@
 {
   "prj": [
     {
-      "name": "Kaki-Blog",
-      "url": "https://github.com/Kakise/Kaki-Blog",
-      "desc": "Mon premier système de blog fait en nodejs. Assez élémentaire."
+      "name": "Blog",
+      "url": "https://github.com/Kakise/Blog",
+      "desc": "Le code source complet de mon blog actuel."
     },
     {
       "name": "Kaki-Static",
@@ -11,9 +11,9 @@
       "desc": "Un nouveau blog engine dérivé de Kaki-Blog mais plus puissant et modulaire."
     },
     {
-      "name": "Blog",
-      "url": "https://github.com/Kakise/Blog",
-      "desc": "Le code source complet de mon blog actuel."
+      "name": "Kaki-Blog",
+      "url": "https://github.com/Kakise/Kaki-Blog",
+      "desc": "Mon premier système de blog fait en nodejs. Assez élémentaire."
     },
     {
       "name": "hx-gameplay",
