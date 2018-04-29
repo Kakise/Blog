@@ -26,6 +26,7 @@ collections:
       file: "source/_data/projects.json"
       editor:
         preview: false
+      widget: "list"
       fields:
         - {label: "Name", name: name, widget: string}
         - {label: "Url", name: url, widget: string}
