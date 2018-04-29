@@ -24,7 +24,7 @@ collections:
     editor:
       preview: false
     file: "source/_data/projects.json"
-      fields:
-        - {label: "Name", name: name, widget: string}
-        - {label: "Url", name: url, widget: string}
-        - {label: "Description", name: desc, widget: string}
+    fields:
+      - {label: "Name", name: name, widget: string}
+      - {label: "Url", name: url, widget: string}
+      - {label: "Description", name: desc, widget: string}
