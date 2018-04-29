@@ -51,9 +51,9 @@
 <section id="projects">
   <span class="h1"><a href="<%- url_for(theme.projects_url) %>"><%= __('index.projects') %></a></span>
   <ul class="project-list">
-    <% for(var obj in site.data.projects){ %>
+    <% for(var obj in site.data.projects.prj){ %>
       <li class="project-item">
-        <b><a href="<%= site.data.projects[obj].url %>"><%= site.data.projects[obj].name %></a></b>: <%= site.data.projects[obj].desc %>
+        <b><a href="<%= site.data.projects.prj[obj].url %>"><%= site.data.projects.prj[obj].name %></a></b>: <%= site.data.projects.prj[obj].desc %>
       </li>
     <% } %>
   </ul>
