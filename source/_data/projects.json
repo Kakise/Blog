@@ -2,7 +2,7 @@
     {
        "name":"Kaki-Blog",
        "url":"https://github.com/Kakise/Kaki-Blog",
-       "desc":"Mon ancien système de blog fait en nodejs."
+       "desc":"Mon premier système de blog fait en nodejs. Assez élémentaire."
     },
     {
        "name": "Kaki-Static",
@@ -13,5 +13,20 @@
       "name": "Blog",
       "url":"https://github.com/Kakise/Blog",
       "desc":"Le code source complet de mon blog actuel."
+    },
+    {
+      "name": "hx-gameplay",
+      "url":"https://github.com/Amadren/hx-gameplay",
+      "desc":"Des 'binding libs' pour Gameplay3D en HaXe. Plus touché depuis des années, très outdated."
+    },
+    {
+      "name": "./play.it (Archlinux Edition)",
+      "url":"https://github.com/Amadren/play.it",
+      "desc":"Ex-port des scripts ./play.it pour Archlinux. Les changements ont été mergés dans la version 2.0. Voir ici: https://www.dotslashplay.it/."
+    },
+    {
+      "name": "lgogd_uri-mk.II",
+      "url": "https://github.com/Amadren/lgogd_uri-mk.II"
+      "desc": "Downloader graphique des jeux GOG basé sur LGOGDownloader. Rework de lgogd_uri qui ne fonctionnait plus"
     }
 ]
