@@ -21,13 +21,10 @@ collections:
 
   - name: "projects"
     label: "Projects"
-    delete: false # Prevent users from deleting documents in this collection
     editor:
       preview: false
-    files:
-      - label: "Projects list"
-        file: "source/_data/projects.json"
-        fields:
-          - {label: "Name", name: name, widget: string}
-          - {label: "Url", name: url, widget: string}
-          - {label: "Description", name: desc, widget: string}
+    file: "source/_data/projects.json"
+      fields:
+        - {label: "Name", name: name, widget: string}
+        - {label: "Url", name: url, widget: string}
+        - {label: "Description", name: desc, widget: string}
