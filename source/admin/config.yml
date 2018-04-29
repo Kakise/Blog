@@ -28,6 +28,10 @@ collections:
         preview: false
       widget: "list"
       fields:
-        - {label: "Name", name: name, widget: string}
-        - {label: "Url", name: url, widget: string}
-        - {label: "Description", name: desc, widget: string}
+        - label: "Project"
+          name: "prj"
+          widget: "object"
+          fields:
+            - {label: "Name", name: name, widget: string}
+            - {label: "Url", name: url, widget: string}
+            - {label: "Description", name: desc, widget: string}
