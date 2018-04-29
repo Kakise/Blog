@@ -18,3 +18,17 @@ collections:
       - {label: "Tags", name: "tags", widget: "list", default: ["news"]}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+  - label: "Pages"
+    name: "pages"
+    files:
+    - name: "projects"
+      label: "Projects"
+      file: "source/_data/projects.json"
+      fields:
+        - label: "Project"
+          name: "prj"
+          widget: "list"
+          fields:
+          - {label: "Name", name: name, widget: string}
+          - {label: "Url", name: url, widget: string}
+          - {label: "Description", name: desc, widget: string}
