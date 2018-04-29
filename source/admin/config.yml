@@ -24,8 +24,11 @@ collections:
     - name: "projects"
       label: "Projects"
       file: "source/_data/projects.json"
-      widget: "list"
       fields:
-        - {label: "Name", name: name, widget: string}
-        - {label: "Url", name: url, widget: string}
-        - {label: "Description", name: desc, widget: string}
+        - label: "Project"
+          name: "prj"
+          widget: "list"
+          fields:
+          - {label: "Name", name: name, widget: string}
+          - {label: "Url", name: url, widget: string}
+          - {label: "Description", name: desc, widget: string}
