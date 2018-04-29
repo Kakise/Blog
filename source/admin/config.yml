@@ -28,9 +28,6 @@ collections:
       - label: "Projects list"
         file: "source/_data/projects.json"
         fields:
-          - label: "Post Settings"
-            widget: "object"
-            fields:
-              - {label: "Name", name: name, widget: string}
-              - {label: "Url", name: url, widget: string}
-              - {label: "Description", name: desc, widget: string}
+          - {label: "Name", name: name, widget: string}
+          - {label: "Url", name: url, widget: string}
+          - {label: "Description", name: desc, widget: string}
