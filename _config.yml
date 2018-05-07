@@ -94,20 +94,6 @@ sitemap:
     path: sitemap.xml
     template: ./sitemap_template.xml
 
-asset_pipeline:
-  revisioning:
-    enable: false
-  clean_css:
-    enable: true
-  uglify_js:
-    enable: true
-    exclude:
-      - '*.min.js'
-  imagemin:
-    enable: true
-  html_minifier:
-    enable: true
-
 # PWA
 pwa:
   manifest:
