@@ -1,6 +1,10 @@
 [build]
-  publish = "public/"
-  command = "hexo deploy" 
+  publish = "public"
+  command = "./build.sh" 
 
 [build.environment]
   NODE_VERSION = "8.11.1"
+
+[template.environment]
+  ONESIGNAL_APP_KEY = "change me for your OneSignal APP Key"
+  ONESGINAL_APP_AUTH_KEY = "change me for your OneSignal Rest API Key"

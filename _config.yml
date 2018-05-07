@@ -85,9 +85,11 @@ theme_config:
 
 # Deploy:
 deploy: 
-   - type: onesignal
-     app_id: 6bb70298-39f8-4f42-9a88-2256dc876257
-
+  type: onesignal
+  app_id: ONESIGNAL_APP_KEY
+  app_auth_key: ONESGINAL_APP_AUTH_KEY
+  app_template_file: ./notif-tpl.json
+  
 sitemap:
     path: sitemap.xml
     template: ./sitemap_template.xml
