@@ -83,11 +83,10 @@ theme: cactus
 theme_config:
   colorscheme: light
 
-nav:
-  Home: /
-  About: /about/
-  Writing: /archives/
-  Projects: /projets/
+# Deploy:
+deploy: 
+   - type: onesignal
+     app_id: 6bb70298-39f8-4f42-9a88-2256dc876257
 
 sitemap:
     path: sitemap.xml
