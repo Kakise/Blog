@@ -121,7 +121,9 @@ pwa:
       display: standalone
       theme_color: "#E2E0DE"
       background_color: "#E2E0DE"
-      start_url: /
+      start_url: https://kakise.me
+      gcm_sender_id: 482941778795
+      gcm_sender_id_comment: "Do not change the GCM Sender ID"
   serviceWorker:
     path: /sw.js
     preload:
