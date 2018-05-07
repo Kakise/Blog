@@ -1,6 +1,6 @@
 [build]
   publish = "public/"
-  command = "hexo generate" 
+  command = "hexo deploy" 
 
 [build.environment]
   NODE_VERSION = "8.11.1"
