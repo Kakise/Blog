@@ -44,6 +44,7 @@
     "hexo-autonofollow": "^1.0.1",
     "hexo-critical-css": "^1.0.6",
     "hexo-deployer-ftpsync": "^0.1.1",
+    "hexo-deployer-onesignal": "^0.5.1",
     "hexo-filter-asciinema": "^1.0.3",
     "hexo-filter-flowchart": "^1.0.4",
     "hexo-generator-archive": "^0.1.4",
