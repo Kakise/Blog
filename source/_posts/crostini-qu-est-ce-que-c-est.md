@@ -22,7 +22,7 @@ Et oui, Crostini se résume à une simple option dans les Paramètres de Chrome 
 
 ![Screenshot montrant les paramètres de Chrome OS sur un Pixelbook](/images/screenshot-2018-05-02-at-7.20.41-pm.png)
 
-_Image trouvée sur: _[_https://goo.gl/2sW4w5_](https://goo.gl/2sW4w5)
+_Image trouvée sur:_ [_https://goo.gl/2sW4w5_](https://goo.gl/2sW4w5)
 
 Avec Crostini, plus besoin de passer son Chromebook en _Developer Mode_ et ainsi, plus de problème lié à la désactivation de l'OS Verification. Sans compter une installation plus _straightforward_ qu'avec Crouton qui est encore assez tricky à utiliser pour les moins expérimentés.
 
