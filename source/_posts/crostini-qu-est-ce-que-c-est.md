@@ -34,6 +34,5 @@ Avec Crostini, les applications installées sont directement affichées dans le 
 
 Enfin, pour finir ce billet, je vous laisse sur quelques liens sympathiques:
 
-[/r/Crostini](https://www.reddit.com/r/Crostini)
-
+[/r/Crostini](https://www.reddit.com/r/Crostini)  
 [/r/Crostini: Help me figure out why Crostini exists](https://www.reddit.com/r/Crostini/comments/8haf9z/help_me_figure_out_the_why_of_crostini/)
