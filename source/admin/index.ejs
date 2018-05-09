@@ -64,7 +64,9 @@ var PostPreview = createClass({
             "div",
             { className: "article-tag" },
             h("i", { className: "fas fa-tag" }),
-            this.props.entry.getIn(['data', 'tags'])._tail.array.map(function(tag, index) {return h('a', {className: "tag-link", href: "#"},tag);})
+            if (this.props.entry.getIn(['data', 'tags'])._tail.array !== "undefined") {
+              this.props.entry.getIn(['data', 'tags'])._tail.array.map(function(tag, index) {return h('a', {className: "tag-link", href: "#"},tag);})
+            }
           )
         )
       ),
