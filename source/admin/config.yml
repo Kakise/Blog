@@ -2,24 +2,30 @@ backend:
   name: github
   repo: Kakise/Blog
   branch: master
+
+display_url: /
+
 publish_mode: editorial_workflow
+
 media_folder: "source/images"
 public_folder: "images"
+
 collections:
   - name: "posts"
-    label: "Post"
+    label: "Posts"
+    label_singular: "Post"
     folder: "source/_posts"
-    sort: "date:desc"
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string", tagname: "h1", default: "Untitled"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD"}
       - {label: "Author", name: "author", widget: "string", default: "Author"}
       - {label: "Tags", name: "tags", widget: "list", default: ["news"]}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
   - label: "Pages"
     name: "pages"
+    label_singular: "Page"
     folder: "source/"
     filter: {field: "layout", value: "page"}
     create: true
