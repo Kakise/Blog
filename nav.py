@@ -13,10 +13,7 @@ for item in nav['nav']:
     string += "  " + item["link"] + ": " + item["url"] + "\n"
     string2 += "      - " + item["url"] + "\n"
 
-#for line in fileinput.input("./themes/cactus/_config.yml", inplace=True):
-#    print (line.replace("NAV_PLACEHOLDER", string))
-#for line in fileinput.input("./_config.yml", inplace=True):
-#    print (line.replace("URL_PLACEHOLDER", string2))
-
-subprocess.call(["sed -i s/NAV_PLACEHOLDER/'"+string+"'/g themes/cactus/_config.yml"], shell=True)
-subprocess.call(["sed -i s/URL_PLACEHOLDER/'"+string2+"'/g _config.yml"], shell=True)
+for line in fileinput.input("./themes/cactus/_config.yml", inplace=True):
+    print (line.replace("haha: URL_PLACEHOLDER", string))
+for line in fileinput.input("./_config.yml", inplace=True):
+    print (line.replace("URL_PLACEHOLDER", string2))
