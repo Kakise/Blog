@@ -20,6 +20,13 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
   - label: "Pages"
     name: "pages"
+    folder: "source"
+    filter: {field: "layout", value: "page"}
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string", tagname: "h1", default: "Untitled"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
     files:
     - name: "projects"
       label: "Projects"
