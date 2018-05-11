@@ -32,8 +32,6 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
   - admin/config.yml
-ignore:
-  - scripts/**
 
 
 # Writing

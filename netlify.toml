@@ -11,4 +11,4 @@
   
 [context.deploy-preview]
   publish = "public"
-  command = "hexo generate" 
+  command = "python3 nav.py && hexo generate" 
