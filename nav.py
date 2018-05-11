@@ -18,5 +18,5 @@ for item in nav['nav']:
 #for line in fileinput.input("./_config.yml", inplace=True):
 #    print (line.replace("URL_PLACEHOLDER", string2))
 
-subprocess.call(["sed -i s/NAV_PLACEHOLDER/"+string+"/g themes/cactus/_config.yml"], shell=True)
-subprocess.call(["sed -i s/URL_PLACEHOLDER/"+string2+"/g _config.yml"], shell=True)
+subprocess.call(["sed -i s/NAV_PLACEHOLDER/'"+string+"'/g themes/cactus/_config.yml"], shell=True)
+subprocess.call(["sed -i s/URL_PLACEHOLDER/'"+string2+"'/g _config.yml"], shell=True)
