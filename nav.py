@@ -14,6 +14,6 @@ for item in nav['nav']:
     string2 += "      - " + item["url"] + "\n"
 
 for line in fileinput.input("./themes/cactus/_config.yml", inplace=True):
-    print (line.replace("haha: URL_PLACEHOLDER", string))
+    print (line.replace("NAV_PLACEHOLDER", string))
 for line in fileinput.input("./_config.yml", inplace=True):
-    print (line.replace("URL_PLACEHOLDER", string2))
+    print (line.replace("haha: URL_PLACEHOLDER", string2))
