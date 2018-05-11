@@ -62,6 +62,7 @@ collections:
     - name: "general"
       label: "General Configuration"
       file: "_config.yml"
+      format: "yml"
       fields:
         - {label: "Title", name: title, widget: string}
         - {label: "Subtitle", name: subtitle, widget: string}
