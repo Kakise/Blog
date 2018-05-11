@@ -7,18 +7,8 @@
 # page within your website.
 projects_url: https://github.com/Kakise
 
-# Configure the navigation menu.
-# A pair 'Key: url' will result in a link to 'url' with the name 'Key' in the
-# navigation menu. Optionally, you can add translations for the 'Key' in
-# languages/*.yml
-nav:
-  home: /
-  about: /about/
-  articles: /archives/
-  projects: /projets/
-  contact: /contact/
-  search: /search/
-
+# Navigation menu placeholder. DON'T CHANGE THIS LINE !!!
+NAV_PLACEHOLDER
 
 # Links to your social media accounts.
 # The keys should correspond to Fontawesome icon names 

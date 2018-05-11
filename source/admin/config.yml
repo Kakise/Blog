@@ -39,3 +39,13 @@ collections:
           - {label: "Name", name: name, widget: string}
           - {label: "Url", name: url, widget: string}
           - {label: "Description", name: desc, widget: string}
+    - name: "navigation"
+      label: "Menu"
+      file: "source/_data/nav.json"
+      fields:
+        - label: "Top Menu"
+          name: "nav"
+          widget: "list"
+          fields:
+          - {label: "Link Name", name: link, widget: string}
+          - {label: "Url", name: url, widget: string}
