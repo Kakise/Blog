@@ -3,7 +3,7 @@ nav:
   about: A propos
   articles: Articles
   projects: Projets
-  search: Chercher
+  search: Recherche
   contact: Contact
 
 footer:
@@ -29,11 +29,11 @@ post:
     share: Partager
 
 search:
-  search: chercher...
+  search: Rehercher...
   no_results: Aucun résultat trouvé.
 
 pagination:
-  page: Page %d de %d
+  page: Page %d sur %d
 
 comments:
   no_js: Veuillez activer JavaScript pour voir les réactions.

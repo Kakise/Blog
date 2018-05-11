@@ -1,6 +1,6 @@
 ---
 title: Contactez-moi !
-date: 2018-04-01 09:45:14
+layout: page
 ---
 Utilisez le formulaire si dessous afin de m'envoyer un message !
 {% raw %}
