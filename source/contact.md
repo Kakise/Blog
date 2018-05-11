@@ -16,7 +16,7 @@ Email
 <label>
 Message
 </label><br>
-<textarea name="message" rows="15" cols="25"></textarea>
-<button type="submit">Envoyer</button>
+<textarea name="message" rows="15" cols="25"></textarea><br>
+<a href="javascript:;" onclick="parentNode.submit();">Envoyer <i class="fas fa-arrow-circle-up"></i></a>
 </form>
 {% endraw %}
