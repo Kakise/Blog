@@ -29,6 +29,8 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
   - label: "Misc"  
     name: "misc"
+    editor:
+      preview: false
     files:
     - name: "projects"
       label: "Projects"
