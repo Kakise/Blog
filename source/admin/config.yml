@@ -2,9 +2,14 @@ backend:
   name: github
   repo: Kakise/Blog
   branch: master
+
+display_url: /
+
 publish_mode: editorial_workflow
+
 media_folder: "source/images"
 public_folder: "images"
+
 collections:
   - name: "posts"
     label: "Posts"
