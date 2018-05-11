@@ -53,3 +53,39 @@ collections:
           fields:
           - {label: "Link Name", name: link, widget: string}
           - {label: "Url", name: url, widget: string}
+    - name: "general"
+      label: "General Configuration"
+      file: "_config.yml"
+      fields:
+        - {label: "Title", name: title, widget: string}
+        - {label: "Subtitle", name: subtitle, widget: string}
+        - {label: "Description", name: description, widget: string}
+        - {label: "Keywords", name: keywords, widget: string}
+        - {label: "Author", name: author, widget: string}
+        - {label: "Language", name: language, widget: string}
+        - {label: "Timezone", name: timezone, widget: string}
+        - label: "Social Links"
+          name: social_links
+          widget: list
+          fields:
+            - {label: "Github", name: github, widget: string}
+            - {label: "Twitter", name: twitter, widget: string}
+            - {label: "E-Mail", name: mail, widget: string}
+        - {label: "Url", name: subtitle, widget: string}
+        - label: "Progressive Web App"
+          name: pwa
+          widget: list
+          fields:
+            - label: "Manifest"
+              name: manifest
+              widget: list
+              fields:
+              - label: "Body"
+                name: body
+                wiget: list
+                fields:
+                - {label: "Name", name: name, widget: string}
+                - {label: "Short Name", name: short_name, widget: string}
+                - {label: "Theme Color", name: theme_color, widget: string}
+                - {label: "Background Color", name: background_color, widget: string}
+                - {label: "Start Url", name: start_url, widget: string}
