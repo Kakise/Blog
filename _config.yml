@@ -103,23 +103,19 @@ pwa:
       name: Le Blog de Kakise
       short_name: LBDK
       icons:
-        - src: /images/LBDK Cover.png
+        - src: /images/PWA_Cover.png
           sizes: 512x512
           type: image/png
       display: standalone
       theme_color: "#E2E0DE"
       background_color: "#E2E0DE"
       start_url: https://kakise.me
-      gcm_sender_id: 482941778795
+      gcm_sender_id: "482941778795"
       gcm_sender_id_comment: "Do not change the GCM Sender ID"
   serviceWorker:
     path: /sw.js
     preload:
-      urls:
-        - /
-        - /about/
-        - /projets/
-        - /archives/
+      URL_PLACEHOLDER
       posts: 10
     opts:
       networkTimeoutSeconds: 5
