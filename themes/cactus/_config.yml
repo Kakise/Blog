@@ -15,6 +15,7 @@ NAV_PLACEHOLDER
 # (see https://fontawesome.com/icons?d=gallery&s=brands);
 # only 'mail' is an exception.
 social_links:
+  rss-square: /atom.xml
   github: http://github.com/Kakise
   twitter: https://twitter.com/Kakise_
   mail: mailto:mail@kakise.me
