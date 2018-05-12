@@ -59,9 +59,14 @@ collections:
           fields:
           - {label: "Link Name", name: link, widget: string}
           - {label: "Url", name: url, widget: string}
-    - name: "_config"
+  - label: "Configuration"  
+    name: "conf"
+    editor:
+      preview: false
+    files:
+      - name: "_config"
       label: "General Configuration"
-      file: "/_config.yml"
+      file: "_config.yml"
       extension: "yml"
       format: "yml"
       fields:
