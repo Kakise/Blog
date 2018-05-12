@@ -115,7 +115,7 @@ pwa:
   serviceWorker:
     path: /sw.js
     preload:
-      haha: URL_PLACEHOLDER
+      urls: URL_PLACEHOLDER
       posts: 10
     opts:
       networkTimeoutSeconds: 5
