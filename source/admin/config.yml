@@ -63,12 +63,12 @@ collections:
     name: "conf"
     editor:
       preview: false
+    extension: "yml"
+    format: "yml"
     files:
       - name: "_config"
       label: "General Configuration"
       file: "_config.yml"
-      extension: "yml"
-      format: "yml"
       fields:
         - {label: "Title", name: title, widget: string}
         - {label: "Subtitle", name: subtitle, widget: string}
