@@ -95,7 +95,7 @@ collections:
               fields:
               - label: "Body"
                 name: body
-                wiget: list
+                widget: list
                 fields:
                 - {label: "Name", name: name, widget: string}
                 - {label: "Short Name", name: short_name, widget: string}
