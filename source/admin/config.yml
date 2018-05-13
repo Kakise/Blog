@@ -2,8 +2,9 @@ backend:
   name: github
   repo: REPO_PLACEHOLDER
   branch: master
+  squash_merges: true
 
-display_url: /
+display_url: SITEURL_PLACEHOLDER
 
 publish_mode: editorial_workflow
 
@@ -59,6 +60,16 @@ collections:
           fields:
           - {label: "Link Name", name: link, widget: string}
           - {label: "Url", name: url, widget: string}
+    - name: "social"
+      label: "Social Links"
+      file: "source/_data/social.json"
+      fields:
+        - label: "Social Links"
+          name: "nav"
+          widget: "list"
+          fields:
+          - {label: "Fontawesome Icon", name: link, widget: string}
+          - {label: "Url", name: url, widget: string}
   - label: "Configuration"  
     name: "conf"
     editor:
@@ -77,14 +88,7 @@ collections:
         - {label: "Author", name: author, widget: string}
         - {label: "Language", name: language, widget: string}
         - {label: "Timezone", name: timezone, widget: string}
-        - label: "Social Links"
-          name: social_links
-          widget: object
-          fields:
-            - {label: "Github", name: github, widget: string}
-            - {label: "Twitter", name: twitter, widget: string}
-            - {label: "E-Mail", name: mail, widget: string}
-        - {label: "Url", name: url, widget: string}
+        - {label: "Url", name: url, widget: hidden, default: SITEURL}
         - {label: "Root", name: root, widget: string}
         - {label: "Permalink", name: permalink, widget: string}
         - {label: "Permalink Defaults", name: permalink_defaults, widget: string}
@@ -109,9 +113,9 @@ collections:
           name: filename_case 
           widget: object
           fields:
-            - {label: "Enable", name: enable, widget: string}
-            - {label: "Line Number", name: line_number, widget: string}
-            - {label: "Auto detect", name: auto_detect, widget: string}
+            - {label: "Enable", name: enable, widget: boolean}
+            - {label: "Line Number", name: line_number, widget: boolean}
+            - {label: "Auto detect", name: auto_detect, widget: boolean}
             - {label: "Tab Replace", name: tag_repalce, widget: string}
         - label: "Index Generator"
           name: index_generator
@@ -206,9 +210,9 @@ collections:
               name: critical
               widget: object
               fields:
-                - {label: "Minify?", name: minify, widget: string}
+                - {label: "Minify?", name: minify, widget: boolean}
             - {label: "httr", name: htmlTagToReplace, widget: hidden, default: "</\\s*head>"}
-            - {label: "PerPageCSS?", name: perPageCss, widget: string}
+            - {label: "PerPageCSS?", name: perPageCss, widget: boolean}
             - {label: "Priority", name: priority, widget: hidden, default: 4}
             - {label: "Replacement HTML header", name: replacementHtmlHeader, widget: hidden, default: "<style type=\"text/css\">"}
             - {label: "Replacement HTML trailer", name: replacementHtmlTrailer, widget: hidden, default: "</style></head>"}
@@ -216,8 +220,8 @@ collections:
           name: lazyload
           widget: object
           fields:
-            - {label: "Enable?", name: enable, widget: string}
-            - {label: "OnlyPost?", name: onlypost, widget: string}
+            - {label: "Enable?", name: enable, widget: boolean}
+            - {label: "OnlyPost?", name: onlypost, widget: boolean}
             - {label: "Loading Image Path", name: loadingImg, widget: string}
         - label: "RSS Feed"
           name: feed
@@ -225,6 +229,7 @@ collections:
           fields:
             - {label: "Type", name: type, widget: hidden, default: atom}
             - {label: "Path", name: path, widget: hidden, default: atom.xml}
+            - {label: "Limit", name: limit, widget: boolean}
             - {label: "Hub", name: hub, widget: hidden, default: }
             - {label: "Content", name: content, widget: hidden, default: }
             - {label: "Content Limit", name: content_limit, widget: number, valueType: int}
@@ -233,10 +238,70 @@ collections:
           name: asciinema
           widget: object
           fields:
-            - {label: "Enable?", name: enable, widget: string}
+            - {label: "Enable?", name: enable, widget: boolean}
         - label: "NoFollow"
           name: nofollow
           widget: object
           fields:
-            - {label: "Enable?", name: enable, widget: string}
+            - {label: "Enable?", name: enable, widget: boolean}
             - {label: "Exclude", name: exclude, widget: string}
+    - name: "theme"
+      label: "Theme Configuration"
+      file: "themes/cactus/_config.yml"
+      fields:
+      - {label: "nav plchdr", name: nav, widget: hidden, default: NAV_PLACEHOLDER}
+      - {label: "soc plchdr", name: social_links, widget: hidden, default: SOC_PLACEHOLDER}
+      - {label: "Projects Url", name: projects_url, widget: string}
+      - label: "Logo"
+        name: logo
+        widget: object
+        fields:
+          - {label: "Enabled?", name: enabled, widget: boolean}
+          - {label: "Width", name: width, widget: number, valueType: int}
+          - {label: "Height", name: height, widget: number, valueType: int}
+          - {label: "Url", name: url, widget: string}
+          - {label: "Gravatar?", name: gravatar, widget: boolean}
+      - label: "Favicon"
+        name: favicon
+        widget: object
+        fields:
+          - label: "Desktop"
+            name: desktop
+            widget: object
+            fields:
+              - {label: "Url", name: url, widget: string}
+              - {label: "Gravatar?", name: gravatar, widget: boolean}
+          - label: "Android"
+            name: android
+            widget: object
+            fields:
+              - {label: "Url", name: url, widget: string}
+              - {label: "Gravatar?", name: gravatar, widget: boolean}
+          - label: "Apple"
+            name: apple
+            widget: object
+            fields:
+              - {label: "Url", name: url, widget: string}
+              - {label: "Gravatar?", name: gravatar, widget: boolean}
+      - {label: "Highlight Style", name: highlight, widget: string}
+      - {label: "Page Width", name: page_width, widget: number, valueType: int}
+      - {label: "RSS", name: rss, widget: hidden, default: "atom.xml"}
+      - label: "OpenGraph"
+        name: open_graph
+        widget: object
+        fields:
+          - {label: "FB App ID", name: fb_app_id, widget: string}
+          - {label: "FB Admins", name: fb_admins, widget: string}
+          - {label: "Twitter ID", name: twitter_id, widget: string}
+          - {label: "Google+", name: google_plus, widget: string}
+      - label: "Disqus"
+        name: disqus
+        widget: object
+        fields:
+          - {label: "Enabled?", name: enabled, widget: boolean}
+          - {label: "Shortname", name: shortname, widget: string}
+      - label: "Gravatar"
+        name: gravatar
+        widget: object
+        fields: 
+          - {label: "Email", name: email, widget: string}
