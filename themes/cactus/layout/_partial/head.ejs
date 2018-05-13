@@ -47,4 +47,13 @@
     <% if (is_post() && config.generator_amp){ %>
       <link rel="amphtml" href="<%= config.url %><%= config.root %><%= page.path %>/amp/index.html">
     <% } %>
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+      var OneSignal = window.OneSignal || [];
+      OneSignal.push(function() {
+        OneSignal.init({
+          appId: "6bb70298-39f8-4f42-9a88-2256dc876257",
+        });
+      });
+    </script>
 </head>
