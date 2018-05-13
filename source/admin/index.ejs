@@ -80,7 +80,7 @@ layout: false
                                   h("i", {
                                       className: "fas fa-tag"
                                   }),
-                                  this.props.entry.getIn(['data', 'tags'])._tail.array.map(function(tag, index) {
+                                  this.props.entry.getIn(['data', 'tags']).map(function(tag, index) {
                                       return h('a', {
                                           className: "tag-link",
                                           href: "#"
