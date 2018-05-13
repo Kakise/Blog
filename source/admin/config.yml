@@ -79,23 +79,23 @@ collections:
         - {label: "Timezone", name: timezone, widget: string}
         - label: "Social Links"
           name: social_links
-          widget: list
+          widget: object
           fields:
             - {label: "Github", name: github, widget: string}
             - {label: "Twitter", name: twitter, widget: string}
             - {label: "E-Mail", name: mail, widget: string}
-        - {label: "Url", name: subtitle, widget: string}
+        - {label: "Url", name: url, widget: string}
         - label: "Progressive Web App"
           name: pwa
-          widget: list
+          widget: object
           fields:
             - label: "Manifest"
               name: manifest
-              widget: list
+              widget: object
               fields:
               - label: "Body"
                 name: body
-                widget: list
+                widget: object
                 fields:
                 - {label: "Name", name: name, widget: string}
                 - {label: "Short Name", name: short_name, widget: string}
