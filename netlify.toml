@@ -8,7 +8,8 @@
 [template.environment]
   ONESIGNAL_APP_KEY = "change me for your OneSignal APP Key"
   ONESGINAL_APP_AUTH_KEY = "change me for your OneSignal Rest API Key"
-  
+  REPO = "change me for your Github repo name. Usally Username/Blog."
+
 [context.deploy-preview]
   publish = "public"
-  command = "python3 nav.py && hexo generate" 
+  command = "./build-preview.sh" 

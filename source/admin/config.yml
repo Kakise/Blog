@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: Kakise/Blog
+  repo: REPO_PLACEHOLDER
   branch: master
 
 display_url: /
