@@ -7,7 +7,7 @@ json_data=open("./source/_data/nav.json")
 nav = json.load(json_data)
 json_data.close()
 
-yml=open("./_config.ejs")
+yml=open("./_config.yml")
 conf = yaml.load(yml)
 yml.close()
 
