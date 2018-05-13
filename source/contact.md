@@ -1,6 +1,6 @@
 ---
 title: Contactez-moi !
-date: 2018-04-01 09:45:14
+layout: page
 ---
 Utilisez le formulaire si dessous afin de m'envoyer un message !
 {% raw %}
@@ -16,7 +16,7 @@ Email
 <label>
 Message
 </label><br>
-<textarea name="message" rows="15" cols="25"></textarea>
-<button type="submit">Envoyer</button>
+<textarea name="message" rows="15" cols="25"></textarea><br>
+<a href="javascript:;" onclick="parentNode.submit();">Envoyer <i class="fas fa-arrow-circle-up"></i></a>
 </form>
 {% endraw %}

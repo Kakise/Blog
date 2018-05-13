@@ -33,6 +33,7 @@ i18n_dir: :lang
 skip_render:
   - admin/config.yml
 
+
 # Writing
 new_post_name: :title.md # File name of new posts
 default_layout: post
@@ -87,7 +88,7 @@ theme_config:
 deploy: 
   type: onesignal
   app_id: ONESIGNAL_APP_KEY
-  app_auth_key: ZjllNTA3MTItMzhiZS00NDg4LTk5MDItYjczYmI2YjhlNTli
+  app_auth_key: ONESIGNAL_APP_AUTH_KEY
   app_template_file: ./notif-tpl.json
   
 sitemap:
@@ -102,23 +103,19 @@ pwa:
       name: Le Blog de Kakise
       short_name: LBDK
       icons:
-        - src: /images/LBDK Cover.png
+        - src: /images/PWA_Cover.png
           sizes: 512x512
           type: image/png
       display: standalone
       theme_color: "#E2E0DE"
       background_color: "#E2E0DE"
       start_url: https://kakise.me
-      gcm_sender_id: 482941778795
+      gcm_sender_id: "482941778795"
       gcm_sender_id_comment: "Do not change the GCM Sender ID"
   serviceWorker:
     path: /sw.js
     preload:
-      urls:
-        - /
-        - /about/
-        - /projets/
-        - /archives/
+      urls: URL_PLACEHOLDER
       posts: 10
     opts:
       networkTimeoutSeconds: 5
@@ -139,14 +136,6 @@ criticalcss:
   priority: 4
   replacementHtmlHeader: "<style type=\"text/css\">"
   replacementHtmlTrailer: "</style></head>"
-
-# Uncss
-uncss:
-  enable: true
-  ignore: "#added_at_runtime"
-  media: ["(min-width: 700px) handheld and (orientation: landscape)"]
-  priority: 100
-  timeout: 1000
 
 lazyload:
   enable: true 

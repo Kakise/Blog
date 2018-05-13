@@ -9,17 +9,16 @@ Featuring:
   - Progressive Web App
   - Fully optimized assets (images, css and js)
   - CMS
+  - Notifications (through OneSignal)
 
-# Using this template to make your blog
+# How to use this template to make your blog
+**Optional but recommended**  
+Create a [OneSignal](https://onesignal.com/) account, make a new Web Browser app, set up everythign then click in your app's Settings and retreive the APP ID and the Rest Api Key from the "Keys&ID" category.
 
-Just press here and enjoy your blog !
+Click here and create an account using github, it will setup everythong for you. If you will use OneSignal, don't forget to put your app's keys.
 
 [![Button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Kakise/Blog)
 
-
-Remove posts & unused pages in `source/` (the `404.md`, `contact/index.md` and `Search/index.md` files are necessary for the site to work correctly).
-
-Change the `_config.yml` and the `themes/cactus/_config.yml` according to your needs, setup github's OAuth credentials in Netlify admin space.
 
 Set these settings in Netlify admin space:
 
@@ -28,6 +27,8 @@ Here: https://app.netlify.com/sites/[YOUR_SITE_NAME]/settings/deploys
 
 ![github's Oauth](https://www.awesomescreenshot.com/upload//229540/2e23faef-10f0-42cb-55a8-c74037ffa1e8.png)
 Here: https://app.netlify.com/sites/[YOUR_SITE_NAME]/settings/access
+
+Then access `/admin/` in your website to make changes according to your needs. Remove the precedent posts, pages etc... mess up with the different configuration files and enjoy ! :)
 
 ## License
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FKakise%2FBlog.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FKakise%2FBlog?ref=badge_large)

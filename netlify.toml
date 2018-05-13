@@ -8,7 +8,7 @@
 [template.environment]
   ONESIGNAL_APP_KEY = "change me for your OneSignal APP Key"
   ONESGINAL_APP_AUTH_KEY = "change me for your OneSignal Rest API Key"
-  
+  REPO = "Usally Username\\/Blog. The '\\' before the '/' is required"
 [context.deploy-preview]
   publish = "public"
-  command = "hexo generate" 
+  command = "./build-preview.sh" 
