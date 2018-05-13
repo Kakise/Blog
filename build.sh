@@ -7,7 +7,7 @@ sed -i s/REPO_PLACEHOLDER/$REPO/g source/admin/config.yml
 
 # Change navigation
 pip install pyyaml
-python3 nav.py
+python nav.py
 
 # Deploy the site
 hexo deploy
