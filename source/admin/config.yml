@@ -169,7 +169,7 @@ collections:
                     - {label: "Source", name: src, widget: string}
                     - {label: "Sizes", name: sizes, widget: string}
                     - {label: "Type", name: type, widget: string}
-                - {label: "Displat", name: display, widget: string}
+                - {label: "Display", name: display, widget: string}
                 - {label: "Theme Color", name: theme_color, widget: string}
                 - {label: "Background Color", name: background_color, widget: string}
                 - {label: "Start Url", name: start_url, widget: string}
@@ -207,11 +207,11 @@ collections:
               widget: object
               fields:
                 - {label: "Minify?", name: minify, widget: string}
-          - {label: "httr", name: htmlTagToReplace, widget: hidden, default: "</\\s*head>"}
-          - {label: "PerPageCSS?", name: perPageCss, widget: string}
-          - {label: "Priority", name: priority, widget: hidden, default: 4}
-          - {label: "Replacement HTML header", name: replacementHtmlHeader, widget: hidden, default: "<style type=\"text/css\">"}
-          - {label: "Replacement HTML trailer", name: replacementHtmlTrailer, widget: hidden, default: "</style></head>"}
+            - {label: "httr", name: htmlTagToReplace, widget: hidden, default: "</\\s*head>"}
+            - {label: "PerPageCSS?", name: perPageCss, widget: string}
+            - {label: "Priority", name: priority, widget: hidden, default: 4}
+            - {label: "Replacement HTML header", name: replacementHtmlHeader, widget: hidden, default: "<style type=\"text/css\">"}
+            - {label: "Replacement HTML trailer", name: replacementHtmlTrailer, widget: hidden, default: "</style></head>"}
       - label: "Image Lazyloading"
         name: lazyload
         widget: object
