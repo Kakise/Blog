@@ -28,6 +28,22 @@ body
   text-rendering: geometricPrecision
 
   antialias()
+@media (min-width: 1200px)
+  #background 
+    width: 100%
+    height: 100% 
+    opacity: 0.2
+    position: fixed 
+    left: 0px
+    top: 0px 
+    z-index: -1
+
+  .stretch 
+    width: 100%
+    height: 100%
+@media (max-width: 1200px)
+  #background
+    display: none
 
 .content
   flex: 1
