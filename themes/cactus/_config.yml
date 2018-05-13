@@ -19,16 +19,6 @@ social_links:
   twitter: https://twitter.com/Kakise_
   mail: mailto:mail@kakise.me
 
-
-# Customize the overview with the most recent blog posts on the index page.
-# Options:
-#   - show_all_posts: whether to show all available posts.
-#   - post_count: whether to show only the x most recent posts.
-posts_overview:
-  show_all_posts: false
-  post_count: 5
-
-
 ##############################################################################
 # Look and Feel
 ##############################################################################
