@@ -212,31 +212,31 @@ collections:
             - {label: "Priority", name: priority, widget: hidden, default: 4}
             - {label: "Replacement HTML header", name: replacementHtmlHeader, widget: hidden, default: "<style type=\"text/css\">"}
             - {label: "Replacement HTML trailer", name: replacementHtmlTrailer, widget: hidden, default: "</style></head>"}
-      - label: "Image Lazyloading"
-        name: lazyload
-        widget: object
-        fields:
-          - {label: "Enable?", name: enable, widget: string}
-          - {label: "OnlyPost?", name: onlypost, widget: string}
-          - {label: "Loading Image Path", name: loadingImg, widget: string}
-      - label: "RSS Feed"
-        name: feed
-        widget: object
-        fields:
-          - {label: "Type", name: type, widget: hidden, default: atom}
-          - {label: "Path", name: path, widget: hidden, default: atom.xml}
-          - {label: "Hub", name: hub, widget: hidden, default: }
-          - {label: "Content", name: content, widget: hidden, default: }
-          - {label: "Content Limit", name: content_limit, widget: number, valueType: int}
-          - {label: "Content Limit Delimit", name: content_limit_delim, widget: string}
-      - label: "Asciinema"
-        name: asciinema
-        widget: object
-        fields:
-          - {label: "Enable?", name: enable, widget: string}
-      - label: "NoFollow"
-        name: nofollow
-        widget: object
-        fields:
-          - {label: "Enable?", name: enable, widget: string}
-          - {label: "Exclude", name: exclude, widget: string}
+        - label: "Image Lazyloading"
+          name: lazyload
+          widget: object
+          fields:
+            - {label: "Enable?", name: enable, widget: string}
+            - {label: "OnlyPost?", name: onlypost, widget: string}
+            - {label: "Loading Image Path", name: loadingImg, widget: string}
+        - label: "RSS Feed"
+          name: feed
+          widget: object
+          fields:
+            - {label: "Type", name: type, widget: hidden, default: atom}
+            - {label: "Path", name: path, widget: hidden, default: atom.xml}
+            - {label: "Hub", name: hub, widget: hidden, default: }
+            - {label: "Content", name: content, widget: hidden, default: }
+            - {label: "Content Limit", name: content_limit, widget: number, valueType: int}
+            - {label: "Content Limit Delimit", name: content_limit_delim, widget: string}
+        - label: "Asciinema"
+          name: asciinema
+          widget: object
+          fields:
+            - {label: "Enable?", name: enable, widget: string}
+        - label: "NoFollow"
+          name: nofollow
+          widget: object
+          fields:
+            - {label: "Enable?", name: enable, widget: string}
+            - {label: "Exclude", name: exclude, widget: string}
