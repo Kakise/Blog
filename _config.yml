@@ -88,7 +88,7 @@ theme_config:
 deploy: 
   type: onesignal
   app_id: ONESIGNAL_APP_KEY
-  app_auth_key: ZjllNTA3MTItMzhiZS00NDg4LTk5MDItYjczYmI2YjhlNTli
+  app_auth_key: ONESIGNAL_APP_AUTH_KEY
   app_template_file: ./notif-tpl.json
   
 sitemap:
@@ -136,14 +136,6 @@ criticalcss:
   priority: 4
   replacementHtmlHeader: "<style type=\"text/css\">"
   replacementHtmlTrailer: "</style></head>"
-
-# Uncss
-uncss:
-  enable: true
-  ignore: "#added_at_runtime"
-  media: ["(min-width: 700px) handheld and (orientation: landscape)"]
-  priority: 100
-  timeout: 1000
 
 lazyload:
   enable: true 

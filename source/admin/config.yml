@@ -66,7 +66,7 @@ collections:
     extension: "yml"
     format: "yml"
     files:
-    - name: "_config"
+    - name: "config"
       label: "General Configuration"
       file: "_config.yml"
       fields:
@@ -85,6 +85,17 @@ collections:
             - {label: "Twitter", name: twitter, widget: string}
             - {label: "E-Mail", name: mail, widget: string}
         - {label: "Url", name: url, widget: string}
+        - {label: "Root", name: root, widget: string}
+        - {label: "Permalink", name: permalink, widget: string}
+        - {label: "Permalink Defaults", name: permalink_defaults, widget: string}
+        - {label: "Source Directory", name: source_dir, widget: hidden, default: source}
+        - {label: "Public Directory", name: public_dir, widget: hidden, default: public}
+        - {label: "Tags Directory", name: tag_dir, widget: hidden, default: tags}
+        - {label: "Archive Directory", name: archive_dir, widget: hidden, default: archives}
+        - {label: "Category Directory", name: source_dir, widget: hidden, default: source}
+        - {label: "Code Directory", name: code_dir, widget: hidden, default: downloads/code}
+        - {label: "i18n Directory", name: i18n_dir, widget: hidden, default: lang}
+        - {label: "Skip Render", name: skip_render, widget: hidden, default: ['admin/config.yml']}
         - label: "Progressive Web App"
           name: pwa
           widget: object
