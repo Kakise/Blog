@@ -155,5 +155,5 @@ asciinema:
   enable: true
 
 nofollow:
-	enable: true
-	exclude:
+  enable: true
+  exclude:
