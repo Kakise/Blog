@@ -1,25 +1,24 @@
 {
-    "nav":
-    [
-        {
-            "link" : "github",
-            "url" : "http://github.com/Kakise"
-        },
-        {
-            "link": "twitter",
-            "url": "https://twitter.com/Kakise_"
-        },
-        {
-            "link": "steam",
-            "url": "https://steamcommunity.com/id/der_professor"
-        },
-        {
-            "link": "twitch",
-            "url": "https://www.twitch.tv/cptkakise"
-        },
-        {
-            "link": "mail",
-            "url": "mailto:mail@kakise.me"
-        }
-    ]
+  "nav": [
+    {
+      "link": "github",
+      "url": "https://github.com/Kakise"
+    },
+    {
+      "link": "twitter",
+      "url": "https://twitter.com/Kakise_"
+    },
+    {
+      "link": "steam",
+      "url": "https://steamcommunity.com/id/der_professor"
+    },
+    {
+      "link": "twitch",
+      "url": "https://www.twitch.tv/cptkakise"
+    },
+    {
+      "link": "mail",
+      "url": "mailto:mail@kakise.me"
+    }
+  ]
 }
