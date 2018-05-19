@@ -59,6 +59,16 @@ collections:
           fields:
           - {label: "Link Name", name: link, widget: string}
           - {label: "Url", name: url, widget: string}
+    - name: "social"
+      label: "Social Links"
+      file: "source/_data/social.json"
+      fields:
+        - label: "Social Links"
+          name: "nav"
+          widget: "list"
+          fields:
+          - {label: "Fontawesome Icon", name: link, widget: string}
+          - {label: "Url", name: url, widget: string}
   - label: "Configuration"  
     name: "conf"
     editor:
@@ -77,13 +87,6 @@ collections:
         - {label: "Author", name: author, widget: string}
         - {label: "Language", name: language, widget: string}
         - {label: "Timezone", name: timezone, widget: string}
-        - label: "Social Links"
-          name: social_links
-          widget: object
-          fields:
-            - {label: "Github", name: github, widget: string}
-            - {label: "Twitter", name: twitter, widget: string}
-            - {label: "E-Mail", name: mail, widget: string}
         - {label: "Url", name: url, widget: string}
         - {label: "Root", name: root, widget: string}
         - {label: "Permalink", name: permalink, widget: string}
@@ -240,3 +243,62 @@ collections:
           fields:
             - {label: "Enable?", name: enable, widget: string}
             - {label: "Exclude", name: exclude, widget: string}
+    - name: "theme"
+      label: "General Configuration"
+      file: "_config.yml"
+      fields:
+      - {label: "nav plchdr", name: nav, widget: hidden, default: NAV_PLACEHOLDER}
+      - {label: "Projects Url", name: projects_url, widget: string}
+      - label: "Logo"
+        name: logo
+        widget: object
+        fields:
+          - {label: "Enabled?", name: enabled, widget: string}
+          - {label: "Width", name: width, widget: string}
+          - {label: "Height", name: height, widget: string}
+          - {label: "Url", name: url, widget: string}
+          - {label: "Gravatar?", name: gravatar, widget: string}
+      - label: "Favicon"
+        name: favicon
+        widget: object
+        fields:
+          - label: "Desktop"
+            name: desktop
+            widget: object
+            fields:
+              - {label: "Url", name: url, widget: string}
+              - {label: "Gravatar?", name: gravatar, widget: string}
+          - label: "Android"
+            name: android
+            widget: object
+            fields:
+              - {label: "Url", name: url, widget: string}
+              - {label: "Gravatar?", name: gravatar, widget: string}
+          - label: "Apple"
+            name: apple
+            widget: object
+            fields:
+              - {label: "Url", name: url, widget: string}
+              - {label: "Gravatar?", name: gravatar, widget: string}
+      - {label: "Highlight Style", name: highlight, widget: string}
+      - {label: "Page Width", name: page_width, widget: string}
+      - {label: "RSS", name: rss, widget: hidden, default: "atom.xml"}
+      - label: "OpenGraph"
+        name: open_graph
+        widget: object
+        fields:
+          - {label: "FB App ID", name: fb_app_id, widget: string}
+          - {label: "FB Admins", name: fb_admins, widget: string}
+          - {label: "Twitter ID", name: twitter_id, widget: string}
+          - {label: "Google+", name: google_plus, widget: string}
+      - label: "Disqus"
+        name: disqus
+        widget: object
+        fields:
+          - {label: "Enabled?", name: enabled, widget: string}
+          - {label: "Shortname", name: shortname, widget: string}
+      - label: "Gravatar"
+        name: gravatar
+        widget: object
+        fields: 
+          - {label: "Email", name: email, widget: string}
