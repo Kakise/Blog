@@ -245,7 +245,7 @@ collections:
             - {label: "Enable?", name: enable, widget: string}
             - {label: "Exclude", name: exclude, widget: string}
     - name: "theme"
-      label: "General Configuration"
+      label: "Theme Configuration"
       file: "themes/cactus/_config.yml"
       fields:
       - {label: "nav plchdr", name: nav, widget: hidden, default: NAV_PLACEHOLDER}
