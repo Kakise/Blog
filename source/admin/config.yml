@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: REPO_PLACEHOLDER
+  repo: 
   branch: master
 
 display_url: /

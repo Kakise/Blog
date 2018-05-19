@@ -6,7 +6,7 @@ sed -i s/ONESIGNAL_APP_AUTH_KEY/$ONESIGNAL_APP_AUTH_KEY/g _config.yml
 sed -i s/REPO_PLACEHOLDER/$REPO/g source/admin/config.yml
 
 # Change navigation
-pip install pyyaml
+pip3 install pyyaml
 python nav.py
 
 # Deploy the site
