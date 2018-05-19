@@ -1,159 +1,103 @@
-# Hexo Configuration
-## Docs: https://hexo.io/docs/configuration.html
-## Source: https://github.com/hexojs/hexo/
-
-# Site
-title: Le Blog de Kakise 
+title: Le Blog de Kakise
 subtitle: Le blog d'un codeur fou !
-description: Salut et bienvenue sur mon blog ! Ici vous retrouverez mes projets, et autres réflexions tout à fait folles !
-keywords: Blog, code, info, science
+description: >-
+  Salut et bienvenue sur mon blog ! Ici vous retrouverez mes projets, et autres
+  réflexions tout à fait folles !
+keywords: 'Blog, code, info, science'
 author: Kakise
 language: fr
 timezone: Europe/Paris
 social_links:
-  github: https://github.com/Kakise 
-  twitter: https://twitter.com/Kakise_
-  mail: me@kakise.xyz 
-  
-# URL
-## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://kakise.me
+  github: 'https://github.com/Kakise'
+  mail: mail@kakise.me
+  twitter: 'https://twitter.com/Kakise_'
+url: 'https://kakise.me'
 root: /
-permalink: :year/:month/:day/:title/
-permalink_defaults:
-
-# Directory
+permalink: ':year/:month/:day/:title/'
+permalink_defaults: ' '
 source_dir: source
 public_dir: public
 tag_dir: tags
 archive_dir: archives
-category_dir: categories
 code_dir: downloads/code
-i18n_dir: :lang
+i18n_dir: ':lang'
 skip_render:
   - admin/config.yml
-
-
-# Writing
-new_post_name: :title.md # File name of new posts
+new_post_name: ':title.md'
 default_layout: post
-titlecase: false # Transform title into titlecase
-external_link: true # Open external links in new tab
+titlecase: false
+external_link: true
 filename_case: 0
 render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
-highlight:
-  enable: true
-  line_number: true
-  auto_detect: true
-  tab_replace:
-  
-# Home page setting
-# path: Root path for your blogs index page. (default = '')
-# per_page: Posts displayed per page. (0 = disable pagination)
-# order_by: Posts order. (Order by date descending by default)
 index_generator:
+  order_by: '-date'
   path: ''
   per_page: 5
-  order_by: -date
-  
-# Category & Tag
 default_category: uncategorized
-category_map:
-tag_map:
-
-# Date / Time format
-## Hexo uses Moment.js to parse and display date
-## You can customize the date format as defined in
-## http://momentjs.com/docs/#/displaying/format/
 date_format: YYYY-MM-DD
-time_format: HH:mm:ss
-
-# Pagination
-## Set per_page to 0 to disable pagination
+time_format: 'HH:mm:ss'
 per_page: 10
 pagination_dir: page
-
-# Extensions
-## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
 theme: cactus
-
 theme_config:
   colorscheme: light
-
-# Deploy:
-deploy: 
-  type: onesignal
-  app_id: ONESIGNAL_APP_KEY
+deploy:
   app_auth_key: ONESIGNAL_APP_AUTH_KEY
+  app_id: ONESIGNAL_APP_KEY
   app_template_file: ./notif-tpl.json
-  
+  type: onesignal
 sitemap:
-    path: sitemap.xml
-    template: ./sitemap_template.xml
-
-# PWA
+  path: sitemap.xml
+  template: ./sitemap_template.xml
 pwa:
   manifest:
-    path: /manifest.json
     body:
+      background_color: '#E2E0DE'
+      display: standalone
+      gcm_sender_id: '482941778795'
+      icons:
+        - sizes: 512x512
+          src: /images/PWA_Cover.png
+          type: image/png
       name: Le Blog de Kakise
       short_name: LBDK
-      icons:
-        - src: /images/PWA_Cover.png
-          sizes: 512x512
-          type: image/png
-      display: standalone
-      theme_color: "#E2E0DE"
-      background_color: "#E2E0DE"
-      start_url: https://kakise.me
-      gcm_sender_id: "482941778795"
-      gcm_sender_id_comment: "Do not change the GCM Sender ID"
+      start_url: 'https://kakise.me'
+      theme_color: '#E2E0DE'
+    path: /manifest.json
+  priority: 5
   serviceWorker:
-    path: /sw.js
-    preload:
-      urls: URL_PLACEHOLDER
-      posts: 10
     opts:
       networkTimeoutSeconds: 5
+    path: /sw.js
+    preload:
+      posts: 10
+      urls: URL_PLACEHOLDER
     routes:
-      - pattern: "!!js/regexp /.*\\.(js|css|jpg|jpeg|png|gif)$/"
+      - pattern: '!!js/regexp /.*\.(js|css|jpg|jpeg|png|gif)$/'
         strategy: cacheFirst
-      - pattern: "!!js/regexp /\\//"
+      - pattern: '!!js/regexp /\//'
         strategy: networkFirst
-  priority: 5
-
-# Critical CSS extractor
 criticalcss:
-  enable: true
   critical:
     minify: true
-  htmlTagToReplace: "</\\s*head>"
+  enable: true
+  htmlTagToReplace: </\s*head>
   perPageCss: false
   priority: 4
-  replacementHtmlHeader: "<style type=\"text/css\">"
-  replacementHtmlTrailer: "</style></head>"
-
+  replacementHtmlHeader: <style type="text/css">
+  replacementHtmlTrailer: </style></head>
 lazyload:
-  enable: true 
+  enable: true
   onlypost: true
-  loadingImg: # "./images/loading.gif" # Image found here: https://gfycat.com/fr/gifs/detail/SkinnySeveralAsianlion
-  
 feed:
-  type: atom
-  path: atom.xml
-  limit: false
-  hub:
-  content:
   content_limit: 140
   content_limit_delim: ' '
-
+  path: atom.xml
+  type: atom
 asciinema:
   enable: true
-
 nofollow:
   enable: true
-  exclude:
