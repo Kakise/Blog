@@ -17,7 +17,7 @@ favicon:
   apple:
     url: /images/apple-icon.png
     gravatar: false
-highlight: rainbow
+highlight: solarized-dark
 page_width: 48
 rss: atom.xml
 open_graph: 
