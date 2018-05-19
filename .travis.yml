@@ -10,7 +10,7 @@ before_script:
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
   - chmod +x ./cc-test-reporter
   - ./cc-test-reporter before-build
-  - pip install pyyaml
+  - pip3 install pyyaml
   - python3 nav.py
 install:
   - npm install
