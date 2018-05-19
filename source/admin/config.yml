@@ -2,6 +2,7 @@ backend:
   name: github
   repo: REPO_PLACEHOLDER
   branch: master
+  squash_merges: true
 
 display_url: /
 
