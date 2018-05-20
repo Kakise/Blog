@@ -81,7 +81,7 @@ criticalcss:
     minify: true
   enable: true
   htmlTagToReplace: </\s*head>
-  perPageCss: true
+  perPageCss: false
   priority: 4
   replacementHtmlHeader: <style type="text/css">
   replacementHtmlTrailer: </style></head>
