@@ -257,8 +257,8 @@ collections:
         widget: object
         fields:
           - {label: "Enabled?", name: enabled, widget: boolean}
-          - {label: "Width", name: width, widget: string}
-          - {label: "Height", name: height, widget: string}
+          - {label: "Width", name: width, widget: number, valueType: int}
+          - {label: "Height", name: height, widget: number, valueType: int}
           - {label: "Url", name: url, widget: string}
           - {label: "Gravatar?", name: gravatar, widget: boolean}
       - label: "Favicon"
