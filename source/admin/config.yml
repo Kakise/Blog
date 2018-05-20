@@ -2,6 +2,7 @@ backend:
   name: github
   repo: REPO_PLACEHOLDER
   branch: master
+  squash_merges: true
 
 display_url: /
 
@@ -245,8 +246,8 @@ collections:
             - {label: "Enable?", name: enable, widget: boolean}
             - {label: "Exclude", name: exclude, widget: string}
     - name: "theme"
-      label: "General Configuration"
-      file: "_config.yml"
+      label: "Theme Configuration"
+      file: "themes/cactus/_config.yml"
       fields:
       - {label: "nav plchdr", name: nav, widget: hidden, default: NAV_PLACEHOLDER}
       - {label: "soc plchdr", name: social_links, widget: hidden, default: SOC_PLACEHOLDER}
