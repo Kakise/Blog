@@ -18,7 +18,7 @@ favicon:
     gravatar: false
     url: /images/favicon.ico
 highlight: solarized-dark
-page_width: '54'
+page_width: 60
 rss: atom.xml
 open_graph:
   twitter_id: Kakise_
