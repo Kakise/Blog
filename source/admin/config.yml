@@ -284,7 +284,7 @@ collections:
               - {label: "Url", name: url, widget: string}
               - {label: "Gravatar?", name: gravatar, widget: boolean}
       - {label: "Highlight Style", name: highlight, widget: string}
-      - {label: "Page Width", name: page_width, widget: string}
+      - {label: "Page Width", name: page_width, widget: number, valueType: int}
       - {label: "RSS", name: rss, widget: hidden, default: "atom.xml"}
       - label: "OpenGraph"
         name: open_graph
