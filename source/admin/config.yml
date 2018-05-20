@@ -112,9 +112,9 @@ collections:
           name: filename_case 
           widget: object
           fields:
-            - {label: "Enable", name: enable, widget: string}
-            - {label: "Line Number", name: line_number, widget: string}
-            - {label: "Auto detect", name: auto_detect, widget: string}
+            - {label: "Enable", name: enable, widget: boolean}
+            - {label: "Line Number", name: line_number, widget: boolean}
+            - {label: "Auto detect", name: auto_detect, widget: boolean}
             - {label: "Tab Replace", name: tag_repalce, widget: string}
         - label: "Index Generator"
           name: index_generator
@@ -209,9 +209,9 @@ collections:
               name: critical
               widget: object
               fields:
-                - {label: "Minify?", name: minify, widget: string}
+                - {label: "Minify?", name: minify, widget: boolean}
             - {label: "httr", name: htmlTagToReplace, widget: hidden, default: "</\\s*head>"}
-            - {label: "PerPageCSS?", name: perPageCss, widget: string}
+            - {label: "PerPageCSS?", name: perPageCss, widget: boolean}
             - {label: "Priority", name: priority, widget: hidden, default: 4}
             - {label: "Replacement HTML header", name: replacementHtmlHeader, widget: hidden, default: "<style type=\"text/css\">"}
             - {label: "Replacement HTML trailer", name: replacementHtmlTrailer, widget: hidden, default: "</style></head>"}
@@ -219,8 +219,8 @@ collections:
           name: lazyload
           widget: object
           fields:
-            - {label: "Enable?", name: enable, widget: string}
-            - {label: "OnlyPost?", name: onlypost, widget: string}
+            - {label: "Enable?", name: enable, widget: boolean}
+            - {label: "OnlyPost?", name: onlypost, widget: boolean}
             - {label: "Loading Image Path", name: loadingImg, widget: string}
         - label: "RSS Feed"
           name: feed
@@ -228,6 +228,7 @@ collections:
           fields:
             - {label: "Type", name: type, widget: hidden, default: atom}
             - {label: "Path", name: path, widget: hidden, default: atom.xml}
+            - {label: "Limit", name: limit, widget: boolean}
             - {label: "Hub", name: hub, widget: hidden, default: }
             - {label: "Content", name: content, widget: hidden, default: }
             - {label: "Content Limit", name: content_limit, widget: number, valueType: int}
@@ -236,28 +237,29 @@ collections:
           name: asciinema
           widget: object
           fields:
-            - {label: "Enable?", name: enable, widget: string}
+            - {label: "Enable?", name: enable, widget: boolean}
         - label: "NoFollow"
           name: nofollow
           widget: object
           fields:
-            - {label: "Enable?", name: enable, widget: string}
+            - {label: "Enable?", name: enable, widget: boolean}
             - {label: "Exclude", name: exclude, widget: string}
     - name: "theme"
       label: "General Configuration"
       file: "_config.yml"
       fields:
       - {label: "nav plchdr", name: nav, widget: hidden, default: NAV_PLACEHOLDER}
+      - {label: "soc plchdr", name: social_links, widget: hidden, default: SOC_PLACEHOLDER}
       - {label: "Projects Url", name: projects_url, widget: string}
       - label: "Logo"
         name: logo
         widget: object
         fields:
-          - {label: "Enabled?", name: enabled, widget: string}
+          - {label: "Enabled?", name: enabled, widget: boolean}
           - {label: "Width", name: width, widget: string}
           - {label: "Height", name: height, widget: string}
           - {label: "Url", name: url, widget: string}
-          - {label: "Gravatar?", name: gravatar, widget: string}
+          - {label: "Gravatar?", name: gravatar, widget: boolean}
       - label: "Favicon"
         name: favicon
         widget: object
@@ -267,19 +269,19 @@ collections:
             widget: object
             fields:
               - {label: "Url", name: url, widget: string}
-              - {label: "Gravatar?", name: gravatar, widget: string}
+              - {label: "Gravatar?", name: gravatar, widget: boolean}
           - label: "Android"
             name: android
             widget: object
             fields:
               - {label: "Url", name: url, widget: string}
-              - {label: "Gravatar?", name: gravatar, widget: string}
+              - {label: "Gravatar?", name: gravatar, widget: boolean}
           - label: "Apple"
             name: apple
             widget: object
             fields:
               - {label: "Url", name: url, widget: string}
-              - {label: "Gravatar?", name: gravatar, widget: string}
+              - {label: "Gravatar?", name: gravatar, widget: boolean}
       - {label: "Highlight Style", name: highlight, widget: string}
       - {label: "Page Width", name: page_width, widget: string}
       - {label: "RSS", name: rss, widget: hidden, default: "atom.xml"}
@@ -295,7 +297,7 @@ collections:
         name: disqus
         widget: object
         fields:
-          - {label: "Enabled?", name: enabled, widget: string}
+          - {label: "Enabled?", name: enabled, widget: boolean}
           - {label: "Shortname", name: shortname, widget: string}
       - label: "Gravatar"
         name: gravatar
