@@ -7,7 +7,7 @@ keywords: 'Blog, code, info, science'
 author: Kakise
 language: fr
 timezone: Europe/Paris
-url: 'https://kakise.me'
+url: SITEURL
 root: /
 permalink: ':year/:month/:day/:title/'
 permalink_defaults: ' '

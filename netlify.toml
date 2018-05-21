@@ -2,10 +2,6 @@
   publish = "public"
   command = "./build.sh" 
 
-[context.deploy-preview]
-  publish = "public"
-  command = "./build-preview.sh" 
-
 [build.environment]
   NODE_VERSION = "8.11.1"
 

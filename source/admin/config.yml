@@ -4,7 +4,7 @@ backend:
   branch: master
   squash_merges: true
 
-display_url: /
+display_url: SITEURL_PLACEHOLDER
 
 publish_mode: editorial_workflow
 
@@ -88,7 +88,7 @@ collections:
         - {label: "Author", name: author, widget: string}
         - {label: "Language", name: language, widget: string}
         - {label: "Timezone", name: timezone, widget: string}
-        - {label: "Url", name: url, widget: string}
+        - {label: "Url", name: url, widget: hidden, default: SITEURL}
         - {label: "Root", name: root, widget: string}
         - {label: "Permalink", name: permalink, widget: string}
         - {label: "Permalink Defaults", name: permalink_defaults, widget: string}
