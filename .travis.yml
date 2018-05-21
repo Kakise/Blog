@@ -1,25 +1,16 @@
 language: node_js
 node_js:
   - 8.11.1
-python:
-  - 3.6
 branches:
   only:
   - master
-before_install:
-  - sudo apt-get -y install python3-pip python-dev
-  - sudo pip3 install -U setuptools
-  - sudo pip3 install -U virtualenvwrapper
-  - python3 -V
-  - pip3 -V
 before_script:
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
   - chmod +x ./cc-test-reporter
   - ./cc-test-reporter before-build
-  - python3 nav.py
 install:
   - npm install
-script: npm run build
+script: ./build.sh
 after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
   - npm run coveralls
