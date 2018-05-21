@@ -1,6 +1,8 @@
 language: node_js
 node_js:
   - 8.11.1
+env:
+  - URL="https://kakise.me" REPOSITORY_URL"git@github:Kakise/Blog" CONTEXT="deploy-preview" PULL_REQUEST="false"
 branches:
   only:
   - master
