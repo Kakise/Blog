@@ -12,9 +12,9 @@ sed -i s@ONESIGNAL_APP_AUTH_KEY@"$ONESIGNAL_APP_AUTH_KEY"@g _config.yml
 sed -i s@SITEURL@"$URL"@g _config.yml
 sed -i s@REPO_PLACEHOLDER@"${REPO[1]}"@g source/admin/config.yml
 sed -i s@SITEURL_PLACEHOLDER@"$URL"@g source/admin/config.yml
+sed -i s@URL_PLACEHOLDER@"$URL"@g themes/cactus/layout/index.ejs
 
 # Change navigation
-pip3 install pyyaml
 python nav.py
 
 # Deploy the site
