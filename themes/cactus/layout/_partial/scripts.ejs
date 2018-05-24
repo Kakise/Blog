@@ -51,22 +51,22 @@
 <% if (theme.disqus.enabled && theme.disqus.shortname && page.comments){ %>
     <script type="text/javascript">
     var disqus_shortname = '<%= theme.disqus.shortname %>';
-    if(/\#disqus_thread/.test(location.hash)){
-        $("#disqus-load").trigger('click');
-    }
     $(document).ready(function() {
+        
+        if(/\#disqus_thread/.test(location.hash)){
+            $("#disqus-load").trigger('click');
+        }
+        
         $('#disqus-load').on('click', function(){ 
-
-        $.ajax({
-            type: "GET",
-            url: "//" + disqus_shortname + ".disqus.com/embed.js",
-            dataType: "script",
-            cache: true
+            $.ajax({
+                type: "GET",
+                url: "//" + disqus_shortname + ".disqus.com/embed.js",
+                dataType: "script",
+                cache: true
+            });
+            $(this).fadeOut();
         });
-
-        $(this).fadeOut();
     });
-});
     </script>
 <% } %>
 <% if (is_home()) { %>
