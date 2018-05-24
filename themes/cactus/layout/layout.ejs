@@ -2,9 +2,11 @@
 <html<%= config.language ? " lang=" + config.language.substring(0, 2) : ""%>>
 <%- partial('_partial/head') %>
 <body class="max-width mx-auto px3">
+    <% if (config.background.enable) { %>
     <div id="background">
-        <img src="images/bg.jpg" class="stretch" alt="" />
+        <img src="<% config.background.path %>" class="stretch" alt="bg image" />
     </div>
+    <% } %>
     <% if (is_post()) { %>
       <%- partial('_partial/post/actions_desktop') %>
     <% } %>

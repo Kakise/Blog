@@ -109,6 +109,12 @@ collections:
         - {label: "PostAF", name: post_asset_folder, widget: hidden, default: false}
         - {label: "Relative Link", name: relative_link, widget: hidden, default: false}
         - {label: "Future", name: future, widget: hidden, default: true}
+        - label: "Background"
+          name: background
+          widget: object
+          fields:
+            - {label: "Enable?", name: enable, widget: boolean}
+            - {label: "Background Path", name: path, widget: string}
         - label: "Filename Case"
           name: filename_case 
           widget: object
