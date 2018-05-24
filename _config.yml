@@ -28,6 +28,9 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
+background:
+  enable: true
+  path: /images/bg.jpg
 index_generator:
   order_by: '-date'
   path: ''
@@ -48,9 +51,6 @@ deploy:
 sitemap:
   path: sitemap.xml
   template: ./sitemap_template.xml
-background:
-  path: /images/bg.jpg
-  enable: true
 pwa:
   manifest:
     body:
