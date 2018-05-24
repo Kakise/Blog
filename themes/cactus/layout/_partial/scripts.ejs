@@ -69,4 +69,6 @@
 });
     </script>
 <% } %>
-<script id="dsq-count-scr" src="//<%= theme.disqus.shortname %>.disqus.com/count.js" async></script>
+<% if (page.index) { %>
+    <script id="dsq-count-scr" src="//<%= theme.disqus.shortname %>.disqus.com/count.js" async></script>
+<% } %>
