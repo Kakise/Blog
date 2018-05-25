@@ -54,7 +54,13 @@
     $(document).ready(function() {
         
         if(/\#disqus_thread/.test(location.hash)){
-            $("#disqus-load").trigger('click');
+            $.ajax({
+                type: "GET",
+                url: "//" + disqus_shortname + ".disqus.com/embed.js",
+                dataType: "script",
+                cache: true
+            });
+            $('#disqus-load').fadeOut();
         }
         
         $('#disqus-load').on('click', function(){ 
