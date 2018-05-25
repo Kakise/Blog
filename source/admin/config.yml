@@ -143,6 +143,11 @@ collections:
           widget: object
           fields:
             - {label: "Color Scheme", name: colorscheme, widget: string}
+        - label: "Math Engine Configuration"
+          name: math
+          widget: object
+          fields:
+            - {label: "Engine", name: engine, widget: string}
         - label: "Deploy Options"
           name: deploy
           widget: object
