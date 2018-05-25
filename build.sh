@@ -10,7 +10,7 @@ echo $CONTEXT
 echo $PULL_REQUEST
 
 # Replace placeholders
-URL_NO_PROTOCOL=(${URL//\\\\/ })[1]
+URL_NO_PROTOCOL=(${URL//\/\// })[1]
 sed -i s@ONESIGNAL_APP_KEY@"$ONESIGNAL_APP_KEY"@g _config.yml
 sed -i s@ONESIGNAL_APP_AUTH_KEY@"$ONESIGNAL_APP_AUTH_KEY"@g _config.yml
 sed -i s@SITEURL@"$URL"@g _config.yml
