@@ -101,3 +101,5 @@ asciinema:
   enable: true
 nofollow:
   enable: true
+math:
+  engine: 'katex'
