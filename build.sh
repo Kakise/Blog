@@ -16,6 +16,8 @@ sed -i s@SITEURL@"$URL"@g _config.yml
 sed -i s@REPO_PLACEHOLDER@"${REPO[1]}"@g source/admin/config.yml
 sed -i s@SITEURL_PLACEHOLDER@"$URL"@g source/admin/config.yml
 sed -i s@URL_PLACEHOLDER@"$URL"@g themes/cactus/layout/index.ejs
+sed -i s@SITEURL_PLACEHOLDER@"$URL"@g source/admin/config.yml
+sed -i s@URLPLACEHOLDER@"$URL"@g themes/cactus/source/js/main.js
 
 # Add various navigation menus
 LINKS=`cat source/_data/nav.json | jq .nav[].link`
