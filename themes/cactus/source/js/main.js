@@ -193,6 +193,7 @@ $(document).ready(function() {
         cookieScriptDomain = '',
         cookieScriptReadMore = '/policy',
         cookieId = 'fec5e6b1c0eff052f84503576d24de11',
+        cookieScriptSource = 'URLPLACEHOLDER',
         cookieScriptDebug = 0,
         cookieScriptShowBadge = !0,
         cookieScriptCurrentUrl = window.location.href,
