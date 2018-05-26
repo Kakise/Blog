@@ -16,13 +16,6 @@
     <div id="share-footer" style="display: none">
       <%- partial('_partial/post/share', { icon_class_name: 'icon-lg' }) %>
     </div>
-    <style>
-      .icon-lg {
-        font-size: 1.33333em;
-        line-height: 0.75em;
-        vertical-align: -.0667em;
-      }
-    </style>
     <div id="actions-footer">
         <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas icon-bars icon-lg" aria-hidden="true"></i> <%= __('post.mobile.menu') %></a>
         <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas icon-list icon-lg" aria-hidden="true"></i> <%= __('post.mobile.toc') %></a>
