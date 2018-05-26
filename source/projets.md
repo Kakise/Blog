@@ -12,11 +12,8 @@ Sur cette page vous pourrez trouver une liste non-exhaustive de mes projets en c
 
 C'est un petit projet fort sympathique dans lequel je fais une tentative d'implémentation de l'_Intelligent Driver Model_ en python (inédit à ce que je sache) afin d'avoir un moyen plutôt simple de pouvoir faire des simulations de trafic et de congestion du trafic routier. Pour l'instant ça ne ressemble pas à grand chose mais c'est en bonne voie.
 
-{% math %}
-\frac{dv}{dt} = a (1 - \frac{v}{v_{0}}^{\delta} - \frac{s^{*}(v, \Delta v)}{s}^{2} )
-{% endmath%}
-
-Equation de calcul de l’accélération.
+$$\frac{dv}{dt} = a (1 - \frac{v}{v_{0}}^{\delta} - \frac{s^{\*}(v, \Delta v)}{s}^{2} )$$
+*Équation de calcul de l’accélération.*
 
 ```python
 def simulation(t,dt,end):
