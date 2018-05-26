@@ -35,5 +35,6 @@ Then access `/admin/` in your website to make changes according to your needs. R
 # Usage
 The full icon list will be found here: <https://kakise.me/docs/demo.html> or, in your_blog.tld/docs/demo.html. Use this for the social menu or for your posts by using `<i class="icon-name"></i>` in your post.
 
+Looking for the "My Anime List" icon? I made it myself using gravit. You'll find it here: <https://kakise.me/images/MyAnimeListIcon.gvdesign>
 ## License
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FKakise%2FBlog.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FKakise%2FBlog?ref=badge_large)
