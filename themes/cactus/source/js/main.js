@@ -114,7 +114,6 @@ $(document).ready(function() {
 });
 
 // Cookies
-$(document).ready(function() {
     ! function(o) {
         var e = !1;
         if ('function' == typeof define && define.amd && (define(o), e = !0), 'object' == typeof exports && (module.exports = o(), e = !0), !e) {
@@ -558,4 +557,3 @@ $(document).ready(function() {
     window.jQuery && jQuery.fn && /^(1\.[8-9]|2\.[0-9]|1\.1[0-2]|3\.[0-9])/.test(jQuery.fn.jquery) ? (cookieScriptDebug && window.console && console.log('Using existing jQuery version ' + jQuery.fn.jquery), cookieQuery = window.jQuery, InjectCookieScript()) : (cookieScriptDebug && window.console && console.log('Loading jQuery 1.8.1 from ajax.googleapis.com'), cookieScriptLoadJavaScript(('https:' == document.location.protocol ? 'https://' : 'http://') + 'ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js', function() {
         cookieQuery = jQuery.noConflict(!0), InjectCookieScript()
     }));
-});

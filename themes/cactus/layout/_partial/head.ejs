@@ -47,8 +47,8 @@
     <% if (is_post() && config.generator_amp){ %>
       <link rel="amphtml" href="<%= config.url %><%= config.root %><%= page.path %>/amp/index.html">
     <% } %>
-    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-    <script>
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" type="text/plain" data-cookiescript="accepted" async=""></script>
+    <script type="text/plain" data-cookiescript="accepted">
       var OneSignal = window.OneSignal || [];
       OneSignal.push(function() {
         OneSignal.init({
