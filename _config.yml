@@ -1,8 +1,8 @@
 title: Le Blog de Kakise
 subtitle: Le blog d'un codeur fou !
 description: >-
-  Salut et bienvenue sur mon blog ! Ici vous retrouverez mes projets, et autres
-  réflexions tout à fait folles !
+  Bienvenue sur mon blog, internaute. Ici tu trouveras de multiples articles
+  sortis tout droit de mon cerveau. Bon voyage !
 keywords: 'Blog, code, info, science'
 author: Kakise
 language: fr
@@ -43,6 +43,8 @@ pagination_dir: page
 theme: cactus
 theme_config:
   colorscheme: light
+math:
+  engine: katex
 deploy:
   app_auth_key: ONESIGNAL_APP_AUTH_KEY
   app_id: ONESIGNAL_APP_KEY
@@ -101,5 +103,3 @@ asciinema:
   enable: true
 nofollow:
   enable: true
-math:
-  engine: 'katex'
