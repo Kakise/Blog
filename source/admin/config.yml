@@ -148,6 +148,12 @@ collections:
           widget: object
           fields:
             - {label: "Engine", name: engine, widget: string}
+            - label: "Katex Options"
+              name: katex
+              widget: object
+              fields:
+                - {label: "CSS", name: css, widget: string}
+                - {label: "Javascript", name: js, widget: string}
         - label: "Deploy Options"
           name: deploy
           widget: object
