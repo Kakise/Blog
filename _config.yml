@@ -45,6 +45,9 @@ theme_config:
   colorscheme: light
 math:
   engine: katex
+  katex:
+    css: https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css
+    js: https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js
 deploy:
   app_auth_key: ONESIGNAL_APP_AUTH_KEY
   app_id: ONESIGNAL_APP_KEY
