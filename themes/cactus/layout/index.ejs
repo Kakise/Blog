@@ -10,11 +10,11 @@
       <% for(var link in theme.social_links) { %>
         <% if (link == 'mail') { %>
           <a class="icon" target="_blank" rel="noopener noreferrer" href="<%- url_for(theme.social_links[link]) %>">
-            <i class="fas fa-envelope"></i><!--
+            <i class="icon-envelope"></i><!--
       ---></a><!--
       ---><% } else { %>
           <a class="icon" target="_blank" rel="noopener noreferrer" href="<%- url_for(theme.social_links[link]) %>">
-            <i class="fab fa-<%= link %>"></i><!--
+            <i class="icon-<%= link %>"></i><!--
       ---></a><!--
     ---><% } %><!--
     ---><%= ( nb_links > 0 && i < nb_links-1 ? 
@@ -33,7 +33,7 @@
     <% page.posts.each(function(post, i){ %>
       <li class="post-item">
         <%- partial('_partial/post/date', { post: post, class_name: 'meta' }) %>
-        <span><%- partial('_partial/post/title', { post: post, index: true, class_name: '' }) %> <i class="fas fa-comment"></i> <a href="URL_PLACEHOLDER<%- url_for(post.path) %>#disqus_thread">0</a></span>
+        <span><%- partial('_partial/post/title', { post: post, index: true, class_name: '' }) %> <i class="icon-comments"></i> <a href="URL_PLACEHOLDER<%- url_for(post.path) %>#disqus_thread">0</a></span>
       </li>
     <% }); %>
   </ul>
