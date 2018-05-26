@@ -8,7 +8,11 @@
       <% var nb_links = Object.keys(theme.social_links).length %>
       <% var i = 0 %>
       <% for(var link in theme.social_links) { %>
-        <% if (link == 'mail') { %>
+        <% if (link == 'mal') { %>
+          <a class="icon" target="_blank" rel="noopener noreferrer" href="<%- url_for(theme.social_links[link]) %>">
+            <span class="icon-mal"><span class="path1"><span class="path2"></span></span></span><!--
+      ---></a>
+      <% } else if (link == 'mail') { %>
           <a class="icon" target="_blank" rel="noopener noreferrer" href="<%- url_for(theme.social_links[link]) %>">
             <i class="icon-envelope"></i><!--
       ---></a><!--
