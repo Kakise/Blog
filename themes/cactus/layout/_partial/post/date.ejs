@@ -1,5 +1,5 @@
 <% if (post.date) { %>
     <div class="<%= class_name %>">
-        <i class="fas fa-calendar-alt"></i> <time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= date(post.date, config.date_format) %></time>
+        <i class="fas icon-calendar-alt"></i> <time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= date(post.date, config.date_format) %></time>
     </div>
 <% } %>

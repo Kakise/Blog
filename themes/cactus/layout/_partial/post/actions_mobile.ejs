@@ -14,14 +14,14 @@
     </div>
 
     <div id="share-footer" style="display: none">
-      <%- partial('_partial/post/share', { icon_class_name: 'fa-lg' }) %>
+      <%- partial('_partial/post/share', { icon_class_name: 'icon-lg' }) %>
     </div>
 
     <div id="actions-footer">
-        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> <%= __('post.mobile.menu') %></a>
-        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> <%= __('post.mobile.toc') %></a>
-        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> <%= __('post.mobile.share') %></a>
-        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> <%= __('post.mobile.back_to_top') %></a>
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas icon-bars icon-lg" aria-hidden="true"></i> <%= __('post.mobile.menu') %></a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas icon-list icon-lg" aria-hidden="true"></i> <%= __('post.mobile.toc') %></a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas icon-share-alt icon-lg" aria-hidden="true"></i> <%= __('post.mobile.share') %></a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas icon-chevron-up icon-lg" aria-hidden="true"></i> <%= __('post.mobile.back_to_top') %></a>
     </div>
 
   </div>
