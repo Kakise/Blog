@@ -11,7 +11,7 @@ layout: false
   <title>Admin Space</title>
   <!-- Include the stylesheets from your site here -->
   <link rel="stylesheet" href="/css/style.css" />
-  <link rel="stylesheet" href="/lib/font-awesome/css/fontawesome-all.min.css" />
+  <link rel="stylesheet" href="/lib/icons/style.css" />
   <link rel="stylesheet" href="https://unpkg.com/netlify-cms@^1.0.0/dist/cms.css" />
 </head>
 <body>
@@ -78,7 +78,7 @@ layout: false
                                       className: "article-tag"
                                   },
                                   h("i", {
-                                      className: "fas fa-tag"
+                                      className: "icon-tag"
                                   }),
                                   this.props.entry.getIn(['data', 'tags']).map(function(tag, index) {
                                       return h('a', {
@@ -102,7 +102,7 @@ layout: false
       });
       CMS.registerPreviewTemplate("posts", PostPreview);
       CMS.registerPreviewStyle('/css/style.css');
-      CMS.registerPreviewStyle('/lib/font-awesome/css/fontawesome-all.min.css');
+      CMS.registerPreviewStyle('/lib/icons/style.css');
       
       var PagePreview = createClass({
           render: function render() {
