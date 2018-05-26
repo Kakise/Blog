@@ -44,7 +44,7 @@ theme: cactus
 theme_config:
   colorscheme: light
 math:
-  engine: katex
+  engine: mathjax
 deploy:
   app_auth_key: ONESIGNAL_APP_AUTH_KEY
   app_id: ONESIGNAL_APP_KEY
