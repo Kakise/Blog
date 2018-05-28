@@ -33,7 +33,7 @@ Here: https://app.netlify.com/sites/[YOUR_SITE_NAME]/settings/access
 Then access `/admin/` in your website to make changes according to your needs. Remove the precedent posts, pages etc... mess up with the different configuration files and enjoy ! :)
 
 # Usage
-The full icon list will be found here: <https://kakise.me/docs/demo.html> or, in your_blog.tld/docs/demo.html. Use this for the social menu or for your posts by using `<i class="icon-name"></i>` in your post.
+The full icon list will be found here: <https://kakise.me/icons>. Use this for the social menu or for your posts by using `<i class="icon-name"></i>` in your post.
 
 Looking for the "My Anime List" icon? I made it myself using gravit. You'll find it here: <https://kakise.me/images/MyAnimeListIcon.gvdesign>
 ## License
