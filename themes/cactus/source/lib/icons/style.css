@@ -24,6 +24,47 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-xs {
+  font-size: .75em; }
+
+.icon-sm {
+  font-size: .875em; }
+
+.icon-1x {
+  font-size: 1em; }
+
+.icon-2x {
+  font-size: 2em; }
+
+.icon-3x {
+  font-size: 3em; }
+
+.icon-4x {
+  font-size: 4em; }
+
+.icon-5x {
+  font-size: 5em; }
+
+.icon-6x {
+  font-size: 6em; }
+
+.icon-7x {
+  font-size: 7em; }
+
+.icon-8x {
+  font-size: 8em; }
+
+.icon-9x {
+  font-size: 9em; }
+
+.icon-10x {
+  font-size: 10em; }
+
+.icon-fw {
+  text-align: center;
+  width: 1.25em; }
+
+
 .icon-mal .path1:before {
   content: "\e900";
   color: rgb(0, 0, 0);

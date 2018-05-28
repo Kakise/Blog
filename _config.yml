@@ -78,7 +78,8 @@ pwa:
     path: /sw.js
     preload:
       posts: 10
-      urls: URL_PLACEHOLDER
+      urls: 
+        - URL_PLACEHOLDER
     routes:
       - pattern: '!!js/regexp /.*\.(js|css|jpg|jpeg|png|gif)$/'
         strategy: cacheFirst

@@ -14,10 +14,10 @@
   <div id="nav">
     <ul>
       <li class="icon">
-        <a href="#"><i class="icon-bars"></i></a>
+        <a href="#"><i class="icon-2x icon-bars"></i></a>
       </li>
-      <% for (var i in theme.nav) { %> 
-        <li><a href="<%- url_for(theme.nav[i]) %>"><%= __('nav.'+i).replace("nav.", "") %></a></li>
+      <% for (var i in site.data.nav.nav) { %> 
+        <li><a href="<%- site.data.nav.nav[i].url %>"><%= __('nav.'+site.data.nav.nav[i].link).replace("nav.", "") %></a></li>
       <% } %>
     </ul>
   </div>
