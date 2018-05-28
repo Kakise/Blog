@@ -266,8 +266,6 @@ collections:
       label: "Theme Configuration"
       file: "themes/cactus/_config.yml"
       fields:
-      - {label: "nav plchdr", name: nav, widget: hidden, default: NAV_PLACEHOLDER}
-      - {label: "soc plchdr", name: social_links, widget: hidden, default: SOC_PLACEHOLDER}
       - {label: "Projects Url", name: projects_url, widget: string}
       - label: "Logo"
         name: logo
