@@ -2,28 +2,28 @@
   <% if (config.description) { %>
     <%- markdown(config.description) %>
   <% } %>
-  <% if (theme.social_links) { %>
+  <% if (site.data.social) { %>
     <p>
       <%= __('index.find_me_on') %>
-      <% var nb_links = Object.keys(theme.social_links).length %>
+      <% var nb_links = site.data.social.nav.length %>
       <% var i = 0 %>
-      <% for(var link in theme.social_links) { %>
-        <% if (link == 'mal') { %>
-          <a class="icon" target="_blank" rel="noopener noreferrer" href="<%- url_for(theme.social_links[link]) %>">
-            <span class="icon-mal"><span class="path1"><span class="path2"></span></span></span><!--
-      ---></a>
-      <% } else if (link == 'mail') { %>
-          <a class="icon" target="_blank" rel="noopener noreferrer" href="<%- url_for(theme.social_links[link]) %>">
-            <i class="icon-envelope"></i><!--
-      ---></a><!--
-      ---><% } else { %>
-          <a class="icon" target="_blank" rel="noopener noreferrer" href="<%- url_for(theme.social_links[link]) %>">
-            <i class="icon-<%= link %>"></i><!--
-      ---></a><!--
-    ---><% } %><!--
-    ---><%= ( nb_links > 0 && i < nb_links-1 ? 
+      <% for (var i in site.data.social.nav) { %>
+        <% if (site.data.social.nav[i].link == 'mal') {%>
+          <a class="icon" target="_blank" rel="noopener noreferrer" href="<%- site.data.social.nav[i].url %>">
+            <span class="icon-mal"><span class="path1"><span class="path2"></span></span></span>
+          </a>
+        <% } else if (site.data.social.nav[i].link == 'mail') { %>
+          <a class="icon" target="_blank" rel="noopener noreferrer" href="<%- site.data.social.nav[i].url %>">
+            <i class="icon-envelope"></i>
+          </a>
+        <% } else { %>
+          <a class="icon" target="_blank" rel="noopener noreferrer" href="<%- site.data.social.nav[i].url %>">
+            <i class="icon-<%- site.data.social.nav[i].link %>"></i>
+          </a>
+        <% } %>
+        <%= ( nb_links > 0 && i < nb_links-1 ? 
             ( i == nb_links-2 ? ' '+__('index.enum_and')+' ' 
-            : __('index.enum_comma')+' ' ) 
+            : __('index.enum_comma')+'' ) 
             : '.' ) %>
         <% i+=1 %>
       <% } %>
