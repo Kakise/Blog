@@ -24,13 +24,13 @@ Le terme "bactérie" est le nom facile pour désigner des organismes unicellulai
 
 Deux _Klebsiella pneumoniae_ en plein "combat" avec un globule blanc.
 
-Il existe cependant des bactéries pluricellulaires. Elles peuvent vivre dans n'importe quel endroit, allant même parfois jusqu'à vivre dans des déchets radioactifs\[^1]. Flippant non? Et c'est pas fini ! Elle peuvent même survivre dans l'espace et en ressortent encore plus virulentes\[^2] !
+Il existe cependant des bactéries pluricellulaires. Elles peuvent vivre dans n'importe quel endroit, allant même parfois jusqu'à vivre dans des déchets radioactifs[^1]. Flippant non? Et c'est pas fini ! Elle peuvent même survivre dans l'espace et en ressortent encore plus virulentes[^2] !
 
 ## Effets sur le corps humain
 
-Bon, maintenant qu'on sait à peu près ce qu'est une bactérie, entrons dans le vif du sujet et parlons des différents effets sur le corps humains (pas que néfastes d'ailleurs). Et oui, pas que néfastes, contrairement à ce que l'on pourrait croire. Dans la réalité, la majorité des bactéries ne sont pas dangereuses pour notre santé, en effet, seules une minorité le font, causant des infections, des allergies, etc... \[^3]
+Bon, maintenant qu'on sait à peu près ce qu'est une bactérie, entrons dans le vif du sujet et parlons des différents effets sur le corps humains (pas que néfastes d'ailleurs). Et oui, pas que néfastes, contrairement à ce que l'on pourrait croire. Dans la réalité, la majorité des bactéries ne sont pas dangereuses pour notre santé, en effet, seules une minorité le font, causant des infections, des allergies, etc... [^3]
 
-Un bon exemple pour illustrer cela est le _microbiote intestinal humain_. On l'appelle aussi le "deuxième cerveau". On appelle ainsi l'ensemble des bactéries qui sont présentes au sein de notre système digestif. Très important, il occupe des fonctions telle que la stimulation du système immunitaire\[^4]. Il évolue avec l'alimentation et il a été observé que certaines populations avec des microbiote très riches étaient immunisées contre certaines maladies\[^5].
+Un bon exemple pour illustrer cela est le _microbiote intestinal humain_. On l'appelle aussi le "deuxième cerveau". On appelle ainsi l'ensemble des bactéries qui sont présentes au sein de notre système digestif. Très important, il occupe des fonctions telle que la stimulation du système immunitaire[^4]. Il évolue avec l'alimentation et il a été observé que certaines populations avec des microbiote très riches étaient immunisées contre certaines maladies[^5].
 
 De plus, certaines études montrent que ça irait plus loin que cela, le microbiote intestinal communiquerait avec le cerveau et influencerait notre alimentation. Par exemple, en mangeant beaucoup de tofu (go vegan o/), on favorise la prolifération des bactéries se "nourrissant" de tofus et elles vous inciteraient à manger plus de tofu.
 
@@ -45,7 +45,7 @@ _Moisissure du genre Penicilium Notatum._
 
 Tout allait bien jusqu'à récemment. L'abus d'antibiotique a conduit à l'évolution des bactéries devenues maintenant antibiorésistante. Un nouveau genre de bactéries, les **SuperBugs** existent dorénavant et tuent à elles seules au moins 23.000 personnes chaque année aux Etats-Unis.
 
-La faute à qui? La prescription d'antiobiotiques pour des infections virales, le non respect des prescriptions ou encore l'usage d'antibiotiques dans les exploitations animales.\[^6] Jusque là, on avait des antibiotiques dont l'usage était très réglementé afin d'éviter la création de bactéries supra résistantes (comme la Colistin) et qui étaient encore efficace. Du moins c'est ce que l'on pensait, en 2015 il a été découvert une résistance à la Colistin (due à son utilisation non réglementée dans les fermes à cochons chinoise).
+La faute à qui? La prescription d'antiobiotiques pour des infections virales, le non respect des prescriptions ou encore l'usage d'antibiotiques dans les exploitations animales.[^6] Jusque là, on avait des antibiotiques dont l'usage était très réglementé afin d'éviter la création de bactéries supra résistantes (comme la Colistin) et qui étaient encore efficace. Du moins c'est ce que l'on pensait, en 2015 il a été découvert une résistance à la Colistin (due à son utilisation non réglementée dans les fermes à cochons chinoise).
 
 ## Présentation de notre nouveau héros: les phages !
 
@@ -63,9 +63,9 @@ Pour cette dernière partie, je vous laisse sur cette excellente vidéo de "Kurz
 
 Et voilà, c'est tout pour ce premier article, publié malheureusement un peu en retard. A plus pour un prochain épisode !
 
-\[^1]: Article scientifique en anglais: <http://aem.asm.org/content/70/7/4230>
-\[^2]: News en anglais: <https://news.nationalgeographic.com/news/2007/09/070924-space-bacteria.html>
-\[^3]: Source: <http://www.inrs.fr/risques/biologiques/effets-sante.html>
-\[^4]: Source: <http://www.nature.com/nri/journal/v4/n6/abs/nri1373.html>
-\[^5]: Ici je fais référence aux "Hadzas". Source: Price M (2017) Early human gut bacteria may have cycled with the season
-\[^6]: Utilisés afin de réduire les coûts de production des bactéries.
+[^1]: Article scientifique en anglais: <http://aem.asm.org/content/70/7/4230>
+[^2]: News en anglais: <https://news.nationalgeographic.com/news/2007/09/070924-space-bacteria.html>
+[^3]: Source: <http://www.inrs.fr/risques/biologiques/effets-sante.html>
+[^4]: Source: <http://www.nature.com/nri/journal/v4/n6/abs/nri1373.html>
+[^5]: Ici je fais référence aux "Hadzas". Source: Price M (2017) Early human gut bacteria may have cycled with the season
+[^6]: Utilisés afin de réduire les coûts de production des bactéries.
