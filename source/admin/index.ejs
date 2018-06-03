@@ -58,7 +58,7 @@ layout: false
                                       "span", {
                                           itemprop: "name"
                                       },
-                                      this.props.entry.getIn(['data', 'author'])
+                                      this.props.entry.getIn(['data', 'author'] + " ")
                                   )
                               ),
                               h(
@@ -69,7 +69,7 @@ layout: false
                                       "i", {
                                           className: "icon-calendar"
                                       },
-                                      ""
+                                      " "
                                   ),
                                   h(
                                       "time", {
@@ -85,7 +85,7 @@ layout: false
                                   },
                                   h("i", {
                                       className: "icon-tag"
-                                  }),
+                                  }, " "),
                                   this.props.entry.getIn(['data', 'tags']).map(function(tag, index) {
                                       return h('a', {
                                           className: "tag-link",
