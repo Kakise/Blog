@@ -66,6 +66,12 @@ layout: false
                                       className: "postdate"
                                   },
                                   h(
+                                      "i", {
+                                          className: "icon-calendar"
+                                      },
+                                      ""
+                                  ),
+                                  h(
                                       "time", {
                                           itemprop: "datePublished",
                                           datetime: fdate
@@ -84,7 +90,7 @@ layout: false
                                       return h('a', {
                                           className: "tag-link",
                                           href: "#"
-                                      }, tag);
+                                      }, tag+" ");
                                   })
                               )
                           )
@@ -100,9 +106,6 @@ layout: false
               );
           }
       });
-      CMS.registerPreviewTemplate("posts", PostPreview);
-      CMS.registerPreviewStyle('/css/style.css');
-      CMS.registerPreviewStyle('/lib/icons/style.css');
       
       var PagePreview = createClass({
           render: function render() {
@@ -121,6 +124,9 @@ layout: false
           }
       });
       CMS.registerPreviewTemplate("pages", PagePreview);
+      CMS.registerPreviewTemplate("posts", PostPreview);
+      CMS.registerPreviewStyle('/css/style.css');
+      CMS.registerPreviewStyle('/lib/icons/style.css');
   </script>
 </body>
 </html>
