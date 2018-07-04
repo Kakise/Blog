@@ -5,7 +5,7 @@ layout: page
 Utilisez le formulaire si dessous afin de m'envoyer un message !
 {% raw %}
 <form name="contact" netlify-honeypot="bot-field" netlify>
-<p class="hidden">
+<p style="display: none;">
 <label>Remplissez si vous êtes un bot: <input name="bot-field" /></label>
 </p>
 <label>
