@@ -1,5 +1,5 @@
 ---
-title: Comment j'ai transformé mon blog statique en véritable CMS !
+title: Comment transformer son blog statique en CMS ?
 date: '2018-05-19'
 author: Kakise
 tags:
