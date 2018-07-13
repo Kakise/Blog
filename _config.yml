@@ -11,7 +11,7 @@ url: SITEURL
 root: /
 permalink: ':year/:month/:day/:title/'
 permalink_defaults: ' '
-source_dir: blog
+source_dir: source
 public_dir: public
 tag_dir: tags
 archive_dir: archives

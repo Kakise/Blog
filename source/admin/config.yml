@@ -8,14 +8,14 @@ display_url: SITEURL_PLACEHOLDER
 
 publish_mode: editorial_workflow
 
-media_folder: "blog/images"
+media_folder: "source/images"
 public_folder: "images"
 
 collections:
   - name: "posts"
     label: "Posts"
     label_singular: "Post"
-    folder: "blog/_posts"
+    folder: "source/_posts"
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string", tagname: "h1", default: "Untitled"}
@@ -27,7 +27,7 @@ collections:
   - label: "Pages"
     name: "pages"
     label_singular: "Page"
-    folder: "blog/"
+    folder: "source/"
     filter: {field: "layout", value: "page"}
     create: true
     fields:
@@ -41,7 +41,7 @@ collections:
     files:
     - name: "projects"
       label: "Projects"
-      file: "blog/_data/projects.json"
+      file: "source/_data/projects.json"
       fields:
         - label: "Project"
           name: "prj"
@@ -52,7 +52,7 @@ collections:
           - {label: "Description", name: desc, widget: string}
     - name: "navigation"
       label: "Menu"
-      file: "blog/_data/nav.json"
+      file: "source/_data/nav.json"
       fields:
         - label: "Top Menu"
           name: "nav"
@@ -62,7 +62,7 @@ collections:
           - {label: "Url", name: url, widget: string}
     - name: "social"
       label: "Social Links"
-      file: "blog/_data/social.json"
+      file: "source/_data/social.json"
       fields:
         - label: "Social Links"
           name: "nav"
@@ -92,11 +92,11 @@ collections:
         - {label: "Root", name: root, widget: string}
         - {label: "Permalink", name: permalink, widget: string}
         - {label: "Permalink Defaults", name: permalink_defaults, widget: string}
-        - {label: "Source Directory", name: source_dir, widget: hidden, default: blog}
+        - {label: "Source Directory", name: source_dir, widget: hidden, default: source}
         - {label: "Public Directory", name: public_dir, widget: hidden, default: public}
         - {label: "Tags Directory", name: tag_dir, widget: hidden, default: tags}
         - {label: "Archive Directory", name: archive_dir, widget: hidden, default: archives}
-        - {label: "Category Directory", name: source_dir, widget: hidden, default: blog}
+        - {label: "Category Directory", name: source_dir, widget: hidden, default: source}
         - {label: "Code Directory", name: code_dir, widget: hidden, default: downloads/code}
         - {label: "i18n Directory", name: i18n_dir, widget: hidden, default: lang}
         - {label: "Skip Render", name: skip_render, widget: hidden, default: ['admin/config.yml']}
