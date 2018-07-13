@@ -10,14 +10,11 @@ Featuring:
   - Progressive Web App
   - Fully optimized assets (images, css and js)
   - CMS
-  - Notifications (through OneSignal)
   - Beautiful icons
 
 # How to use this template to make your blog
-**Optional but recommended**  
-Create a [OneSignal](https://onesignal.com/) account, make a new Web Browser app, set up everythign then click in your app's Settings and retreive the APP ID and the Rest Api Key from the "Keys&ID" category.
 
-Click here and create an account using github, it will setup everythong for you. If you will use OneSignal, don't forget to put your app's keys.
+Click here and create an account using github, it will setup everything for you. If you will use OneSignal, don't forget to put your app's keys.
 
 [![Button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Kakise/Blog)
 
@@ -33,7 +30,7 @@ Here: https://app.netlify.com/sites/[YOUR_SITE_NAME]/settings/access
 Then access `/admin/` in your website to make changes according to your needs. Remove the precedent posts, pages etc... mess up with the different configuration files and enjoy ! :)
 
 # Usage
-The full icon list will be found here: <https://kakise.me/icons>. Use this for the social menu or for your posts by using `<i class="icon-name"></i>` in your post.
+An icon pack that includes fontawesome ones was included with the cms. Use them for the social menu or for your posts by using `<i class="icon-name"></i>` in your post.
 
 Looking for the "My Anime List" icon? I made it myself using gravit. You'll find it here: <https://kakise.me/images/MyAnimeListIcon.gvdesign>
 ## License

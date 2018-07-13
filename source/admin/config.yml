@@ -8,14 +8,14 @@ display_url: SITEURL_PLACEHOLDER
 
 publish_mode: editorial_workflow
 
-media_folder: "source/images"
+media_folder: "blog/images"
 public_folder: "images"
 
 collections:
   - name: "posts"
     label: "Posts"
     label_singular: "Post"
-    folder: "source/_posts"
+    folder: "blog/_posts"
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string", tagname: "h1", default: "Untitled"}
@@ -27,7 +27,7 @@ collections:
   - label: "Pages"
     name: "pages"
     label_singular: "Page"
-    folder: "source/"
+    folder: "blog/"
     filter: {field: "layout", value: "page"}
     create: true
     fields:
@@ -41,7 +41,7 @@ collections:
     files:
     - name: "projects"
       label: "Projects"
-      file: "source/_data/projects.json"
+      file: "blog/_data/projects.json"
       fields:
         - label: "Project"
           name: "prj"
@@ -52,7 +52,7 @@ collections:
           - {label: "Description", name: desc, widget: string}
     - name: "navigation"
       label: "Menu"
-      file: "source/_data/nav.json"
+      file: "blog/_data/nav.json"
       fields:
         - label: "Top Menu"
           name: "nav"
@@ -62,7 +62,7 @@ collections:
           - {label: "Url", name: url, widget: string}
     - name: "social"
       label: "Social Links"
-      file: "source/_data/social.json"
+      file: "blog/_data/social.json"
       fields:
         - label: "Social Links"
           name: "nav"
@@ -92,11 +92,11 @@ collections:
         - {label: "Root", name: root, widget: string}
         - {label: "Permalink", name: permalink, widget: string}
         - {label: "Permalink Defaults", name: permalink_defaults, widget: string}
-        - {label: "Source Directory", name: source_dir, widget: hidden, default: source}
+        - {label: "Source Directory", name: source_dir, widget: hidden, default: blog}
         - {label: "Public Directory", name: public_dir, widget: hidden, default: public}
         - {label: "Tags Directory", name: tag_dir, widget: hidden, default: tags}
         - {label: "Archive Directory", name: archive_dir, widget: hidden, default: archives}
-        - {label: "Category Directory", name: source_dir, widget: hidden, default: source}
+        - {label: "Category Directory", name: source_dir, widget: hidden, default: blog}
         - {label: "Code Directory", name: code_dir, widget: hidden, default: downloads/code}
         - {label: "i18n Directory", name: i18n_dir, widget: hidden, default: lang}
         - {label: "Skip Render", name: skip_render, widget: hidden, default: ['admin/config.yml']}
@@ -137,7 +137,7 @@ collections:
         - {label: "Time Format", name: time_format, widget: hidden, default: HH:mm:ss}
         - {label: "Posts per page", name: per_page, widget: string}
         - {label: "Pagination Dir", name: pagination_dir, widget: hidden, default: page}
-        - {label: "Theme", name: theme, widget: hidden, default: cactus}
+        - {label: "Theme", name: theme, widget: hidden, default: default}
         - label: "Theme Configuration"
           name: theme_config
           widget: object
@@ -154,14 +154,11 @@ collections:
               fields:
                 - {label: "CSS", name: css, widget: string}
                 - {label: "Javascript", name: js, widget: string}
-        - label: "Deploy Options"
-          name: deploy
-          widget: object
-          fields:
-          - {label: "Type", name: type, widget: hidden, default: onesignal}
-          - {label: "App ID", name: app_id, widget: hidden, default: ONESIGNAL_APP_KEY}
-          - {label: "App Auth Key", name: app_auth_key, widget: hidden, default: ONESIGNAL_APP_AUTH_KEY}
-          - {label: "App Tpl File", name: app_template_file, widget: hidden, default: ./notify-tpl.json}
+            - label: "Mathjax Options"
+              name: mathjax
+              widget: object
+              fields:
+                - {label: "Javascript", name: js, widget: string}
         - label: "Sitemap"
           name: sitemap
           widget: object
@@ -194,7 +191,6 @@ collections:
                 - {label: "Theme Color", name: theme_color, widget: string}
                 - {label: "Background Color", name: background_color, widget: string}
                 - {label: "Start Url", name: start_url, widget: string}
-                - {label: "GCM Sender ID", name: gcm_sender_id, widget: hidden, default: "482941778795"}
             - label: "Service Worker"
               name: serviceWorker
               widget: object
@@ -264,7 +260,7 @@ collections:
             - {label: "Exclude", name: exclude, widget: string}
     - name: "theme"
       label: "Theme Configuration"
-      file: "themes/cactus/_config.yml"
+      file: "themes/default/_config.yml"
       fields:
       - {label: "Projects Url", name: projects_url, widget: string}
       - label: "Logo"

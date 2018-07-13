@@ -1,0 +1,72 @@
+backend:
+  name: github
+  repo: Kakise/Blog
+  branch: master
+  squash_merges: true
+
+display_url: SITEURL_PLACEHOLDER
+
+publish_mode: editorial_workflow
+
+media_folder: "static/images"
+public_folder: "images"
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    label_singular: "Post"
+    folder: "blog/_posts"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string", tagname: "h1", default: "Untitled"}
+      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD"}
+      - {label: "Author", name: "author", widget: "string", default: "Author"}
+      - {label: "Tags", name: "tags", widget: "list", default: ["news"]}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+  - label: "Pages"
+    name: "pages"
+    label_singular: "Page"
+    folder: "blog/"
+    filter: {field: "layout", value: "page"}
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string", tagname: "h1", default: "Untitled"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+  - label: "Misc"
+    name: "misc"
+    editor:
+      preview: false
+    files:
+    - name: "projects"
+      label: "Projects"
+      file: "blog/_data/projects.json"
+      fields:
+        - label: "Project"
+          name: "prj"
+          widget: "list"
+          fields:
+          - {label: "Name", name: name, widget: string}
+          - {label: "Url", name: url, widget: string}
+          - {label: "Description", name: desc, widget: string}
+    - name: "navigation"
+      label: "Menu"
+      file: "blog/_data/nav.json"
+      fields:
+        - label: "Top Menu"
+          name: "nav"
+          widget: "list"
+          fields:
+          - {label: "Link Name", name: link, widget: string}
+          - {label: "Url", name: url, widget: string}
+    - name: "social"
+      label: "Social Links"
+      file: "blog/_data/social.json"
+      fields:
+        - label: "Social Links"
+          name: "nav"
+          widget: "list"
+          fields:
+          - {label: "Fontawesome Icon", name: link, widget: string}
+          - {label: "Url", name: url, widget: string}

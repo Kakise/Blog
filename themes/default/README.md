@@ -1,0 +1,1 @@
+Default theme for my Blog, originally based on hexo-theme-cactus. Customized to death with a lot of love.
