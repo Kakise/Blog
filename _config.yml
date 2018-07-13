@@ -11,7 +11,7 @@ url: SITEURL
 root: /
 permalink: ':year/:month/:day/:title/'
 permalink_defaults: ' '
-source_dir: source
+source_dir: blog
 public_dir: public
 tag_dir: tags
 archive_dir: archives
@@ -29,7 +29,7 @@ post_asset_folder: false
 relative_link: false
 future: true
 background:
-  enable: true
+  enable: false
   path: /images/bg.jpg
 index_generator:
   order_by: '-date'
@@ -40,19 +40,16 @@ date_format: YYYY-MM-DD
 time_format: 'HH:mm:ss'
 per_page: 10
 pagination_dir: page
-theme: cactus
+theme: default
 theme_config:
-  colorscheme: light
+  colorscheme: dark
 math:
-  engine: katex
+  engine: mathjax
   katex:
     css: https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css
     js: https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js
-deploy:
-  app_auth_key: ONESIGNAL_APP_AUTH_KEY
-  app_id: ONESIGNAL_APP_KEY
-  app_template_file: ./notif-tpl.json
-  type: onesignal
+  mathjax:
+    src: https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML
 sitemap:
   path: sitemap.xml
   template: ./sitemap_template.xml
@@ -61,7 +58,6 @@ pwa:
     body:
       background_color: '#E2E0DE'
       display: standalone
-      gcm_sender_id: '482941778795'
       icons:
         - sizes: 512x512
           src: /images/PWA_Cover.png
