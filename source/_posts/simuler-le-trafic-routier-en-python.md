@@ -19,4 +19,4 @@ Cette équation ci-dessus est l'équation utilisée afin de calculer l'accélér
 
 ## Le modèle IDM en python
 
-Afin de parvenir à mon but, j'ai d'abord cherché à voir différentes implémentations du modèle IDM en python afin de m'en inspirer et d'adapter mon code plus vite.
+Afin de parvenir à mon but, j'ai d'abord cherché à voir différentes implémentations du modèle IDM en python afin de m'en inspirer et d'adapter mon code plus vite. Petit problème: y'en a pas. Mais.... Heureusement pour moi, je sais coder en autre chose que du Python (En vrai je suis mauvais en Python). Du coup, je me suis inspiré d'un modèle fait en C++ et d'un autre modèle fait en JS.
