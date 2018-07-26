@@ -32,6 +32,17 @@ layout: false
                       itemtype: "http://schema.org/BlogPosting"
                   },
                   h(
+                      "style", {
+                          type: "text/css"
+                      },
+                      "html:before, html:after, body:before, body:after\n" +
+                      "  content: \"\"\n" +
+                      "  background: $color-body-border\n" +
+                      "  position: fixed\n" +
+                      "  display: none\n" +
+                      "  z-index: 5"
+                  ),
+                  h(
                       "div", {
                           className: "content index my4"
                       },
