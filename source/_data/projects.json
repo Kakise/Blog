@@ -1,6 +1,11 @@
 {
   "prj": [
     {
+      "name": "Pong-NG+",
+      "url": "https://github.com/Kakise/Pong",
+      "desc": "Un clone de Pong fait en C++."
+    },
+    {
       "name": "Blog",
       "url": "https://github.com/Kakise/Blog",
       "desc": "Le code source complet de mon blog actuel."
