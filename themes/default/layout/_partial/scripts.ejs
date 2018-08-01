@@ -49,32 +49,35 @@
 <% } %>
 <!-- Disqus Comments -->
 <% if (theme.disqus.enabled && theme.disqus.shortname && page.comments){ %>
-    <script type="text/plain" data-cookiescript="accepted">
-    var disqus_shortname = '<%= theme.disqus.shortname %>';
-    $(document).ready(function() {
-        
-        if(/\#disqus_thread/.test(location.hash)){
-            $.ajax({
-                type: "GET",
-                url: "//" + disqus_shortname + ".disqus.com/embed.js",
-                dataType: "script",
-                cache: true
+    <script type="type="text/javascript">
+    cookieValue = document.cookie.match(/(;)?cookiebar=([^;]*);?/)[2];
+    if (cookieValue == 'CookieAllowed') {
+        var disqus_shortname = '<%= theme.disqus.shortname %>';
+        $(document).ready(function() {
+
+            if(/\#disqus_thread/.test(location.hash)){
+                $.ajax({
+                    type: "GET",
+                    url: "//" + disqus_shortname + ".disqus.com/embed.js",
+                    dataType: "script",
+                    cache: true
+                });
+                $('#disqus-load').fadeOut();
+            }
+
+            $('#disqus-load').on('click', function(){ 
+                $.ajax({
+                    type: "GET",
+                    url: "//" + disqus_shortname + ".disqus.com/embed.js",
+                    dataType: "script",
+                    cache: true
+                });
+                $(this).fadeOut();
             });
-            $('#disqus-load').fadeOut();
-        }
-        
-        $('#disqus-load').on('click', function(){ 
-            $.ajax({
-                type: "GET",
-                url: "//" + disqus_shortname + ".disqus.com/embed.js",
-                dataType: "script",
-                cache: true
-            });
-            $(this).fadeOut();
         });
-    });
+      }
     </script>
 <% } %>
 <% if (is_home()) { %>
-    <script id="dsq-count-scr" src="//<%= theme.disqus.shortname %>.disqus.com/count.js" type="text/plain" data-cookiescript="accepted" async></script>
+    <script id="dsq-count-scr" src="//<%= theme.disqus.shortname %>.disqus.com/count.js" type="text/javascript"></script>
 <% } %>
