@@ -27,8 +27,8 @@ Voilà le script complet:
 cd ~/Downloads
 curl -Ls https://goo.gl/fd3zc > crouton
 chmod +x crouton
-sudo ln -s /media/removable/USB Drive/chroots/ /usr/local/chroots
-sh crouton
+sudo ln -s '/media/removable/USB Drive/chroots/' /usr/local/chroots
+sudo sh crouton -u -n dev
 ```
 
 Il permet de télécharger et rendre exécutable Crouton sur mon CB puis de symlink le dossier de chroots de ma clé usb à mon CB. Je n'ai plus alors qu'à lancer un petit `sudo startxiwi -b nomDeLapp` et c'est bon !
