@@ -10,7 +10,7 @@ Bonjour à toutes et à tous, aujourd'hui une petit news sur une nouvelle foncti
 
 ## Comment l'utiliser?
 
-Pour utiliser cette nouvelle fonction, il faut déjà vous assurer que vous êtes sous Chrome OS Canary, pour cela, il faut activer le mode développeur, utiliser la combinaison de touche suivante: Ctrl + Alt + T. Elle ouvre un invité de commande, il faudra entrer la commande suivante: \`live_in_a_coal_mine\`. Ensuite, vous redémarrez votre CB après que la màj soit faite et maintenant, à chaque fois que vous faites un clic droit dans une zone de texte, l'option suivante apparaît:
+Pour utiliser cette nouvelle fonction, il faut déjà vous assurer que vous êtes sous Chrome OS Canary, pour cela, il faut activer le mode développeur, utiliser la combinaison de touche suivante: Ctrl + Alt + T. Elle ouvre un invité de commande, il faudra entrer la commande suivante: `live_in_a_coal_mine`. Ensuite, vous redémarrez votre CB après que la màj soit faite et maintenant, à chaque fois que vous faites un clic droit dans une zone de texte, l'option suivante apparaît:
 
 ![Screenshot de la nouvelle fonction](/images/screenshot-2018-08-03-at-10.34.52.png)
 
