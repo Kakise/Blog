@@ -1,5 +1,5 @@
 ---
-title: Un nouveau raccourci dédié aux emojis sous Chrome OS Canary !
+title: Une nouvelle option "emojis" sous Chrome OS Canary !
 date: '2018-08-03'
 author: Kakise
 tags:
