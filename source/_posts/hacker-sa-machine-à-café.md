@@ -3,7 +3,8 @@ title: Hacker sa machine à café !?
 date: '2018-08-10'
 author: Kakise
 tags:
-  - news
+  - code
+  - hack
 layout: post
 ---
 Coucou, aujourd'hui on se retrouve pour un nouveau billet sur "Comment hacker ma machine à café Tassimo? 🤔🤔".
