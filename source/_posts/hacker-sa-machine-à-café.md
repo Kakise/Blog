@@ -21,7 +21,7 @@ Déjà, il faut comprendre comment fonctionne une machine à café Tassimo class
 
 ![Fonctionnement d'une machine à café tassimo bosch - thermodynamique](/images/screenshot-2018-08-10-at-11.44.07.png)
 
-Ici, on a le plan de fonctionnement de la partie thermodynamique du système. Oui parce que je ne l'ai pas précisé mais en réalité, on peut découper le système \`{machine à café}\` en deux parties, un sous-système "thermodynamique" qui va s'occuper de réguler la température et la pression du café (mais pas la conception du café, c'est à l'intérieur de la dosette qu'à lieu le filtrage !). Et une seconde partie électronique qui va lire la code barre.
+Ici, on a le plan de fonctionnement de la partie thermodynamique du système. Oui parce que je ne l'ai pas précisé mais en réalité, on peut découper le système {machine à café} en deux parties, un sous-système "thermodynamique" qui va s'occuper de réguler la température et la pression du café (mais pas la conception du café, c'est à l'intérieur de la dosette qu'à lieu le filtrage !). Et une seconde partie électronique qui va lire la code barre.
 
 ![Dosette de type "T-Disc"](/images/image.jpg)
 
@@ -39,7 +39,7 @@ Le code barre est comme je l'ai dit du format `Standard2of5` donc ça nous arran
 
 Le café est encodé sur 4 chiffres différents et 13 bits en base 2. La dosette que j'ai montré un peu plus haut a pour code décimal \`297615_{10}\`. A partir de là on peut déjà éliminer et déterminer ce qu'on appelle le `checksum` c'est à dire la fonction mathématique servant à vérifier si il y a des erreurs ou pas. Le check sum est standard. En notant \`abcdef\` les 6 chiffres de notre code barre, on a la fonction suivante:
 
-\`3 \* a + b + 3 \* c + d + 3 * e + f = 50 \equiv 0 \pmod 10\`
+\`3 \* a + b + 3 \* c + d + 3 * e + f = 50 \equiv 0 \mod 10\`
 
 C'est déjà une bonne base. Une fois qu'on a dégagé les chiffres \`a\` et \`b\`, on a plus que les chiffres codant la préparation du café: \`bcde_{10}\`. La partie électronique va ensuite encoder ces chiffres sur 12 bits. Pour le coup, je passe à du C++, ça me simplifie le travail (vous avez pas envie de voir à quoi ressemble la conversion qui est à base de reste de division par 2 puis on rajoute des 0 devant pour faire 12 bits).
 
