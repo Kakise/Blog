@@ -59,3 +59,31 @@ Ouais, c'est très moche, je sais. Mais ça fonctionne comme ça.
 Bon, je vais vous épargner les explications chelous en mode "faut faire blablabla", à la place je vais vous expliquer le principe de fonctionnement.
 
 Chaque catégorie de bits servant à coder les différentes instructions ont leur équivalents décimaux et plus on monte, plus ce sera haut (pour le volume, la température et le flow rate).
+
+Pour le reste, il suffit de faire une concaténation de chaque bits afin de se retrouver avec quelques chose du format \`abcdefghijklm_{2}\`.
+
+Une fois qu'on a ce code, c'est la partie `checksum` qui est un peu vnr en C++.
+
+En gros, il faut déterminer \`a\` et \`f\` de cette façon:
+
+\`a = (50 - b - 3\*c - d -3\*e) / 3\` mais on récupère juste le quotien de la division euclidienne.
+
+\`f = 50 - b - 3\*c - d -3\*e - 3 * a\`
+
+Ce qui nous donne ces merveilleuses lignes en C++:
+
+```cpp
+    std::string barcode0 = temp.to_string() + charge.to_string() + volume.to_string() + flowRate.to_string() + purge.to_string();
+    std::bitset<13> barcodeDec(barcode0);
+    int bcint = (int)(barcodeDec.to_ulong());
+    int rem = 50 - bcint / 1000 - 3 * ((bcint % 1000 - bcint % 100)/100) - (bcint % 100 - bcint % 10)/10 - 3 * (bcint%10);
+    int a = rem / 3;
+    int f = rem - 3 * a;
+    std::bitset<20> barcode(std::stoi(std::to_string(a) + std::to_string(bcint) + std::to_string(f)));
+```
+
+Et là, vous avez la valeur décimale de votre code barre.
+
+Avant de vous laisser, je vous laisse quand même le lien vers mon programme fait maison: [dispo juste ici !](https://gist.github.com/Kakise/fbc24ae75cb64d22a270c70781315324)
+
+Au revoir et à bientôt o/
