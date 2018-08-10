@@ -37,11 +37,11 @@ Bon, maintenant qu'on sait ce qu'on va étudier, attaquons nous au vif du sujet:
 
 Le code barre est comme je l'ai dit du format `Standard2of5` donc ça nous arrange parce qu'on peut utiliser un générateur en ligne et des impressions afin de faire nos tests.
 
-Le café est encodé sur 4 chiffres différents et 13 bits en base 2. La dosette que j'ai montré un peu plus haut a pour code décimal \`297615_{(10)}\`. A partir de là on peut déjà éliminer et déterminer ce qu'on appelle le `checksum` c'est à dire la fonction mathématique servant à vérifier si il y a des erreurs ou pas. Le check sum est standard. En notant \`abcdef_{(10)}\` les 6 chiffres de notre code barre, on a la fonction suivante:
+Le café est encodé sur 4 chiffres différents et 13 bits en base 2. La dosette que j'ai montré un peu plus haut a pour code décimal `297615_{(10)}`. A partir de là on peut déjà éliminer et déterminer ce qu'on appelle le `checksum` c'est à dire la fonction mathématique servant à vérifier si il y a des erreurs ou pas. Le check sum est standard. En notant `abcdef_{(10)}` les 6 chiffres de notre code barre, on a la fonction suivante:
 
 \`3 \* a + b + 3 \* c + d + 3 * e + f = 50 \equiv 0 \mod 10\`
 
-C'est déjà une bonne base. Une fois qu'on a dégagé les chiffres \`a\` et \`b\`, on a plus que les chiffres codant la préparation du café: \`bcde_{10}\`. La partie électronique va ensuite encoder ces chiffres sur 12 bits. Pour le coup, je passe à du C++, ça me simplifie le travail (vous avez pas envie de voir à quoi ressemble la conversion qui est à base de reste de division par 2 puis on rajoute des 0 devant pour faire 12 bits).
+C'est déjà une bonne base. Une fois qu'on a dégagé les chiffres \`a\` et \`f\`, on a plus que les chiffres codant la préparation du café: \`bcde_{10}\`. La partie électronique va ensuite encoder ces chiffres sur 12 bits. Pour le coup, je passe à du C++, ça me simplifie le travail (vous avez pas envie de voir à quoi ressemble la conversion qui est à base de reste de division par 2 puis on rajoute des 0 devant pour faire 12 bits).
 
 Afin de convertir \`bcde\_{(10)}\` en \`abcdefghijklm\_{(2)}\`, j'utilise l'instruction suivante en C++: `std::bitset<13>(std::to_string(bcde));` (Ouais ça commence à devenir moche haha).
 
