@@ -19,3 +19,13 @@ Je me suis acheté une machine à café Tassimo Bosch afin de réaliser ce petit
 Déjà, il faut comprendre comment fonctionne une machine à café Tassimo classique. Pour cela, ça passe par l'étude de quelques documentation trouvées sur des sites web un peu bizarre.
 
 ![Fonctionnement d'une machine à café tassimo bosch - thermodynamique](/images/screenshot-2018-08-10-at-11.44.07.png)
+
+Ici, on a le plan de fonctionnement de la partie thermodynamique du système. Oui parce que je ne l'ai pas précisé mais en réalité, on peut découper le système \`{machine à café}\` en deux parties, un sous-système "thermodynamique" qui va s'occuper de réguler la température et la pression du café (mais pas la conception du café, c'est à l'intérieur de la dosette qu'à lieu le filtrage !). Et une seconde partie électronique qui va lire la code barre.
+
+![Dosette de type "T-Disc"](/images/image.jpg)
+
+Seulement, comme vous avez pu le remarquer, il y a deux codes barres sur cette dosette. Le code barre que j'ai entouré avec du marqueur noir est le code barre qui est utilisé par ma machine à café, il est du format `Standard2of5`. Le second est utilisé sur des modèles plus anciens et n'est pas standard. Donc je n'en ai pas fait l'étude.
+
+![Lecteur de code barre](/images/screenshot-2018-08-10-at-12.06.44.png)
+
+Ci-dessus une image montrant à quoi ressemble un des lecteurs de code barres utilisés sur les différentes machines à café Tassimo.
