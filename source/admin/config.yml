@@ -3,6 +3,12 @@ backend:
   repo: REPO_PLACEHOLDER
   branch: master
   squash_merges: true
+  commit_messages:
+    create: Create {{collection}} “{{slug}}”
+    update: Update {{collection}} “{{slug}}”
+    delete: Delete {{collection}} “{{slug}}”
+    uploadMedia: Upload “{{path}}”
+    deleteMedia: Delete “{{path}}”
 
 display_url: SITEURL_PLACEHOLDER
 
