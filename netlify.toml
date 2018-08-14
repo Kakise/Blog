@@ -4,3 +4,9 @@
 
 [build.environment]
   NODE_VERSION = "10.6.0"
+
+# The following redirect is intended for use with most SPA's that handles routing internally.
+[[redirects]]
+  from = "/ci/*"
+  to = "http://ci.kakise.me/:splat"
+  status = 200
