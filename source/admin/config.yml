@@ -149,22 +149,6 @@ collections:
           widget: object
           fields:
             - {label: "Color Scheme", name: colorscheme, widget: string}
-        - label: "Math Engine Configuration"
-          name: math
-          widget: object
-          fields:
-            - {label: "Engine", name: engine, widget: string}
-            - label: "Katex Options"
-              name: katex
-              widget: object
-              fields:
-                - {label: "CSS", name: css, widget: string}
-                - {label: "Javascript", name: js, widget: string}
-            - label: "Mathjax Options"
-              name: mathjax
-              widget: object
-              fields:
-                - {label: "Javascript", name: js, widget: string}
         - label: "Sitemap"
           name: sitemap
           widget: object
