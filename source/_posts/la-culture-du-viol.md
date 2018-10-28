@@ -4,6 +4,7 @@ date: '2018-10-28'
 author: Kakise
 tags:
   - news
+  - politique
 layout: post
 ---
 Bon, ça fait longtemps que j'ai pas posté ici, n'est-ce pas. Mais voilà, ces derniers temps il se passe des choses assez révoltantes: de la banalisation du viol à la pelle. C'est triste quand même, je n'ai pas le temps de toucher à mon PC en général, et de que j'y reviens, je trouve quoi? TPMP et des propos horribles.
