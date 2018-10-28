@@ -43,13 +43,6 @@ pagination_dir: page
 theme: default
 theme_config:
   colorscheme: dark
-math:
-  engine: mathjax
-  katex:
-    css: https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css
-    js: https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js
-  mathjax:
-    src: https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML
 sitemap:
   path: sitemap.xml
   template: ./sitemap_template.xml
