@@ -15,7 +15,7 @@ Afin d'avoir une simulation précise et efficace, j'ai utilisé un modèle déj�
 
 ![Calcul de l’accélération à partir du modèle IDM](/images/equation-idm.png)
 
-Cette équation ci-dessus est l'équation utilisée afin de calculer l'accélération à un instant \`t + dt\` à partir de paramètres au temps \`t\`.
+Cette équation ci-dessus est l'équation utilisée afin de calculer l'accélération à un instant $t + dt$ à partir de paramètres au temps $t$.
 
 ## Le modèle IDM en python
 
@@ -67,18 +67,16 @@ class IDM:
             return max(-self.bmax, accFree + accInt + accRnd)
 ```
 
-Si j'ai crée un objet et je n'ai pas juste codé une fonction servant à calculer l'accélération de ma voiture à un instant \`t+dt\`, c'est parce que le modèle doit être initialisé avec des constantes. En utilisant un objet, je pouvais du coup faire du code un peu plus facilement réutilisable.
+Si j'ai crée un objet et je n'ai pas juste codé une fonction servant à calculer l'accélération de ma voiture à un instant $t+dt$, c'est parce que le modèle doit être initialisé avec des constantes. En utilisant un objet, je pouvais du coup faire du code un peu plus facilement réutilisable.
 
 ## Application numérique
 
-Bon, maintenant qu'on a un modèle fonctionnel et qu'on sait comment calculer l'accélération d'une voiture, un peu de théorie:\
+Bon, maintenant qu'on a un modèle fonctionnel et qu'on sait comment calculer l'accélération d'une voiture, un peu de théorie:  
 Afin de calculer depuis l'accélération la vitesse et la position de la voiture, il faut les intégrer. Pour se faire, il y a deux méthodes possibles. Soit on utilise la méthode de Runge-Kutta à l'ordre 4 (elle se rapproche beaucoup de la réalité), soit on fait une intégration simpliste en disant la chose suivante:  
 
-\`v = a * t + v_{0}\`
-
-\`x = \frac{1}{2} \* a \* t^{2} + v\_{0} * t + x\_{0}\`
-
-\`x\_{0}\` et \`v\_{0}\` étant les positions et vitesses à l'instant \`t\` et \`v\` et \`x\` celles à l'instant \`t + dt\`.
+$v = a * t + v_{0}$
+$x = \frac{1}{2} \* a \* t^{2} + v\_{0} * t + x\_{0}$
+$x\_{0}$ et $v\_{0}$ étant les positions et vitesses à l'instant $t$ et $v$ et $x$ celles à l'instant $t + dt$.
 
 Pour utiliser la méthode RK4, vous pouvez utiliser ce morceau de code:
 
