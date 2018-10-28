@@ -75,7 +75,7 @@ Bon, maintenant qu'on a un modèle fonctionnel et qu'on sait comment calculer l'
 Afin de calculer depuis l'accélération la vitesse et la position de la voiture, il faut les intégrer. Pour se faire, il y a deux méthodes possibles. Soit on utilise la méthode de Runge-Kutta à l'ordre 4 (elle se rapproche beaucoup de la réalité), soit on fait une intégration simpliste en disant la chose suivante:  
 
 $v = a * t + v_{0}$
-$x = \frac{1}{2} \* a \* t^{2} + v\_{0} * t + x\_{0}$
+$x = \frac{1}{2} * a * t^{2} + v\_{0} * t + x\_{0}$
 $x\_{0}$ et $v\_{0}$ étant les positions et vitesses à l'instant $t$ et $v$ et $x$ celles à l'instant $t + dt$.
 
 Pour utiliser la méthode RK4, vous pouvez utiliser ce morceau de code:
