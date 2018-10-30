@@ -300,6 +300,7 @@ collections:
         widget: object
         fields:
           - {label: "Enabled?", name: enabled, widget: boolean}
+          - {label: "Delayed?", name: enabled, widget: boolean}
           - {label: "Shortname", name: shortname, widget: string}
       - label: "Gravatar"
         name: gravatar

@@ -22,5 +22,6 @@ open_graph:
   twitter_id: Kakise_
 disqus:
   enabled: true
+  delayed: false
   shortname: kakise
 gravatar: {}
