@@ -11,7 +11,7 @@ echo $PULL_REQUEST
 
 # Replace placeholders
 sed -i s@SITEURL@"$URL"@g _config.yml
-sed -i s@REPO_PLACEHOLDER@"${REPO[1]}"@g source/admin/config.yml
+sed -i s@REPO_PLACEHOLDER@"Kakise/Blog"@g source/admin/config.yml
 sed -i s@SITEURL_PLACEHOLDER@"$URL"@g source/admin/config.yml
 
 # Add various navigation menus
