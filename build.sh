@@ -4,7 +4,7 @@
 REPO=(${REPOSITORY_URL//:/ })
 
 # Print various debug vars
-echo ${REPO[1]}
+echo ${REPO[0]}
 echo $URL
 echo $CONTEXT
 echo $PULL_REQUEST
