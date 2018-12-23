@@ -17,6 +17,11 @@ publish_mode: editorial_workflow
 media_folder: "source/images"
 public_folder: "images"
 
+media_library:
+  name: uploadcare
+  config:
+    publicKey: UPLOADCARE_KEY
+
 collections:
   - name: "posts"
     label: "Posts"
