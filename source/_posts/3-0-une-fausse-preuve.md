@@ -28,7 +28,7 @@ Pour cela, on passe par une série d'équivalences et d'implications afin de sim
 
 $x^{2} + x + 1 = 0 \Rightarrow x^{3} = 1$
 
-Cette phrase se traduit littéralement par "si $x$ est solution de $x^{2} + x + 1 = 0$, alors $x$ est aussi solution de $x^{3} = 1$". Cela ne veut _**PAS**_ dire "si $x$ est solution de $x^{3} = 1$, alors $x$ est aussi solution de $x^{2} + x + 1 = 0$".
+Cette phrase se traduit littéralement par "si $x$ est solution de $x^{2} + x + 1 = 0$, alors $x$ est aussi solution de $x^{3} = 1$". Cela ne veut pas dire "si $x$ est solution de $x^{3} = 1$, alors $x$ est aussi solution de $x^{2} + x + 1 = 0$".
 
 Ainsi, cette implication nous permet de déduire la chose suivante: "Les solutions de mon équation se trouvent parmi les solutions de $x^{3} = 1$". Je vous épargne les maths, les solutions de $x^{3} = 1$ sont ${1, j, j^{2}}$. Vous voyez où je veux en venir?
 
