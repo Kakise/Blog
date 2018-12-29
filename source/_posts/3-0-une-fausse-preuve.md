@@ -1,6 +1,6 @@
 ---
 title: '3 = 0: Une fausse preuve'
-date: '2018-12-27'
+date: '2018-12-29'
 author: Kakise
 tags:
   - maths
