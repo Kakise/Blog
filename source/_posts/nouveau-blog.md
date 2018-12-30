@@ -1,8 +1,7 @@
 ---
 title: Mon nouveau blog statique propulsé par netlify !
 date: 2018-04-21T15:21:03.000Z
-categories:
-  - Code
+author: Kakise
 tags:
   - seo
   - code
