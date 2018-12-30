@@ -1,8 +1,7 @@
 ---
 title: Mon nouveau blog statique propulsé par netlify !
 date: 2018-04-21T15:21:03.000Z
-categories:
-  - Code
+author: Kakise
 tags:
   - seo
   - code
@@ -39,7 +38,7 @@ Bon, je vous fait une petite présentation rapide: Netlify est un service d'héb
 
 Dans mon cas, le switch a été très rapide. Je me suis connecté via github pour créer un compte gratuit, j'ai setup les paramètres de "deploy" comme suit: 
 
-![Screenshot de mes paramètres](/images/Screenshot-2018-4-21 Build deploy Settings.png)
+![Screenshot de mes paramètres](/images/Screenshot-2018-4-21.png)
 
 Et voilà, le tour était joué ! Je suis maintenant en possession d'un blog ultra rapide, statique et disponible hors ligne. Elle est pas belle la vie?
 
