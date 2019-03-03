@@ -13,8 +13,6 @@ echo $PULL_REQUEST
 sed -i s@SITEURL@"$URL"@g _config.yml
 sed -i s@REPO_PLACEHOLDER@"Kakise/Blog"@g source/admin/config.yml
 sed -i s@SITEURL_PLACEHOLDER@"$URL"@g source/admin/config.yml
-sed -i s@UPLOADCARE_KEY@"$UPLOADCARE_PUBLIC_KEY"@g source/admin/config.yml
-UPLOADCARE_KEY
 
 # Add various navigation menus
 LINKS=`cat source/_data/nav.json | jq .nav[].link`
