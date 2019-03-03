@@ -5,5 +5,5 @@
 [build.environment]
   NODE_VERSION = "10.6.0"
   
-[template.environment]
-  UPLOADCARE_PUBLIC_KEY = "change me for your uploadcare public key"
+#[template.environment]
+#  UPLOADCARE_PUBLIC_KEY = "change me for your uploadcare public key"
