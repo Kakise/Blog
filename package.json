@@ -57,7 +57,6 @@
     "hexo-renderer-sass": "^0.3.2",
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.2.2",
-    "hexo-uncss": "git+https://github.com/tomap/hexo-uncss.git",
     "js-yaml": "^3.12.2"
   }
 }
