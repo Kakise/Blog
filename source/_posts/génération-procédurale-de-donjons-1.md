@@ -67,3 +67,107 @@ Je remarque d'emblée deux choses: j'ai tendance à faire des connexions malgré
 3. Je prends une pièce au hasard et je la place.
 4. Je regarde les différentes connexions qui sont sur cette pièce, je sélectionne une seconde pièce au hasard, je la connecte à une des connexions de ma première pièce.
 5. Je répète cela à l'infini.
+
+## Traduction de cet algorithme
+
+Pour passer de cet algorithme en langage naturel en versions programmée, je commence par poser les "fondations". Je crée un type représentant les pièces:
+
+```BASIC
+type Rooms
+	Connectors as Connector[]
+	Sprite as integer
+endtype
+```
+
+Ainsi, j'aurais aucune difficulté à stocker chacune de mes pièces dans un tableau ou une liste.
+
+Ensuite, je crée un type pour chacun de mes "Connecteur":
+
+```BASIC
+type Connector
+	X as integer // En terme de tiles
+	Y as integer
+	Orientation as string
+	tSize as integer // Taille de la tile
+	Connected as integer
+endtype
+```
+
+Enfin, je commence par la fonction la plus simple du programme, celle qui prend deux "Rooms" et renvoie un pair de "Connector":
+
+```BASIC
+// Fonction permettant de connecter deux "Rooms" de façon aléatoire
+// On prend un "Connector" de R1 au pif puis on le connecte à un "Connector" de R2 au pif
+// tout en conservant l'orientation
+function ConnectRooms(R1 as Rooms, R2 as Rooms)
+	i1 = Random(0, R1.Connectors.length)
+	i2 = -1
+	Rotation = 0
+	
+	for j = 0 to R2.Connectors.length
+		// Cas "haut"
+		if R1.Connectors[i1].Orientation = "h"
+			if R2.Connectors[j].Orientation = "b"
+				i2 = j
+				exit
+			elseif R2.Connectors[j].Orientation = "h"
+				i2 = j
+				Rotation = 180
+				exit
+			endif
+		endif
+		
+		// Cas "bas"
+		if R1.Connectors[i1].Orientation = "b"
+			if R2.Connectors[j].Orientation = "h"
+				i2 = j
+				exit
+			elseif R2.Connectors[j].Orientation = "b"
+				i2 = j
+				Rotation = 180
+				exit
+			endif
+		endif
+		
+		// Cas "gauche"
+		if R1.Connectors[i1].Orientation = "g"
+			if R2.Connectors[j].Orientation = "d"
+				i2 = j
+				exit
+			elseif R2.Connectors[j].Orientation = "g"
+				i2 = j
+				Rotation = 180
+				exit
+			endif
+		endif
+		
+		// Cas "droite"
+		if R1.Connectors[i1].Orientation = "d"
+			if R2.Connectors[j].Orientation = "g"
+				i2 = j
+				exit
+			elseif R2.Connectors[j].Orientation = "d"
+				i2 = j
+				Rotation = 180
+				exit
+			endif
+		endif
+	next j
+	
+	Array as integer[1]
+	Array[0] = i2
+	Array[1] = Rotation
+endfunction Array
+```
+
+La variable rotation me servira ensuite à correctement orienter ma pièce tandis que la variable i2 me donnera le Connector à associer au Connector i1.
+
+Dans la prochaine partie, je vais ensuite créer une variante de cette fonction qui prendra un Connector et donnera une autre Room à accoler, pour, par exemple, changer de niveau.
+
+Enfin, voici un exemple de "Room":
+
+![Exemple de Room](/images/room2.png "Exemple de Room")
+
+Ici, le "tSize" est à 32, le Connector est en haut, à X = 4 et Y = 0.
+
+Rendez-vous à la prochaine partie !
