@@ -1,6 +1,5 @@
 # Blog
-[![Maintainability](https://api.codeclimate.com/v1/badges/de96f52fc4c398710a1a/maintainability)](https://codeclimate.com/github/Kakise/Blog/maintainability)
-[![Build Status](https://travis-ci.org/Kakise/Blog.svg?branch=master)](https://travis-ci.org/Kakise/Blog)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e26a1a32-f63d-4090-b771-e9af319d74a4/deploy-status)](https://app.netlify.com/sites/kakise-blog/deploys)
 [![Author Badge](https://img.shields.io/badge/Author-Kakise-red.svg?style=flat-square)](https://kakise.me)
 
 My blog's source code
