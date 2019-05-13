@@ -29,8 +29,8 @@ post_asset_folder: false
 relative_link: false
 future: true
 background:
-  enable: false
-  path: /images/bg.jpg
+  enable: true
+  path: /images/IMG_0324.png
 index_generator:
   order_by: '-date'
   path: ''
