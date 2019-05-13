@@ -30,7 +30,7 @@ relative_link: false
 future: true
 background:
   enable: true
-  path: /images/IMG_0324.png
+  path: /images/img_0324.png
 index_generator:
   order_by: '-date'
   path: ''
