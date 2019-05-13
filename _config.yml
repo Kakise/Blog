@@ -1,9 +1,9 @@
-title: Le Blog de Kakise
-subtitle: Le blog d'un codeur fou !
+title: 'Blog, Photos et Histoires'
+subtitle: 'Mon blog, écrits sur la vie d''un humain normal.'
 description: >-
-  Bienvenue sur mon blog, internaute. Ici tu trouveras de multiples articles
-  sortis tout droit de mon cerveau. Bon voyage !
-keywords: 'Blog, code, info, science'
+  Bienvenue dans mon blog, ici je poste mes travaux photos, mes histoires et un
+  peu de tout sur ma vie.
+keywords: 'code, informatique, science, photos, blog, podcast, news'
 author: Kakise
 language: fr
 timezone: Europe/Paris
@@ -29,8 +29,8 @@ post_asset_folder: false
 relative_link: false
 future: true
 background:
-  enable: false
-  path: /images/bg.jpg
+  enable: true
+  path: /images/img_0324.png
 index_generator:
   order_by: '-date'
   path: ''
@@ -67,7 +67,7 @@ pwa:
     path: /sw.js
     preload:
       posts: 10
-      urls: 
+      urls:
         - URL_PLACEHOLDER
     routes:
       - pattern: '!!js/regexp /.*\.(js|css|jpg|jpeg|png|gif)$/'
@@ -85,6 +85,7 @@ criticalcss:
   replacementHtmlTrailer: </style></head>
 lazyload:
   enable: true
+  loadingImg: /images/loading.gif
   onlypost: true
 feed:
   content_limit: 140
@@ -96,3 +97,4 @@ asciinema:
   enable: true
 nofollow:
   enable: true
+  exclude: yy
