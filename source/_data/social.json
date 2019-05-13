@@ -1,20 +1,16 @@
 {
   "nav": [
     {
+      "link": "camera",
+      "url": "https://photo.kakise.me"
+    },
+    {
       "link": "github",
       "url": "https://github.com/Kakise"
     },
     {
       "link": "twitter",
       "url": "https://twitter.com/Kakise_"
-    },
-    {
-      "link": "reddit",
-      "url": "https://www.reddit.com/user/Kakise"
-    },
-    {
-      "link": "steam",
-      "url": "https://steamcommunity.com/id/der_professor"
     },
     {
       "link": "mail",
