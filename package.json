@@ -40,6 +40,7 @@
     "hexo": "^3.8.0",
     "hexo-autonofollow": "^1.0.1",
     "hexo-critical-css": "git+https://github.com/Kakise/hexo-critical-css.git",
+    "hexo-excerpt": "^1.1.4",
     "hexo-filter-asciinema": "^1.0.3",
     "hexo-generator-archive": "^0.1.4",
     "hexo-generator-category": "^0.1.3",

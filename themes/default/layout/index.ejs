@@ -1,58 +1,72 @@
 <section id="about">
-  <% if (config.description) { %>
-    <%- markdown(config.description) %>
-  <% } %>
-  <% if (site.data.social) { %>
-    <p>
-      <%= __('index.find_me_on') %>
-      <% var nb_links = site.data.social.nav.length %>
-      <% var i = 0 %>
-      <% for (var i in site.data.social.nav) { %>
-        <% if (site.data.social.nav[i].link == 'mal') {%>
-          <a class="icon" target="_blank" rel="noopener noreferrer" href="<%- site.data.social.nav[i].url %>">
-            <span class="icon-mal"><span class="path1"><span class="path2"></span></span></span>
-          </a>
-        <% } else if (site.data.social.nav[i].link == 'mail') { %>
-          <a class="icon" target="_blank" rel="noopener noreferrer" href="<%- site.data.social.nav[i].url %>">
-            <i class="icon-envelope"></i>
-          </a>
-        <% } else { %>
-          <a class="icon" target="_blank" rel="noopener noreferrer" href="<%- site.data.social.nav[i].url %>">
-            <i class="icon-<%- site.data.social.nav[i].link %>"></i>
-          </a>
-        <% } %>
-        <%= ( nb_links > 0 && i < nb_links-1 ? 
-            ( i == nb_links-2 ? ' '+__('index.enum_and')+' ' 
-            : __('index.enum_comma')+'' ) 
-            : '.' ) %>
-        <% i+=1 %>
-      <% } %>
-    </p>
-  <% } %>
+    <% if (config.description) { %>
+        <%- markdown(config.description) %>
+    <% } %>
+    <% if (site.data.social) { %>
+        <p>
+            <%= __('index.find_me_on') %>
+            <% var nb_links = site.data.social.nav.length %>
+            <% var i = 0 %>
+            <% for (var i in site.data.social.nav) { %>
+                <% if (site.data.social.nav[i].link == 'mal') { %>
+                    <a class="icon" target="_blank" rel="noopener noreferrer" href="<%- site.data.social.nav[i].url %>">
+                        <span class="icon-mal"><span class="path1"><span class="path2"></span></span></span>
+                    </a>
+                <% } else if (site.data.social.nav[i].link == 'mail') { %>
+                    <a class="icon" target="_blank" rel="noopener noreferrer" href="<%- site.data.social.nav[i].url %>">
+                        <i class="icon-envelope"></i>
+                    </a>
+                <% } else { %>
+                    <a class="icon" target="_blank" rel="noopener noreferrer" href="<%- site.data.social.nav[i].url %>">
+                        <i class="icon-<%- site.data.social.nav[i].link %>"></i>
+                    </a>
+                <% } %>
+                <%= (nb_links > 0 && i < nb_links - 1 ?
+                        (i == nb_links - 2 ? ' ' + __('index.enum_and') + ' '
+                                : __('index.enum_comma') + '')
+                        : '.') %>
+                <% i += 1 %>
+            <% } %>
+        </p>
+    <% } %>
 </section>
 
 <section id="writing">
-  <span class="h1"><a href="<%- url_for("archives") %>"><%= __('index.articles') %></a></span>
-  <ul class="post-list">
-    <% page.posts.each(function(post, i){ %>
-      <li class="post-item">
-        <%- partial('_partial/post/date', { post: post, class_name: 'meta' }) %>
-        <span><%- partial('_partial/post/title', { post: post, index: true, class_name: '' }) %> <i class="icon-comments"></i> <a href="<%- config.url %><%- url_for(post.path) %>#disqus_thread">0</a></span>
-      </li>
-    <% }); %>
-  </ul>
+    <span class="h1"><a href="<%- url_for("archives") %>"><%= __('index.articles') %></a></span>
+    <ul class="post-list">
+        <% page.posts.each(function(post, i){ %>
+            <li class="post-item">
+                <div class="max-width-4 mx-auto">
+                    <div class="clearfix">
+                        <div class="col col-4"><%- partial('_partial/post/title', {
+                                post: post,
+                                index: true,
+                                class_name: ''
+                            }) %><br>
+                            <i class="icon-comments"></i> <a
+                                    href="<%- config.url %><%- url_for(post.path) %>#disqus_thread">0</a>
+                            &nbsp;&nbsp;<i class="icon-clock-o"></i> <%- readingTime(post.content, 'min.') %>
+                            &nbsp; <%- partial('_partial/post/date', {post: post}) %>
+                        </div>
+                        <div class="col col-8"><%- post.excerpt %></div>
+                    </div>
+                </div>
+            </li>
+            <hr>
+        <% }); %>
+    </ul>
     <%- partial('_partial/pagination') %>
 </section>
 
 <% if (site.data.projects) { %>
-<section id="projects">
-  <span class="h1"><a href="<%- url_for(theme.projects_url) %>"><%= __('index.projects') %></a></span>
-  <ul class="project-list">
-    <% for(var obj in site.data.projects.prj){ %>
-      <li class="project-item">
-        <b><a href="<%= site.data.projects.prj[obj].url %>"><%= site.data.projects.prj[obj].name %></a></b>: <%= site.data.projects.prj[obj].desc %>
-      </li>
-    <% } %>
-  </ul>
-</section>
+    <section id="projects">
+        <span class="h1"><a href="<%- url_for(theme.projects_url) %>"><%= __('index.projects') %></a></span>
+        <ul class="project-list">
+            <% for(var obj in site.data.projects.prj){ %>
+                <li class="project-item">
+                    <b><a href="<%= site.data.projects.prj[obj].url %>"><%= site.data.projects.prj[obj].name %></a></b>: <%= site.data.projects.prj[obj].desc %>
+                </li>
+            <% } %>
+        </ul>
+    </section>
 <% } %>
