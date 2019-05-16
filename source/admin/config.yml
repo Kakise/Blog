@@ -38,6 +38,10 @@ collections:
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string", tagname: "h1", default: "Untitled"}
+      - label: Gallery
+        name: photos
+        widget: list
+        field: {label: Image, name: image, widget: image}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
   - label: "Misc"  
