@@ -6,3 +6,5 @@ photos:
 layout: page
 ---
 Appareil: Canon EOS 350D
+
+Toutes les photos ici sont soumises aux droits d'auteurs français. Copyright Sami Taâissat.
