@@ -6,7 +6,7 @@ tags:
   - maths
 layout: post
 ---
-Bonsoir à toi, jeune internaute.
+Ces derniers temps on a de plus en plus de vidéos YouTube "éducatives"/"scientifiques". Le problème avec ces vidéos, sont les erreurs qui peuvent s'y trouver, et je vais te le montrer !
 
 Récemment je suis tombé sur une [vidéo YouTube](https://www.youtube.com/watch?v=SGUZ-8u1OxM) à cause des recommandations et j'ai tout de suite été intrigué par le titre de la vidéo: "3=0, can you spot the mistake?". Bon alors en vrai c'était surtout l'équation qui menait à ce résultat qui m'intéressait.
 

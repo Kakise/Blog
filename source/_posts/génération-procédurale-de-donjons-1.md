@@ -9,7 +9,7 @@ tags:
 layout: post
 ---
 Bonjour à tous, dans cette série assez courte on va s'intéresser à la génération de donjons de façon procédurale.
-
+On utilisera l'exemple d'un jeu de type top-down shooter.
 # Qu'est-ce que la génération procédurale de donjons ?
 
 Le concept est assez simple à comprendre. A partir de quelques règles, on cherches à générer un donjon, un labyrinthe, une carte, ... de façon algorithmique. L'un des premiers exemples de jeu-vidéo utilisant ce système est Rogue, en 1980.

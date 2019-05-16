@@ -307,3 +307,8 @@ collections:
         widget: object
         fields: 
           - {label: "Email", name: email, widget: string}
+      - label: "Excerpt"
+        name: excerpt
+        widget: object
+        fields:
+          - {label: "depth", name: depth, widget: number, valueType: int}
