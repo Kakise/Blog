@@ -1,29 +1,32 @@
 {
-    "nav":
-    [
-        {
-            "link" : "home",
-            "url" : "/"
-        },
-        {
-            "link": "about",
-            "url": "/about"
-        },
-        {
-            "link": "articles",
-            "url": "/archives"
-        },
-        {
-            "link": "projects",
-            "url": "/projets"
-        },
-        {
-            "link": "contact",
-            "url": "/contact"
-        },
-        {
-            "link": "search",
-            "url": "/search"
-        }
-    ]
+  "nav": [
+    {
+      "link": "home",
+      "url": "/"
+    },
+    {
+      "link": "about",
+      "url": "/about"
+    },
+    {
+      "link": "Photos",
+      "url": "/portfolio"
+    },
+    {
+      "link": "articles",
+      "url": "/archives"
+    },
+    {
+      "link": "projects",
+      "url": "/projets"
+    },
+    {
+      "link": "contact",
+      "url": "/contact"
+    },
+    {
+      "link": "search",
+      "url": "/search"
+    }
+  ]
 }
