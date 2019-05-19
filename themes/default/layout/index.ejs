@@ -42,16 +42,17 @@
                     index: true,
                     class_name: ''
                 }) %>
-                <!--                            <i class="icon-comments"></i> <a-->
-                <!--                                    href="<%- config.url %><%- url_for(post.path) %>#disqus_thread">0</a>-->
                 <span class="meta">
                     <i class="icon-clock-o"></i> <%- readingTime(post.content, 'min.') %>
                     <%- partial('_partial/post/date', {post: post}) %>
+                    <i class="icon-comments"></i> <a
+                            href="<%- config.url %><%- url_for(post.path) %>#disqus_thread">0</a>
                 </span>
                 <%- post.excerpt %>
             </div>
             <hr>
-            <% if (i == 2) { %>
+            <!-- adsense in feed -->
+            <% if ((i == 2 || i == page.posts.length - 1) && config.url == "https://kakise.me") { %>
                 <div class="post-item">
                     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                     <ins class="adsbygoogle"
