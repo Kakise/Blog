@@ -44,275 +44,275 @@ collections:
         field: {label: Image, name: image, widget: image}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
-  - label: "Misc"  
+  - label: "Misc"
     name: "misc"
     editor:
       preview: false
     files:
-    - name: "projects"
-      label: "Projects"
-      file: "source/_data/projects.json"
-      fields:
-        - label: "Project"
-          name: "prj"
-          widget: "list"
-          fields:
-          - {label: "Name", name: name, widget: string}
-          - {label: "Url", name: url, widget: string}
-          - {label: "Description", name: desc, widget: string}
-    - name: "navigation"
-      label: "Menu"
-      file: "source/_data/nav.json"
-      fields:
-        - label: "Top Menu"
-          name: "nav"
-          widget: "list"
-          fields:
-          - {label: "Link Name", name: link, widget: string}
-          - {label: "Url", name: url, widget: string}
-    - name: "social"
-      label: "Social Links"
-      file: "source/_data/social.json"
-      fields:
-        - label: "Social Links"
-          name: "nav"
-          widget: "list"
-          fields:
-          - {label: "Fontawesome Icon", name: link, widget: string}
-          - {label: "Url", name: url, widget: string}
-  - label: "Configuration"  
+      - name: "projects"
+        label: "Projects"
+        file: "source/_data/projects.json"
+        fields:
+          - label: "Project"
+            name: "prj"
+            widget: "list"
+            fields:
+              - {label: "Name", name: name, widget: string}
+              - {label: "Url", name: url, widget: string}
+              - {label: "Description", name: desc, widget: string}
+      - name: "navigation"
+        label: "Menu"
+        file: "source/_data/nav.json"
+        fields:
+          - label: "Top Menu"
+            name: "nav"
+            widget: "list"
+            fields:
+              - {label: "Link Name", name: link, widget: string}
+              - {label: "Url", name: url, widget: string}
+      - name: "social"
+        label: "Social Links"
+        file: "source/_data/social.json"
+        fields:
+          - label: "Social Links"
+            name: "nav"
+            widget: "list"
+            fields:
+              - {label: "Fontawesome Icon", name: link, widget: string}
+              - {label: "Url", name: url, widget: string}
+  - label: "Configuration"
     name: "conf"
     editor:
       preview: false
     extension: "yml"
     format: "yml"
     files:
-    - name: "config"
-      label: "General Configuration"
-      file: "_config.yml"
-      fields:
-        - {label: "Title", name: title, widget: string}
-        - {label: "Subtitle", name: subtitle, widget: string}
-        - {label: "Description", name: description, widget: string}
-        - {label: "Keywords", name: keywords, widget: string}
-        - {label: "Author", name: author, widget: string}
-        - {label: "Language", name: language, widget: string}
-        - {label: "Timezone", name: timezone, widget: string}
-        - {label: "Url", name: url, widget: hidden, default: SITEURL}
-        - {label: "Root", name: root, widget: string}
-        - {label: "Permalink", name: permalink, widget: string}
-        - {label: "Permalink Defaults", name: permalink_defaults, widget: string}
-        - {label: "Source Directory", name: source_dir, widget: hidden, default: source}
-        - {label: "Public Directory", name: public_dir, widget: hidden, default: public}
-        - {label: "Tags Directory", name: tag_dir, widget: hidden, default: tags}
-        - {label: "Archive Directory", name: archive_dir, widget: hidden, default: archives}
-        - {label: "Category Directory", name: source_dir, widget: hidden, default: source}
-        - {label: "Code Directory", name: code_dir, widget: hidden, default: downloads/code}
-        - {label: "i18n Directory", name: i18n_dir, widget: hidden, default: lang}
-        - {label: "Skip Render", name: skip_render, widget: hidden, default: ['admin/config.yml']}
-        - {label: "New Post Name", name: new_post_name, widget: hidden, default: :title.md}
-        - {label: "Default Layout", name: default_layout, widget: hidden, default: post}
-        - {label: "Titlecase", name: titlecase, widget: hidden, default: false}
-        - {label: "External Link", name: external_link, widget: hidden, default: true}
-        - {label: "Filename Case", name: filename_case, widget: hidden, default: 0}
-        - {label: "Render Draft", name: render_drafts, widget: hidden, default: false}
-        - {label: "PostAF", name: post_asset_folder, widget: hidden, default: false}
-        - {label: "Relative Link", name: relative_link, widget: hidden, default: false}
-        - {label: "Future", name: future, widget: hidden, default: true}
-        - label: "Background"
-          name: background
-          widget: object
-          fields:
-            - {label: "Enable?", name: enable, widget: boolean}
-            - {label: "Background Path", name: path, widget: string}
-        - label: "Filename Case"
-          name: filename_case 
-          widget: object
-          fields:
-            - {label: "Enable", name: enable, widget: boolean}
-            - {label: "Line Number", name: line_number, widget: boolean}
-            - {label: "Auto detect", name: auto_detect, widget: boolean}
-            - {label: "Tab Replace", name: tag_repalce, widget: string}
-        - label: "Index Generator"
-          name: index_generator
-          widget: object
-          fields:
-          - {label: "path", name: path, widget: hidden, default: ''}
-          - {label: "Posts per page", name: per_page, widget: number, valueType: int}
-          - {label: "Order By", name: order_by, widget: string}
-        - {label: "Category", name: default_category, widget: hidden, default: uncategorized}
-        - {label: "Category Map", name: category_map, widget: hidden, default: }
-        - {label: "Tag Map", name: tag_map, widget: hidden, default: }
-        - {label: "Date Format", name: date_format, widget: hidden, default: YYYY-MM-DD}
-        - {label: "Time Format", name: time_format, widget: hidden, default: HH:mm:ss}
-        - {label: "Posts per page", name: per_page, widget: string}
-        - {label: "Pagination Dir", name: pagination_dir, widget: hidden, default: page}
-        - {label: "Theme", name: theme, widget: hidden, default: default}
-        - label: "Theme Configuration"
-          name: theme_config
-          widget: object
-          fields:
-            - {label: "Color Scheme", name: colorscheme, widget: string}
-        - label: "Sitemap"
-          name: sitemap
-          widget: object
-          fields:
-          - {label: "Path", name: path, widget: string}
-          - {label: "Template", name: template, widget: string}
-        - label: "Progressive Web App"
-          name: pwa
-          widget: object
-          fields:
-            - label: "Manifest"
-              name: manifest
-              widget: object
-              fields:
-              - {label: "Path", name: path, widget: hidden, default: /manifest.json}
-              - label: "Body"
-                name: body
+      - name: "config"
+        label: "General Configuration"
+        file: "_config.yml"
+        fields:
+          - {label: "Title", name: title, widget: string}
+          - {label: "Subtitle", name: subtitle, widget: string}
+          - {label: "Description", name: description, widget: string}
+          - {label: "Keywords", name: keywords, widget: string}
+          - {label: "Author", name: author, widget: string}
+          - {label: "Language", name: language, widget: string}
+          - {label: "Timezone", name: timezone, widget: string}
+          - {label: "Url", name: url, widget: hidden, default: SITEURL}
+          - {label: "Root", name: root, widget: string}
+          - {label: "Permalink", name: permalink, widget: string}
+          - {label: "Permalink Defaults", name: permalink_defaults, widget: string}
+          - {label: "Source Directory", name: source_dir, widget: hidden, default: source}
+          - {label: "Public Directory", name: public_dir, widget: hidden, default: public}
+          - {label: "Tags Directory", name: tag_dir, widget: hidden, default: tags}
+          - {label: "Archive Directory", name: archive_dir, widget: hidden, default: archives}
+          - {label: "Category Directory", name: source_dir, widget: hidden, default: source}
+          - {label: "Code Directory", name: code_dir, widget: hidden, default: downloads/code}
+          - {label: "i18n Directory", name: i18n_dir, widget: hidden, default: lang}
+          - {label: "Skip Render", name: skip_render, widget: hidden, default: ['admin/config.yml']}
+          - {label: "New Post Name", name: new_post_name, widget: hidden, default: :title.md}
+          - {label: "Default Layout", name: default_layout, widget: hidden, default: post}
+          - {label: "Titlecase", name: titlecase, widget: hidden, default: false}
+          - {label: "External Link", name: external_link, widget: hidden, default: true}
+          - {label: "Filename Case", name: filename_case, widget: hidden, default: 0}
+          - {label: "Render Draft", name: render_drafts, widget: hidden, default: false}
+          - {label: "PostAF", name: post_asset_folder, widget: hidden, default: false}
+          - {label: "Relative Link", name: relative_link, widget: hidden, default: false}
+          - {label: "Future", name: future, widget: hidden, default: true}
+          - label: "Background"
+            name: background
+            widget: object
+            fields:
+              - {label: "Enable?", name: enable, widget: boolean}
+              - {label: "Background Path", name: path, widget: string}
+          - label: "Filename Case"
+            name: filename_case
+            widget: object
+            fields:
+              - {label: "Enable", name: enable, widget: boolean}
+              - {label: "Line Number", name: line_number, widget: boolean}
+              - {label: "Auto detect", name: auto_detect, widget: boolean}
+              - {label: "Tab Replace", name: tag_repalce, widget: string}
+          - label: "Index Generator"
+            name: index_generator
+            widget: object
+            fields:
+              - {label: "path", name: path, widget: hidden, default: ''}
+              - {label: "Posts per page", name: per_page, widget: number, valueType: int}
+              - {label: "Order By", name: order_by, widget: string}
+          - {label: "Category", name: default_category, widget: hidden, default: uncategorized}
+          - {label: "Category Map", name: category_map, widget: hidden, default: }
+          - {label: "Tag Map", name: tag_map, widget: hidden, default: }
+          - {label: "Date Format", name: date_format, widget: hidden, default: YYYY-MM-DD}
+          - {label: "Time Format", name: time_format, widget: hidden, default: HH:mm:ss}
+          - {label: "Posts per page", name: per_page, widget: string}
+          - {label: "Pagination Dir", name: pagination_dir, widget: hidden, default: page}
+          - {label: "Theme", name: theme, widget: hidden, default: default}
+          - label: "Theme Configuration"
+            name: theme_config
+            widget: object
+            fields:
+              - {label: "Color Scheme", name: colorscheme, widget: string}
+          - label: "Sitemap"
+            name: sitemap
+            widget: object
+            fields:
+              - {label: "Path", name: path, widget: string}
+              - {label: "Template", name: template, widget: string}
+          - label: "Progressive Web App"
+            name: pwa
+            widget: object
+            fields:
+              - label: "Manifest"
+                name: manifest
                 widget: object
                 fields:
-                - {label: "Name", name: name, widget: string}
-                - {label: "Short Name", name: short_name, widget: string}
-                - label: "Icons"
-                  name: icons
-                  widget: list
-                  fields:
-                    - {label: "Source", name: src, widget: string}
-                    - {label: "Sizes", name: sizes, widget: string}
-                    - {label: "Type", name: type, widget: string}
-                - {label: "Display", name: display, widget: string}
-                - {label: "Theme Color", name: theme_color, widget: string}
-                - {label: "Background Color", name: background_color, widget: string}
-                - {label: "Start Url", name: start_url, widget: string}
-            - label: "Service Worker"
-              name: serviceWorker
-              widget: object
-              fields:
-                - {label: "Path", name: path, widget: string}
-                - label: "Preload"
-                  name: preload
-                  widget: object
-                  fields:
-                    - {label: "Urls", name: urls, widget: hidden, default: URL_PLACEHOLDER}
-                    - {label: "Posts", name: posts, widget: number, valueType: int}
-                - label: "Options"
-                  name: opts
-                  widget: object
-                  fields:
-                    - {label: "Network Timeout in Seconds", name: networkTimeoutSeconds, widget: number, valueType: int}
-                - label: "Routes"
-                  name: routes
-                  widget: list
-                  fields:
-                    - {label: "Pattern", name: pattern, widget: string}
-                    - {label: "Strategy", name: strategy, widget: string}
-            - {label: "Priority", name: priority, widget: hidden, default: 5}
-        - label: "Critical CSS extractor"
-          name: criticalcss
-          widget: object
-          fields:
-            - {label: "Enable", name: enable, widget: hidden, default: true}
-            - label: "Options"
-              name: critical
-              widget: object
-              fields:
-                - {label: "Minify?", name: minify, widget: boolean}
-            - {label: "httr", name: htmlTagToReplace, widget: hidden, default: "</\\s*head>"}
-            - {label: "PerPageCSS?", name: perPageCss, widget: boolean}
-            - {label: "Priority", name: priority, widget: hidden, default: 4}
-            - {label: "Replacement HTML header", name: replacementHtmlHeader, widget: hidden, default: "<style type=\"text/css\">"}
-            - {label: "Replacement HTML trailer", name: replacementHtmlTrailer, widget: hidden, default: "</style></head>"}
-        - label: "Image Lazyloading"
-          name: lazyload
-          widget: object
-          fields:
-            - {label: "Enable?", name: enable, widget: boolean}
-            - {label: "OnlyPost?", name: onlypost, widget: boolean}
-            - {label: "Loading Image Path", name: loadingImg, widget: string}
-        - label: "RSS Feed"
-          name: feed
-          widget: object
-          fields:
-            - {label: "Type", name: type, widget: hidden, default: atom}
-            - {label: "Path", name: path, widget: hidden, default: atom.xml}
-            - {label: "Limit", name: limit, widget: boolean}
-            - {label: "Hub", name: hub, widget: hidden, default: }
-            - {label: "Content", name: content, widget: hidden, default: }
-            - {label: "Content Limit", name: content_limit, widget: number, valueType: int}
-            - {label: "Content Limit Delimit", name: content_limit_delim, widget: string}
-        - label: "Asciinema"
-          name: asciinema
-          widget: object
-          fields:
-            - {label: "Enable?", name: enable, widget: boolean}
-        - label: "NoFollow"
-          name: nofollow
-          widget: object
-          fields:
-            - {label: "Enable?", name: enable, widget: boolean}
-            - {label: "Exclude", name: exclude, widget: string}
-    - name: "theme"
-      label: "Theme Configuration"
-      file: "themes/default/_config.yml"
-      fields:
-      - {label: "Projects Url", name: projects_url, widget: string}
-      - label: "Logo"
-        name: logo
-        widget: object
-        fields:
-          - {label: "Enabled?", name: enabled, widget: boolean}
-          - {label: "Width", name: width, widget: number, valueType: int}
-          - {label: "Height", name: height, widget: number, valueType: int}
-          - {label: "Url", name: url, widget: string}
-          - {label: "Gravatar?", name: gravatar, widget: boolean}
-      - label: "Favicon"
-        name: favicon
-        widget: object
-        fields:
-          - label: "Desktop"
-            name: desktop
+                  - {label: "Path", name: path, widget: hidden, default: /manifest.json}
+                  - label: "Body"
+                    name: body
+                    widget: object
+                    fields:
+                      - {label: "Name", name: name, widget: string}
+                      - {label: "Short Name", name: short_name, widget: string}
+                      - label: "Icons"
+                        name: icons
+                        widget: list
+                        fields:
+                          - {label: "Source", name: src, widget: string}
+                          - {label: "Sizes", name: sizes, widget: string}
+                          - {label: "Type", name: type, widget: string}
+                      - {label: "Display", name: display, widget: string}
+                      - {label: "Theme Color", name: theme_color, widget: string}
+                      - {label: "Background Color", name: background_color, widget: string}
+                      - {label: "Start Url", name: start_url, widget: string}
+              - label: "Service Worker"
+                name: serviceWorker
+                widget: object
+                fields:
+                  - {label: "Path", name: path, widget: string}
+                  - label: "Preload"
+                    name: preload
+                    widget: object
+                    fields:
+                      - {label: "Urls", name: urls, widget: hidden, default: URL_PLACEHOLDER}
+                      - {label: "Posts", name: posts, widget: number, valueType: int}
+                  - label: "Options"
+                    name: opts
+                    widget: object
+                    fields:
+                      - {label: "Network Timeout in Seconds", name: networkTimeoutSeconds, widget: number, valueType: int}
+                  - label: "Routes"
+                    name: routes
+                    widget: list
+                    fields:
+                      - {label: "Pattern", name: pattern, widget: string}
+                      - {label: "Strategy", name: strategy, widget: string}
+              - {label: "Priority", name: priority, widget: hidden, default: 5}
+          - label: "Critical CSS extractor"
+            name: criticalcss
             widget: object
             fields:
-              - {label: "Url", name: url, widget: string}
-              - {label: "Gravatar?", name: gravatar, widget: boolean}
-          - label: "Android"
-            name: android
+              - {label: "Enable", name: enable, widget: hidden, default: true}
+              - label: "Options"
+                name: critical
+                widget: object
+                fields:
+                  - {label: "Minify?", name: minify, widget: boolean}
+              - {label: "httr", name: htmlTagToReplace, widget: hidden, default: "</\\s*head>"}
+              - {label: "PerPageCSS?", name: perPageCss, widget: boolean}
+              - {label: "Priority", name: priority, widget: hidden, default: 4}
+              - {label: "Replacement HTML header", name: replacementHtmlHeader, widget: hidden, default: "<style type=\"text/css\">"}
+              - {label: "Replacement HTML trailer", name: replacementHtmlTrailer, widget: hidden, default: "</style></head>"}
+          - label: "Image Lazyloading"
+            name: lazyload
             widget: object
             fields:
-              - {label: "Url", name: url, widget: string}
-              - {label: "Gravatar?", name: gravatar, widget: boolean}
-          - label: "Apple"
-            name: apple
+              - {label: "Enable?", name: enable, widget: boolean}
+              - {label: "OnlyPost?", name: onlypost, widget: boolean}
+              - {label: "Loading Image Path", name: loadingImg, widget: string}
+          - label: "RSS Feed"
+            name: feed
             widget: object
             fields:
+              - {label: "Type", name: type, widget: hidden, default: atom}
+              - {label: "Path", name: path, widget: hidden, default: atom.xml}
+              - {label: "Limit", name: limit, widget: boolean}
+              - {label: "Hub", name: hub, widget: hidden, default: }
+              - {label: "Content", name: content, widget: hidden, default: }
+              - {label: "Content Limit", name: content_limit, widget: number, valueType: int}
+              - {label: "Content Limit Delimit", name: content_limit_delim, widget: string}
+          - label: "Asciinema"
+            name: asciinema
+            widget: object
+            fields:
+              - {label: "Enable?", name: enable, widget: boolean}
+          - label: "NoFollow"
+            name: nofollow
+            widget: object
+            fields:
+              - {label: "Enable?", name: enable, widget: boolean}
+              - {label: "Exclude", name: exclude, widget: string}
+      - name: "theme"
+        label: "Theme Configuration"
+        file: "themes/default/_config.yml"
+        fields:
+          - {label: "Projects Url", name: projects_url, widget: string}
+          - label: "Logo"
+            name: logo
+            widget: object
+            fields:
+              - {label: "Enabled?", name: enabled, widget: boolean}
+              - {label: "Width", name: width, widget: number, valueType: int}
+              - {label: "Height", name: height, widget: number, valueType: int}
               - {label: "Url", name: url, widget: string}
               - {label: "Gravatar?", name: gravatar, widget: boolean}
-      - {label: "Highlight Style", name: highlight, widget: string}
-      - {label: "Page Width", name: page_width, widget: number, valueType: int}
-      - {label: "RSS", name: rss, widget: hidden, default: "atom.xml"}
-      - label: "OpenGraph"
-        name: open_graph
-        widget: object
-        fields:
-          - {label: "FB App ID", name: fb_app_id, widget: string}
-          - {label: "FB Admins", name: fb_admins, widget: string}
-          - {label: "Twitter ID", name: twitter_id, widget: string}
-          - {label: "Google+", name: google_plus, widget: string}
-      - label: "Disqus"
-        name: disqus
-        widget: object
-        fields:
-          - {label: "Enabled?", name: enabled, widget: boolean}
-          - {label: "Delayed?", name: enabled, widget: boolean}
-          - {label: "Shortname", name: shortname, widget: string}
-      - label: "Gravatar"
-        name: gravatar
-        widget: object
-        fields: 
-          - {label: "Email", name: email, widget: string}
-      - label: "Excerpt"
-        name: excerpt
-        widget: object
-        fields:
-          - {label: "depth", name: depth, widget: number, valueType: int}
+          - label: "Favicon"
+            name: favicon
+            widget: object
+            fields:
+              - label: "Desktop"
+                name: desktop
+                widget: object
+                fields:
+                  - {label: "Url", name: url, widget: string}
+                  - {label: "Gravatar?", name: gravatar, widget: boolean}
+              - label: "Android"
+                name: android
+                widget: object
+                fields:
+                  - {label: "Url", name: url, widget: string}
+                  - {label: "Gravatar?", name: gravatar, widget: boolean}
+              - label: "Apple"
+                name: apple
+                widget: object
+                fields:
+                  - {label: "Url", name: url, widget: string}
+                  - {label: "Gravatar?", name: gravatar, widget: boolean}
+          - {label: "Highlight Style", name: highlight, widget: string}
+          - {label: "Page Width", name: page_width, widget: number, valueType: int}
+          - {label: "RSS", name: rss, widget: hidden, default: "atom.xml"}
+          - label: "OpenGraph"
+            name: open_graph
+            widget: object
+            fields:
+              - {label: "FB App ID", name: fb_app_id, widget: string}
+              - {label: "FB Admins", name: fb_admins, widget: string}
+              - {label: "Twitter ID", name: twitter_id, widget: string}
+              - {label: "Google+", name: google_plus, widget: string}
+          - label: "Disqus"
+            name: disqus
+            widget: object
+            fields:
+              - {label: "Enabled?", name: enabled, widget: boolean}
+              - {label: "Delayed?", name: enabled, widget: boolean}
+              - {label: "Shortname", name: shortname, widget: string}
+          - label: "Gravatar"
+            name: gravatar
+            widget: object
+            fields:
+              - {label: "Email", name: email, widget: string}
+          - label: "Excerpt"
+            name: excerpt
+            widget: object
+            fields:
+              - {label: "depth", name: depth, widget: number, valueType: int}

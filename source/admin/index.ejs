@@ -5,139 +5,140 @@ layout: false
 <!doctype html>
 <html>
 <head>
-  <link rel="shortcut icon" href="/images/favicon.ico">
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Admin Space</title>
-  <!-- Include the stylesheets from your site here -->
-  <link rel="stylesheet" href="/css/style.css" />
-  <link rel="stylesheet" href="/lib/icons/style.css" />
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Admin Space</title>
+    <!-- Include the stylesheets from your site here -->
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/lib/icons/style.css"/>
 </head>
 <body>
-  <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
-  <script type="text/javascript">
-      function pad(number) {
-          if (number < 10) {
-              return '0' + number;
-          }
-          return number;
-      }
-      var PostPreview = createClass({
-          render: function render() {
-              var date = new Date(this.props.entry.getIn(['data', 'date']));
-              var fdate = date.getUTCFullYear() + '-' + pad(date.getUTCMonth() + 1) + '-' + pad(date.getUTCDate());
-              return h("article", {
-                      className: "post",
-                      itemtype: "http://schema.org/BlogPosting"
-                  },
-                  h(
-                      "style", {
-                          type: "text/css"
-                      },
-                      "html:before, html:after, body:before, body:after{\n" +
-                      "  content: \"\";\n" +
-                      "  background: #000000;\n" +
-                      "  position: fixed;\n" +
-                      "  display: none;\n" +
-                      "  z-index: 5;}"
-                  ),
-                  h(
-                      "div", {
-                          className: "content index my4"
-                      },
-                      h(
-                          "header", {},
-                          h(
-                              "h1", {
-                                  className: "posttitle",
-                                  itemprop: "name headline"
-                              },
-                              this.props.entry.getIn(['data', 'title'])
-                          ),
-                          h(
-                              "div", {
-                                  className: "meta"
-                              },
-                              h(
-                                  "span", {
-                                      className: "author",
-                                      itemprop: "author",
-                                      itemtype: "http://schema.org/Person"
-                                  },
-                                  h(
-                                      "span", {
-                                          itemprop: "name"
-                                      },
-                                      this.props.entry.getIn(['data', 'author'] + " ")
-                                  )
-                              ),
-                              h(
-                                  "div", {
-                                      className: "postdate"
-                                  },
-                                  h(
-                                      "i", {
-                                          className: "icon-calendar"
-                                      },
-                                      " "
-                                  ),
-                                  h(
-                                      "time", {
-                                          itemprop: "datePublished",
-                                          datetime: fdate
-                                      },
-                                      fdate
-                                  )
-                              ),
-                              h(
-                                  "div", {
-                                      className: "article-tag"
-                                  },
-                                  h("i", {
-                                      className: "icon-tag"
-                                  }, " "),
-                                  this.props.entry.getIn(['data', 'tags']).map(function(tag, index) {
-                                      return h('a', {
-                                          className: "tag-link",
-                                          href: "#"
-                                      }, tag+" ");
-                                  })
-                              )
-                          )
-                      ),
-                      h(
-                          "div", {
-                              className: "content",
-                              itemprop: "articleBody"
-                          },
-                          this.props.widgetFor('body')
-                      )
-                  )
-              );
-          }
-      });
-      
-      var PagePreview = createClass({
-          render: function render() {
-              return h("article", {
-                      className: "post",
-                      itemtype: "http://schema.org/BlogPosting"
-                  },
-                  h(
-                      "div", {
-                          className: "content",
-                          itemprop: "articleBody"
-                      },
-                      this.props.widgetFor('body')
-                  )
-              );
-          }
-      });
-      CMS.registerPreviewTemplate("pages", PagePreview);
-      CMS.registerPreviewTemplate("posts", PostPreview);
-      CMS.registerPreviewStyle('/css/style.css');
-      CMS.registerPreviewStyle('/lib/icons/style.css');
-  </script>
+<script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+<script type="text/javascript">
+    function pad(number) {
+        if (number < 10) {
+            return '0' + number;
+        }
+        return number;
+    }
+
+    var PostPreview = createClass({
+        render: function render() {
+            var date = new Date(this.props.entry.getIn(['data', 'date']));
+            var fdate = date.getUTCFullYear() + '-' + pad(date.getUTCMonth() + 1) + '-' + pad(date.getUTCDate());
+            return h("article", {
+                    className: "post",
+                    itemtype: "http://schema.org/BlogPosting"
+                },
+                h(
+                    "style", {
+                        type: "text/css"
+                    },
+                    "html:before, html:after, body:before, body:after{\n" +
+                    "  content: \"\";\n" +
+                    "  background: #000000;\n" +
+                    "  position: fixed;\n" +
+                    "  display: none;\n" +
+                    "  z-index: 5;}"
+                ),
+                h(
+                    "div", {
+                        className: "content index my4"
+                    },
+                    h(
+                        "header", {},
+                        h(
+                            "h1", {
+                                className: "posttitle",
+                                itemprop: "name headline"
+                            },
+                            this.props.entry.getIn(['data', 'title'])
+                        ),
+                        h(
+                            "div", {
+                                className: "meta"
+                            },
+                            h(
+                                "span", {
+                                    className: "author",
+                                    itemprop: "author",
+                                    itemtype: "http://schema.org/Person"
+                                },
+                                h(
+                                    "span", {
+                                        itemprop: "name"
+                                    },
+                                    this.props.entry.getIn(['data', 'author'] + " ")
+                                )
+                            ),
+                            h(
+                                "div", {
+                                    className: "postdate"
+                                },
+                                h(
+                                    "i", {
+                                        className: "icon-calendar"
+                                    },
+                                    " "
+                                ),
+                                h(
+                                    "time", {
+                                        itemprop: "datePublished",
+                                        datetime: fdate
+                                    },
+                                    fdate
+                                )
+                            ),
+                            h(
+                                "div", {
+                                    className: "article-tag"
+                                },
+                                h("i", {
+                                    className: "icon-tag"
+                                }, " "),
+                                this.props.entry.getIn(['data', 'tags']).map(function (tag, index) {
+                                    return h('a', {
+                                        className: "tag-link",
+                                        href: "#"
+                                    }, tag + " ");
+                                })
+                            )
+                        )
+                    ),
+                    h(
+                        "div", {
+                            className: "content",
+                            itemprop: "articleBody"
+                        },
+                        this.props.widgetFor('body')
+                    )
+                )
+            );
+        }
+    });
+
+    var PagePreview = createClass({
+        render: function render() {
+            return h("article", {
+                    className: "post",
+                    itemtype: "http://schema.org/BlogPosting"
+                },
+                h(
+                    "div", {
+                        className: "content",
+                        itemprop: "articleBody"
+                    },
+                    this.props.widgetFor('body')
+                )
+            );
+        }
+    });
+    CMS.registerPreviewTemplate("pages", PagePreview);
+    CMS.registerPreviewTemplate("posts", PostPreview);
+    CMS.registerPreviewStyle('/css/style.css');
+    CMS.registerPreviewStyle('/lib/icons/style.css');
+</script>
 </body>
 </html>
 {% endraw %}
