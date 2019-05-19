@@ -31,11 +31,11 @@
     <% } %>
 </section>
 
-<section id="writing">
+<main id="writing">
     <span class="h1"><a href="<%- url_for("archives") %>"><%= __('index.articles') %></a></span>
-    <ul class="post-list">
+    <div class="post-list">
         <% page.posts.each(function(post, i){ %>
-            <li class="post-item">
+            <div class="post-item">
                 <div class="max-width-4 mx-auto">
                     <div class="clearfix">
                         <div class="col col-4"><%- partial('_partial/post/title', {
@@ -51,12 +51,12 @@
                         <div class="col col-8"><%- post.excerpt %></div>
                     </div>
                 </div>
-            </li>
+            </div>
             <hr>
         <% }); %>
-    </ul>
+    </div>
     <%- partial('_partial/pagination') %>
-</section>
+</main>
 
 <% if (site.data.projects) { %>
     <section id="projects">
