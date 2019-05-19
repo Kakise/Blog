@@ -18,7 +18,6 @@
         <%- page.content %>
     </div>
 </article>
-<%- partial('_partial/comments') %>
 <!-- adsense in article -->
 <% if (config.url == "https://kakise.me") { %>
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -32,3 +31,4 @@
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 <% } %>
+<%- partial('_partial/comments') %>
