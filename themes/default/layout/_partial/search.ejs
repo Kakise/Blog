@@ -1,31 +1,40 @@
-<section id="search">
-    <form>
-        <script>
-            (function () {
-                var cx = 'partner-pub-1368620516057306:3601805374';
-                var gcse = document.createElement('script');
-                gcse.type = 'text/javascript';
-                gcse.async = true;
-                gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-                var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(gcse, s);
-            })();
-        </script>
-        <gcse:searchbox-only></gcse:searchbox-only>
-    </form>
-    <div id="search-result">
-        <script>
-            (function () {
-                var cx = 'partner-pub-1368620516057306:3601805374';
-                var gcse = document.createElement('script');
-                gcse.type = 'text/javascript';
-                gcse.async = true;
-                gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-                var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(gcse, s);
-            })();
-        </script>
-        <gcse:searchresults-only></gcse:searchresults-only>
-    </div>
-    <p class="search-no-result"><%= __('search.no_results') %></p>
-</section>
+<% if (config.url == "https://kakise.me") { %>
+    <section id="search">
+        <form>
+            <script>
+                (function () {
+                    var cx = 'partner-pub-1368620516057306:3601805374';
+                    var gcse = document.createElement('script');
+                    gcse.type = 'text/javascript';
+                    gcse.async = true;
+                    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(gcse, s);
+                })();
+            </script>
+            <gcse:searchbox-only></gcse:searchbox-only>
+        </form>
+        <div id="search-result">
+            <script>
+                (function () {
+                    var cx = 'partner-pub-1368620516057306:3601805374';
+                    var gcse = document.createElement('script');
+                    gcse.type = 'text/javascript';
+                    gcse.async = true;
+                    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(gcse, s);
+                })();
+            </script>
+            <gcse:searchresults-only></gcse:searchresults-only>
+        </div>
+    </section>
+<% } else { %>
+    <section id="search">
+        <form>
+            <input type="text" class="search-input" id="search-input" placeholder="<%= __('search.search') %>">
+        </form>
+        <div id="search-result"></div>
+        <p class="search-no-result"><%= __('search.no_results') %></p>
+    </section>
+<% } %>
