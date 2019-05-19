@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html<%= config.language ? " lang=" + config.language.substring(0, 2) : ""%>>
+<html<%= config.language ? " lang=" + config.language.substring(0, 2) : "" %>>
 <%- partial('_partial/head') %>
 <body class="max-width mx-auto px3">
-    <% if (config.background.enable) { %>
+<% if (config.background.enable) { %>
     <div id="background">
-        <img src="<%= config.background.path %>" class="stretch" alt="bg image" />
+        <img src="<%= config.background.path %>" class="stretch" alt="bg image"/>
     </div>
+<% } %>
+<% if (is_post()) { %>
+    <%- partial('_partial/post/actions_desktop') %>
+<% } %>
+<div class="content index my4">
+    <% if (!is_post()) { %>
+        <%- partial('_partial/header') %>
     <% } %>
-    <% if (is_post()) { %>
-      <%- partial('_partial/post/actions_desktop') %>
-    <% } %>
-    <div class="content index my4">
-        <% if (!is_post()) { %>
-          <%- partial('_partial/header') %>
-        <% } %>
-        <%- body %>
-    </div>
-    <% if (is_post()) { %>
-      <%- partial('_partial/post/actions_mobile') %>
-    <% } %>
-    <%- partial('_partial/footer') %>
+    <%- body %>
+</div>
+<% if (is_post()) { %>
+    <%- partial('_partial/post/actions_mobile') %>
+<% } %>
+<%- partial('_partial/footer') %>
 <%- partial('_partial/styles') %>
 <%- partial('_partial/scripts') %>
 </body>

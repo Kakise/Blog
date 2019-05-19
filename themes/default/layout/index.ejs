@@ -34,23 +34,21 @@
 <main id="writing">
     <span class="h1"><a href="<%- url_for("archives") %>"><%= __('index.articles') %></a></span>
     <div class="post-list">
+        <hr>
         <% page.posts.each(function(post, i){ %>
             <div class="post-item">
-                <div class="max-width-4 mx-auto">
-                    <div class="clearfix">
-                        <div class="col col-4"><%- partial('_partial/post/title', {
-                                post: post,
-                                index: true,
-                                class_name: ''
-                            }) %><br>
-                            <i class="icon-comments"></i> <a
-                                    href="<%- config.url %><%- url_for(post.path) %>#disqus_thread">0</a>
-                            &nbsp;&nbsp;<i class="icon-clock-o"></i> <%- readingTime(post.content, 'min.') %>
-                            &nbsp; <%- partial('_partial/post/date', {post: post}) %>
-                        </div>
-                        <div class="col col-8"><%- post.excerpt %></div>
-                    </div>
-                </div>
+                <%- partial('_partial/post/title', {
+                    post: post,
+                    index: true,
+                    class_name: ''
+                }) %>
+                <!--                            <i class="icon-comments"></i> <a-->
+                <!--                                    href="<%- config.url %><%- url_for(post.path) %>#disqus_thread">0</a>-->
+                <span class="meta">
+                    <i class="icon-clock-o"></i> <%- readingTime(post.content, 'min.') %>
+                    <%- partial('_partial/post/date', {post: post}) %>
+                </span>
+                <%- post.excerpt %>
             </div>
             <hr>
         <% }); %>

@@ -1,24 +1,26 @@
 <header id="header">
-  <a href="<%- url_for("/") %>">
-  <% if (theme.logo && theme.logo.enabled) { %>
-    <% if (theme.gravatar.email && theme.logo.gravatar) { %>
-      <div id="logo" style="background-image: url(<%- gravatar(theme.gravatar.email) %>);"></div>
-    <% } else { %>
-      <div id="logo" style="background-image: url(<%- url_for(theme.logo.url) %>);"></div>
-    <% } %>
-  <% } %>
-    <div id="title">
-      <h1><%= config.title %></h1>
+    <a href="<%- url_for("/") %>">
+        <% if (theme.logo && theme.logo.enabled) { %>
+            <% if (theme.gravatar.email && theme.logo.gravatar) { %>
+                <div id="logo" style="background-image: url(<%- gravatar(theme.gravatar.email) %>);"></div>
+            <% } else { %>
+                <div id="logo" style="background-image: url(<%- url_for(theme.logo.url) %>);"></div>
+            <% } %>
+        <% } %>
+        <div id="title">
+            <h1><%= config.title %></h1>
+        </div>
+    </a>
+    <div id="nav">
+        <ul>
+            <li class="icon">
+                <a href="#"><i class="icon-2x icon-bars"></i></a>
+            </li>
+            <% for (var i in site.data.nav.nav) { %>
+                <li>
+                    <a href="<%- site.data.nav.nav[i].url %>"><%= __('nav.' + site.data.nav.nav[i].link).replace("nav.", "") %></a>
+                </li>
+            <% } %>
+        </ul>
     </div>
-  </a>
-  <div id="nav">
-    <ul>
-      <li class="icon">
-        <a href="#"><i class="icon-2x icon-bars"></i></a>
-      </li>
-      <% for (var i in site.data.nav.nav) { %> 
-        <li><a href="<%- site.data.nav.nav[i].url %>"><%= __('nav.'+site.data.nav.nav[i].link).replace("nav.", "") %></a></li>
-      <% } %>
-    </ul>
-  </div>
 </header>

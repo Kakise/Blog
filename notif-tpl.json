@@ -1,6 +1,8 @@
 {
   "app_id": "",
-  "included_segments": ["All"],
+  "included_segments": [
+    "All"
+  ],
   "contents": {
     "en": "Hey, come to see what´s new",
     "pt": "Olá, venha conferir as novidades",

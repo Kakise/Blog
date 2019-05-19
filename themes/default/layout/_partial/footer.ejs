@@ -1,14 +1,17 @@
 <footer id="footer">
-  <div class="footer-left">
-    <%= __('footer.copyright') %> &copy; <%= new Date().getFullYear() %> <%= config.author || config.title %>  |  <a href="/atom.xml"><i class="icon-rss-square"></i></a>
-  </div>
-  <div class="footer-right">
-    <nav>
-      <ul>
-        <% for (var i in site.data.nav.nav) { %> 
-          <li><a href="<%- site.data.nav.nav[i].url %>"><%= __('nav.'+site.data.nav.nav[i].link).replace("nav.", "") %></a></li>
-        <% } %>
-      </ul>
-    </nav>
-  </div>
+    <div class="footer-left">
+        <%= __('footer.copyright') %> &copy; <%= new Date().getFullYear() %> <%= config.author || config.title %> | <a
+                href="/atom.xml"><i class="icon-rss-square"></i></a>
+    </div>
+    <div class="footer-right">
+        <nav>
+            <ul>
+                <% for (var i in site.data.nav.nav) { %>
+                    <li>
+                        <a href="<%- site.data.nav.nav[i].url %>"><%= __('nav.' + site.data.nav.nav[i].link).replace("nav.", "") %></a>
+                    </li>
+                <% } %>
+            </ul>
+        </nav>
+    </div>
 </footer>

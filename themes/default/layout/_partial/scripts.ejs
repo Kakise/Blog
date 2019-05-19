@@ -1,17 +1,19 @@
 <!-- css defer -->
-    <script>
-      var loadDeferredStyles = function() {
+<script>
+    var loadDeferredStyles = function () {
         var addStylesNode = document.getElementById("deferred-styles");
         var replacement = document.createElement("div");
         replacement.innerHTML = addStylesNode.textContent;
-          document.body.appendChild(replacement);
+        document.body.appendChild(replacement);
         addStylesNode.parentElement.removeChild(addStylesNode);
-      };
-      var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
-          window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
-      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-      else window.addEventListener('load', loadDeferredStyles);
-    </script>
+    };
+    var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+        window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+    if (raf) raf(function () {
+        window.setTimeout(loadDeferredStyles, 0);
+    });
+    else window.addEventListener('load', loadDeferredStyles);
+</script>
 <!-- jquery -->
 <%- js('lib/jquery/jquery.min') %>
 <%- js('lib/justified-gallery/js/jquery.justifiedGallery.min.js') %>
@@ -20,10 +22,10 @@
 <% if (config.search && (page.search || page.type === "search")){ %>
     <%- js('js/search.js') %>
     <script type="text/javascript">
-        $(function() {
+        $(function () {
             var $inputArea = $("input#search-input");
             var $resultArea = document.querySelector("div#search-result");
-            $inputArea.focus(function() {
+            $inputArea.focus(function () {
                 var search_path = "<%= config.search.path %>";
                 if (search_path.length == 0) {
                     search_path = "search.xml";
@@ -31,65 +33,66 @@
                 var path = "<%= config.root %>" + search_path;
                 searchFunc(path, 'search-input', 'search-result');
             });
-            $inputArea.keydown(function(e) {
+            $inputArea.keydown(function (e) {
                 if (e.which == 13) {
                     e.preventDefault();
                 }
             });
-            var observer = new MutationObserver(function(mutationsList, observer) {
+            var observer = new MutationObserver(function (mutationsList, observer) {
                 if (mutationsList[0].addedNodes) {
                     $(".search-no-result").show(200);
                 } else {
                     $(".search-no-result").hide();
                 }
             });
-            observer.observe($resultArea, { childList: true });
+            observer.observe($resultArea, {childList: true});
         });
     </script>
 <% } %>
 <!-- Disqus Comments -->
 <% if (theme.disqus.enabled && theme.disqus.shortname && page.comments){ %>
     <script type="text/javascript">
-    cookieValue = document.cookie.match(/(;)?cookiebar=([^;]*);?/)[2];
-    if (cookieValue == 'CookieAllowed') {
-        var disqus_shortname = '<%= theme.disqus.shortname %>';
-        $(document).ready(function() {
+        cookieValue = document.cookie.match(/(;)?cookiebar=([^;]*);?/)[2];
+        if (cookieValue == 'CookieAllowed') {
+            var disqus_shortname = '<%= theme.disqus.shortname %>';
+            $(document).ready(function () {
 
-            if(/\#disqus_thread/.test(location.hash)){
-                $.ajax({
-                    type: "GET",
-                    url: "//" + disqus_shortname + ".disqus.com/embed.js",
-                    dataType: "script",
-                    cache: true
+                if (/\#disqus_thread/.test(location.hash)) {
+                    $.ajax({
+                        type: "GET",
+                        url: "//" + disqus_shortname + ".disqus.com/embed.js",
+                        dataType: "script",
+                        cache: true
+                    });
+                    $('#disqus-load').fadeOut();
+                }
+
+                $('#disqus-load').on('click', function () {
+                    $.ajax({
+                        type: "GET",
+                        url: "//" + disqus_shortname + ".disqus.com/embed.js",
+                        dataType: "script",
+                        cache: true
+                    });
+                    $(this).fadeOut();
                 });
-                $('#disqus-load').fadeOut();
-            }
 
-            $('#disqus-load').on('click', function(){ 
-                $.ajax({
-                    type: "GET",
-                    url: "//" + disqus_shortname + ".disqus.com/embed.js",
-                    dataType: "script",
-                    cache: true
-                });
-                $(this).fadeOut();
-            });
-
-            <% if (!theme.disqus.delayed){ %>
-                (function() {
+                <% if (!theme.disqus.delayed){ %>
+                (function () {
                     var d = document, s = d.createElement('script');
 
-                    s.src = '//' +disqus_shortname+ '.disqus.com/embed.js';
+                    s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
 
                     s.setAttribute('data-timestamp', +new Date());
                     (d.head || d.body).appendChild(s);
                 })();
                 $('#disqus-load').fadeOut();
-            <% } %>
-        });
-      }
+                <% } %>
+            });
+        }
     </script>
 <% } %>
 <% if (is_home()) { %>
-    <script id="dsq-count-scr" src="//<%= theme.disqus.shortname %>.disqus.com/count.js" type="text/javascript"></script>
+    <script id="dsq-count-scr" src="//<%= theme.disqus.shortname %>.disqus.com/count.js"
+            type="text/javascript"></script>
 <% } %>
