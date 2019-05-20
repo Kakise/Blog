@@ -28,17 +28,19 @@ function fromDir(startPath, filter, callback) {
 
 fromDir('./public', /\.html$/, function (filename) {
     console.log('-- found: ', filename);
-    content.push("./" + filename);
+    content.push(path.resolve(filename));
 });
 
 fromDir('./public', /\.js$/, function (filename) {
     console.log('-- found: ', filename);
-    content.push("./" + filename);
+    content.push(path.resolve(filename));
 });
 
 fromDir('./public', /\.css$/, function (filename) {
     console.log('-- found: ', filename);
-    content.push("./" + filename);
+    content.push(path.resolve(filename));
 });
+
+console.log(content)
 
 purify(content, "", options);
