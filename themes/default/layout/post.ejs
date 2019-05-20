@@ -2,13 +2,13 @@
     <header>
         <%- partial('_partial/post/title', {post: page, index: false, class_name: 'posttitle'}) %>
         <div class="meta">
-      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <span itemprop="name">
-            <% if (page.author) { %><%- page.author %>
-            <% } else { %><%- config.title %>
-            <% } %>
-        </span>
-      </span>
+            <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <span itemprop="name">
+                    <% if (page.author) { %><%- page.author %>
+                    <% } else { %><%- config.title %>
+                    <% } %>
+                </span>
+            </span>
             <%- partial('_partial/post/date', {post: page, class_name: 'postdate'}) %>
             <%- partial('_partial/post/tag') %>
         </div>
@@ -16,19 +16,19 @@
     <%- partial('_partial/post/gallery') %>
     <div class="content" itemprop="articleBody">
         <%- page.content %>
+        <!-- adsense in article -->
+        <% if (config.url == "https://kakise.me") { %>
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <ins class="adsbygoogle"
+                 style="display:block; text-align:center;"
+                 data-ad-layout="in-article"
+                 data-ad-format="fluid"
+                 data-ad-client="ca-pub-1368620516057306"
+                 data-ad-slot="9653397771"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        <% } %>
     </div>
 </article>
-<!-- adsense in article -->
-<% if (config.url == "https://kakise.me") { %>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <ins class="adsbygoogle"
-         style="display:block; text-align:center;"
-         data-ad-layout="in-article"
-         data-ad-format="fluid"
-         data-ad-client="ca-pub-1368620516057306"
-         data-ad-slot="9653397771"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-<% } %>
 <%- partial('_partial/comments') %>
