@@ -77,7 +77,7 @@ pwa:
 criticalcss:
   critical:
     minify: true
-  enable: true
+  enable: false
   htmlTagToReplace: </\s*head>
   perPageCss: false
   priority: 4
