@@ -15,7 +15,7 @@
     else window.addEventListener('load', loadDeferredStyles);
 </script>
 <!-- jquery -->
-<script defer type="text/javascript" src="lib/jquery/jquery.min"></script>
+<script defer type="text/javascript" src="lib/jquery/jquery.min.js"></script>
 <script defer type="text/javascript" src="lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
 <script defer type="text/javascript" src="js/main"></script>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -52,7 +52,7 @@
 <% } %>
 <!-- Disqus Comments -->
 <% if (theme.disqus.enabled && theme.disqus.shortname && page.comments){ %>
-    <script defer type="text/javascript">
+    <script type="text/javascript">
         cookieValue = document.cookie.match(/(;)?cookiebar=([^;]*);?/)[2];
         if (cookieValue == 'CookieAllowed') {
             var disqus_shortname = '<%= theme.disqus.shortname %>';
