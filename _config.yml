@@ -98,3 +98,5 @@ asciinema:
 nofollow:
   enable: true
   exclude: yy
+excerpt:
+  depth: 1
