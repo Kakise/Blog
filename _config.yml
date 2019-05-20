@@ -79,7 +79,7 @@ criticalcss:
     minify: true
   enable: true
   htmlTagToReplace: </\s*head>
-  perPageCss: false
+  perPageCss: true
   priority: 4
   replacementHtmlHeader: <style type="text/css">
   replacementHtmlTrailer: </style></head>
@@ -94,7 +94,7 @@ feed:
   path: atom.xml
   type: atom
 asciinema:
-  enable: true
+  enable: false
 nofollow:
   enable: true
   exclude: yy
