@@ -52,7 +52,7 @@
 <% } %>
 <!-- Disqus Comments -->
 <% if (theme.disqus.enabled && theme.disqus.shortname && page.comments){ %>
-    <script type="text/javascript">
+    <script defer type="text/javascript">
         cookieValue = document.cookie.match(/(;)?cookiebar=([^;]*);?/)[2];
         if (cookieValue == 'CookieAllowed') {
             var disqus_shortname = '<%= theme.disqus.shortname %>';
