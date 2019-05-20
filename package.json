@@ -58,7 +58,6 @@
     "hexo-renderer-sass": "^0.3.2",
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.2.2",
-    "js-yaml": "^3.12.2",
-    "purify-css": "^1.2.5"
+    "js-yaml": "^3.12.2"
   }
 }
