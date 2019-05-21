@@ -36,7 +36,6 @@
         <span class="h1"><a href="<%- url_for("archives") %>"><%= __('index.articles') %></a></span>
     </header>
     <div class="post-list">
-        <hr>
         <% page.posts.each(function(post, i){ %>
             <div class="post-item">
                 <%- partial('_partial/post/title', {
@@ -52,8 +51,10 @@
                 </span>
                 <%- post.excerpt %>
             </div>
-            <hr>
-            <% if ((i % 3 == 2 || (i == page.posts.length - 1 && page.posts.length - 1 < 10)) && config.url == "https://kakise.me") { %>
+            <% if (i != page.posts.length - 1) { %>
+                <hr>
+            <% } %>
+            <% if (i % 3 == 2 && i != page.posts.length - 1 && config.url == "https://kakise.me") { %>
                 <!-- adsense in feed -->
                 <ins class="adsbygoogle"
                      style="display:block"
@@ -61,13 +62,13 @@
                      data-ad-layout-key="-hg-2b+3p+r-f"
                      data-ad-client="ca-pub-1368620516057306"
                      data-ad-slot="4875003371"></ins>
-                    <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
-                <hr>
-            <% } %>
-        <% }); %>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+    </div>
+    <hr>
+    <% } %>
+    <% }); %>
     </div>
     <%- partial('_partial/pagination') %>
 </main>
