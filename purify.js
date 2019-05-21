@@ -1,7 +1,10 @@
 const purify = require("purify-css")
 var content = []
+var css = []
 var options = {
-    output: 'public/src/style-clean.css'
+    output: 'public/css/style-clean.css',
+    info: true,
+    minify: true
 };
 
 var path = require('path'), fs = require('fs');
@@ -28,17 +31,19 @@ function fromDir(startPath, filter, callback) {
 
 fromDir('./public', /\.html$/, function (filename) {
     console.log('-- found: ', filename);
-    content.push("./" + filename);
+    content.push(path.relative('./', filename));
 });
 
 fromDir('./public', /\.js$/, function (filename) {
     console.log('-- found: ', filename);
-    content.push("./" + filename);
+    content.push(path.relative('./', filename));
 });
 
 fromDir('./public', /\.css$/, function (filename) {
     console.log('-- found: ', filename);
-    content.push("./" + filename);
+    css.push(path.relative('./', filename));
 });
 
-purify(content, "", options);
+console.log(content)
+
+purify(content, css, options);
