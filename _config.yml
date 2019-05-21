@@ -84,7 +84,7 @@ criticalcss:
   priority: 4
   replacementHtmlHeader: <style type="text/css">
   replacementHtmlTrailer: </style></head>
-all_minifier: true
+all_minifier: false
 lazyload:
   enable: true
   loadingImg: /images/loading.gif
