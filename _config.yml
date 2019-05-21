@@ -77,12 +77,14 @@ pwa:
 criticalcss:
   critical:
     minify: true
-  enable: false
+    css: public/css/style.css
+  enable: true
   htmlTagToReplace: </\s*head>
   perPageCss: false
   priority: 4
   replacementHtmlHeader: <style type="text/css">
   replacementHtmlTrailer: </style></head>
+all_minifier: true
 lazyload:
   enable: true
   loadingImg: /images/loading.gif
@@ -93,8 +95,6 @@ feed:
   limit: true
   path: atom.xml
   type: atom
-asciinema:
-  enable: false
 nofollow:
   enable: true
   exclude: yy
