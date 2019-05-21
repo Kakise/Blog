@@ -1,3 +1,5 @@
+// Script to remove all unnecessary css from the css source files
+
 const purify = require("purify-css")
 var content = []
 var css = []
@@ -10,9 +12,6 @@ var options = {
 var path = require('path'), fs = require('fs');
 
 function fromDir(startPath, filter, callback) {
-
-    //console.log('Starting from dir '+startPath+'/');
-
     if (!fs.existsSync(startPath)) {
         console.log("no dir ", startPath);
         return;

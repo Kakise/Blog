@@ -148,6 +148,7 @@ collections:
           - {label: "Posts per page", name: per_page, widget: string}
           - {label: "Pagination Dir", name: pagination_dir, widget: hidden, default: page}
           - {label: "Theme", name: theme, widget: hidden, default: default}
+          - {label: "All Minifier", name: all_minifier, widget: hidden, valueType: "true"}
           - label: "Theme Configuration"
             name: theme_config
             widget: object
@@ -218,6 +219,7 @@ collections:
                 widget: object
                 fields:
                   - {label: "Minify?", name: minify, widget: boolean}
+                  - {label: "css", name: css, widget: hidden, default: "public/css/style.css"}
               - {label: "httr", name: htmlTagToReplace, widget: hidden, default: "</\\s*head>"}
               - {label: "PerPageCSS?", name: perPageCss, widget: boolean}
               - {label: "Priority", name: priority, widget: hidden, default: 4}
@@ -241,17 +243,17 @@ collections:
               - {label: "Content", name: content, widget: hidden, default: }
               - {label: "Content Limit", name: content_limit, widget: number, valueType: int}
               - {label: "Content Limit Delimit", name: content_limit_delim, widget: string}
-          - label: "Asciinema"
-            name: asciinema
-            widget: object
-            fields:
-              - {label: "Enable?", name: enable, widget: boolean}
           - label: "NoFollow"
             name: nofollow
             widget: object
             fields:
               - {label: "Enable?", name: enable, widget: boolean}
               - {label: "Exclude", name: exclude, widget: string}
+          - label: "Excerpt"
+            name: excerpt
+            widget: object
+            fields:
+              - {label: "depth", name: depth, widget: number, valueType: int}
       - name: "theme"
         label: "Theme Configuration"
         file: "themes/default/_config.yml"
@@ -311,8 +313,3 @@ collections:
             widget: object
             fields:
               - {label: "Email", name: email, widget: string}
-          - label: "Excerpt"
-            name: excerpt
-            widget: object
-            fields:
-              - {label: "depth", name: depth, widget: number, valueType: int}
