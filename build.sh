@@ -34,4 +34,4 @@ sed -i "s%        - URL_PLACEHOLDER%$URLS_PWA%g" _config.yml
 
 hexo generate
 
-node purify.js
+node purify
