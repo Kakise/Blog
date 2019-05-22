@@ -81,10 +81,26 @@ criticalcss:
   enable: true
   htmlTagToReplace: </\s*head>
   perPageCss: false
-  priority: 4
+  priority: 1
   replacementHtmlHeader: <style type="text/css">
   replacementHtmlTrailer: </style></head>
-all_minifier: true
+asset_pipeline:
+  revisioning:
+    enable: false
+  clean_css:
+    enable: true
+  uglify_js:
+    enable: true
+  imagemin:
+    enable: true
+    interlaced: true
+    multipass: true
+    optimizationLevel: 3
+    pngquant: true
+    progressive: true
+  html_minifier:
+    enable: true
+    ignore_error: true
 lazyload:
   enable: true
   loadingImg: /images/loading.gif

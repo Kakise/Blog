@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "hexo": "^3.8.0",
-    "hexo-all-minifier": "^0.5.3",
+    "hexo-asset-pipeline": "^1.8.0",
     "hexo-autonofollow": "^1.0.1",
     "hexo-critical-css": "git+https://github.com/Kakise/hexo-critical-css.git",
     "hexo-excerpt": "^1.1.4",
@@ -58,6 +58,9 @@
     "hexo-renderer-sass": "^0.3.2",
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.2.2",
+    "imagemin": "^6.1.0",
+    "imagemin-jpegtran": "^6.0.0",
+    "imagemin-pngquant": "^7.0.0",
     "js-yaml": "^3.12.2",
     "purify-css": "^1.2.5"
   }
