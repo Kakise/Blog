@@ -7,6 +7,7 @@ tags:
   - bandai
   - retro
 layout: post
+photos: /images/tamagotchi21024x576.jpg
 ---
 Et voilà, enfin, les tamagotchis font leur grand retour en France ! Mais si, vous vous souvenez, ces petits œufs tout mignon qu'on avait en primaire et au collège ! Si vous êtes nés dans les années 90, il est clair que vous en avez entendu parler !
 

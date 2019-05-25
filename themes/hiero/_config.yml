@@ -19,7 +19,6 @@ keywords: ""
 # Put your favicon.ico into `hexo-site/themes/hiero/source/` directory.
 favicon: css/images/favicon.ico
 
-
 # Put your avatar.jpg into `hexo-site/themes/hiero/source/` directory.
 # url is target link (E.g. `url: https://hexo.io/logo.svg` or `url: css/images/mylogo.jpg`)
 avatar:
@@ -31,11 +30,11 @@ avatar:
 
 
 # AboutPage background
-about_big_image: [css/images/pose.jpg, https://source.unsplash.com/collection/954550/1920x1080]
+about_big_image: []
 
 
 # Homepage thumbnail
-random_thumb: false
+random_thumb: true
 
 
 # Post Article's Content
