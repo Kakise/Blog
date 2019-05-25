@@ -1,6 +1,6 @@
 ---
 title: 'CaptainFact: pour ne plus se faire avoir par les fake news !'
-date: '2019-05-24'
+date: '2019-05-25'
 author: Kakise
 tags:
   - news
@@ -9,7 +9,6 @@ tags:
   - élections
   - infox
 layout: post
-photos: /images/captainfact-1.png
 ---
 Ces derniers temps, on entends de plus en plus parler des fake news (ou infox en français). De grands acteurs tels que Facebook et Google mènent en ce moment une véritable lutte contre les fake news. Pourtant, [d'après une étude de Stanford](http://web.stanford.edu/~gentzkow/research/fakenews.pdf), bien que les infox étaient plus performantes que les infos provenant de médias traditionnels, leur impact était assez faible et seulement 1,2% des américains sondés étaient impactés par des infox, lors des élections américaines.
 
