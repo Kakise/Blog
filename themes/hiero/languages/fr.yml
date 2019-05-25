@@ -1,0 +1,30 @@
+home: Accueil
+archives: Archives
+about: A propos
+categories: Catégories
+search: Recherche
+tags: Mots-Clés
+tagcloud: Nuage de Mots-Clés
+tweets: Tweets
+prev: Précédent
+next: Suivant
+comment: Commentaires
+archive_a: Archives
+archive_b: "Archives: %s"
+page: Page %d
+recent_posts: Articles récents
+newer: Plus récent
+older: Plus ancien
+share: Partager
+theme_by: Theme by
+rss_feed: Flux RSS
+category: Catégorie
+tag: Mot-clé
+connect: 'Nous Suivre'
+post_total_count: Il y a %d articles au total.
+read_more: Continuer à lire →
+contents: Contenus
+none: Aucun
+posted_on: Publié le
+donation:
+  button_text: 'Donner'
