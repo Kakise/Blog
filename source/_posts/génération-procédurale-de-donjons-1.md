@@ -7,6 +7,7 @@ tags:
   - algo
   - pcg
 layout: post
+photos: /images/wfc_example.png
 ---
 Bonjour à tous, dans cette série assez courte on va s'intéresser à la génération de donjons de façon procédurale.
 On utilisera l'exemple d'un jeu de type top-down shooter.

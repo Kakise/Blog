@@ -5,6 +5,7 @@ author: Kakise
 tags:
   - maths
 layout: post
+photos: https://ucarecdn.com/7785a711-58fd-4854-b0ac-c7815056f2f6/
 ---
 Ces derniers temps on a de plus en plus de vidéos YouTube "éducatives"/"scientifiques". Le problème avec ces vidéos, sont les erreurs qui peuvent s'y trouver, et je vais te le montrer !
 

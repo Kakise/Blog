@@ -5,6 +5,7 @@ author: Kakise
 tags:
   - lifestyle
 layout: post
+photos: /images/pomodorotimer.jpg
 ---
 Ces derniers temps, j'avais beaucoup de mal à enchaîner plusieurs heures de travail, pourtant, ça fait longtemps que je suis habitué à un rythme très soutenu où j'enchaîne facilement 5/6h sans pause. Du coup, à la place de continuer comme ça, j'ai cherché sur internet une nouvelle façon de faire. Et c'est comme ça que je suis très vite tombé sur la méthode pomodoro.
 

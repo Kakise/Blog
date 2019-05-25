@@ -7,6 +7,7 @@ tags:
   - médecine
   - biologie
 layout: post
+photos: (/images/multidrug-resistant_klebsiella_pneumoniaeand_neutrophil.bmp.jpg
 ---
 > Les antibiotiques, c'est pas automatique.
 
@@ -20,7 +21,7 @@ Pour commencer cet article, je vais d'abord vous parler des bactéries et de leu
 
 Le terme "bactérie" est le nom facile pour désigner des organismes unicellulaires sans noyau. Ça ressemble plus ou moins à ça:
 
-![Image de 2 bactéries sous le domaine publique.](/images/multidrug-resistant_klebsiella_pneumoniaeand_neutrophil.bmp.jpg)
+![Image de 2 bactéries dans le domaine publique.](/images/multidrug-resistant_klebsiella_pneumoniaeand_neutrophil.bmp.jpg)
 
 Deux _Klebsiella pneumoniae_ en plein "combat" avec un globule blanc.
 
