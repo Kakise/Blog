@@ -5,6 +5,7 @@ categories:
   - Ma vie
 date: 2018-04-20 01:45:30
 tags:
+photos: /images/scr_colab.png
 ---
 
 Oui, vous avez bien lu. J'ai décidé de passer d'un Macbook Pro à un Chromebook. Mais pourquoi me diriez-vous? La robustesse, entre autres. L'éco-système Google que je préfère à celui d'Apple. Et d'autres raisons plus ou moins similaires.

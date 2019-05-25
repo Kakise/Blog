@@ -7,6 +7,7 @@ tags:
   - chrome os
   - chrome
 layout: post
+photos: /images/screenshot-2018-05-02-at-7.20.41-pm.png
 ---
 > Run Linux tools, editors, and IDEs on your Chromebook.
 
