@@ -89,12 +89,6 @@ index_widgets:
 archive_type: 'monthly'
 show_count: true
 
-# Google Webmaster tools verification setting
-# See: https://www.google.com/webmasters/
-google_site_verification:
-baidu_site_verification:
-qihu_site_verification:
-
 # Miscellaneous
 google_analytics: UA-39191129-2
 
