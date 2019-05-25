@@ -1,46 +1,4 @@
 (function ($) {
-    // Search
-    var $searchWrap = $('#search-form-wrap'),
-        isSearchAnim = false,
-        searchAnimDuration = 200;
-
-    var startSearchAnim = function () {
-        isSearchAnim = true;
-    };
-
-    var stopSearchAnim = function (callback) {
-        setTimeout(function () {
-            isSearchAnim = false;
-            callback && callback();
-        }, searchAnimDuration);
-    };
-
-    var s = [
-        '<div style="display: none;">',
-        '<script src="https://s11.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>',
-        '</div>'
-    ].join('');
-
-    var di = $(s);
-
-    $('#container').append(di);
-
-    $('#nav-search-btn').on('click', function () {
-        if (isSearchAnim) return;
-
-        startSearchAnim();
-        $searchWrap.addClass('on');
-        stopSearchAnim(function () {
-            $('.search-form-input').focus();
-        });
-    });
-
-    $('.search-form-input').on('blur', function () {
-        startSearchAnim();
-        $searchWrap.removeClass('on');
-        stopSearchAnim();
-    });
-
     // Share
     $('body').on('click', function () {
         $('.article-share-box.on').removeClass('on');

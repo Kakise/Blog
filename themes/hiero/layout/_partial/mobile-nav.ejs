@@ -1,5 +1,6 @@
 <nav id="mobile-nav">
-    <% for (var i in theme.menu){ %>
-        <a href="<%- url_for(theme.menu[i]) %>" class="mobile-nav-link"><%= i %></a>
+        <% for (var i in site.data.nav.nav){ %>
+                <a href="<%- site.data.nav.nav[i].url %>"
+                   class="mobile-nav-link"><%= __('nav.' + site.data.nav.nav[i].link).replace("nav.", "") %></a>
     <% } %>
 </nav>
