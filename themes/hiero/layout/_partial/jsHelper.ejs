@@ -1,6 +1,6 @@
 <script>
     var themeMenus = {};
     <% for (var i in site.data.nav.nav){ %>
-    themeMenus["<%- site.data.nav.nav[i].url %>"] = "<%=  <%= __('nav.' + site.data.nav.nav[i].link).replace("nav.", "").toLowerCase() %>";
+    themeMenus["<%- site.data.nav.nav[i].url %>"] = "<%= __('nav.' + site.data.nav.nav[i].link).replace("nav.", "").toLowerCase() %>";
     <% } %>
 </script>
