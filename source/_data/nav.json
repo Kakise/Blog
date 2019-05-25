@@ -5,7 +5,7 @@
       "url": "/"
     },
     {
-      "link": "about",
+      "link": "à propos",
       "url": "/about"
     },
     {
@@ -13,20 +13,16 @@
       "url": "/portfolio"
     },
     {
-      "link": "articles",
+      "link": "Archives",
       "url": "/archives"
     },
     {
-      "link": "projects",
+      "link": "projets",
       "url": "/projets"
     },
     {
-      "link": "contact",
+      "link": "Contact",
       "url": "/contact"
-    },
-    {
-      "link": "search",
-      "url": "/search"
     }
   ]
 }
