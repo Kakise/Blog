@@ -6,6 +6,7 @@ tags:
   - code
   - science
 layout: post
+photos: /images/equation-idm.png
 ---
 Salut à tous ! Aujourd'hui dans cet article, je vais tenter de vous expliquer le fonction de mon dernier projet en date: une simulation du trafic routier réalisée en python et basée sur le "Intelligent Driver Model".
 

@@ -6,6 +6,7 @@ tags:
   - code
   - hack
 layout: post
+photos: /images/image.jpg
 ---
 Coucou, aujourd'hui on se retrouve pour un nouveau billet sur "Comment hacker ma machine à café Tassimo? 🤔🤔".
 

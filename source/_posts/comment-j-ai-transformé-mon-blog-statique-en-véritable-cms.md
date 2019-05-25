@@ -5,6 +5,7 @@ author: Kakise
 tags:
   - code
 layout: post
+photos: /images/screenshot-2018-05-19-at-19.55.03.png
 ---
 Eh oui, ce titre n'est pas un clickbait. Faut dire, ces derniers temps je me suis vachement ennuyé. Du coup, j'ai fait ce que je fais habituellement quand je m'ennuie, je découvre une nouvelle techno. [C'est là que j'ai fait la découverte de Netlify](https://kakise.me/2018/04/21/nouveau-blog/) et de ce qu'on appelle le "[JAMStack](https://jamstack.org/)". Bon, en gros le concept est simple. On fait un site web statique qui utilise du javascript (ou autre) afin de récupérer le contenu. Finalement, ça ressemblait énormément à ce que j'avais fait il y a un an avec [Kaki-Static](https://github.com/Kakise/Kaki-Static) (que j'ai maintenant abandonné).
 
