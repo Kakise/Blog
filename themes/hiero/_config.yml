@@ -68,35 +68,7 @@ social:
   Twitter: https://twitter.com/Kakise
   email: mail@kakise.me
 
-
-# Search
-search:
-  insight: true # you need to install `hexo-generator-json-content` before using Insight Search
-  swiftype: # enter swiftype install key here
-  baidu: false # you need to disable other search engines to use Baidu search, options: true, false
-
-
-# comment ShortName, you can choose only ONE to display.
-gentie_productKey: #your-gentie-product-key
-duoshuo_shortname:
 disqus_shortname: kakise
-livere_shortname:
-uyan_uid:
-wumii:
-gitment:
-  owner:                   #Your GitHub ID
-  repo:                    #The repo to store comments
-  client_id:               #Your client ID
-  client_secret:           #Your client secret
-valine:
-  appid: #Leancloud应用app_id，必填
-  appkey: #Leancloud应用app_key，必填
-  notify: false
-  verify: false
-  placeholder: ヾﾉ≧∀≦)o快来评论一下吧!
-  avatar:
-  pageSize: 10
-  visitor: true
 
 # Code Highlight theme
 # Available value:
@@ -124,15 +96,7 @@ baidu_site_verification:
 qihu_site_verification:
 
 # Miscellaneous
-google_analytics:
-gauges_analytics:
-baidu_analytics:
-tencent_analytics:
-busuanzi_analytics:
-twitter:
-google_plus:
-fb_admins:
-fb_app_id:
+google_analytics: UA-39191129-2
 
 # Facebook SDK Support.
 # https://github.com/iissnan/hexo-theme-next/pull/410
@@ -142,9 +106,6 @@ facebook_sdk:
   fb_admin:     #<user_id>
   like_button:  #true
   webmaster:    #true
-
-# CNZZ count
-cnzz_siteid: 1260716016
 
 # donation button
 donate:

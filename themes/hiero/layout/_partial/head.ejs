@@ -45,15 +45,6 @@
     <% } else if (page.tags && page.tags.length){ %>
         <meta name="keywords" content="<% page.tags.forEach(function(tag, i){ %><%- tag.name %><% }) %>"/>
     <% } %>
-    <% if (theme.google_site_verification){ %>
-        <meta name="google-site-verification" content="<%- theme.google_site_verification %>"/>
-    <% } %>
-    <% if (theme.baidu_site_verification){ %>
-        <meta name="baidu-site-verification" content="<%- theme.baidu_site_verification %>"/>
-    <% } %>
-    <% if (theme.qihu_site_verification){ %>
-        <meta name="360-site-verification" content="<%- theme.qihu_site_verification %>"/>
-    <% } %>
     <%- open_graph({
         twitter_id: theme.twitter,
         google_plus: theme.google_plus,
@@ -63,8 +54,6 @@
     <% if (theme.rss){ %>
         <link rel="alternate" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
     <% } %>
-    <link rel="icon"
-          href="<%= config.root %><% if (theme.favicon){ %><%- theme.favicon %><% } else { %>css/images/favicon.ico<% } %>">
     <% if (config.highlight.enable){ %>
         <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
     <% } %>
@@ -116,8 +105,6 @@
         <link rel="stylesheet" href="<%- config.root %>css/vdonate.css">
     <% } %>
 
-    <!-- Custom CSS -->
-    <%- css('css/my.css') %>
     <!-- Google Adsense -->
     <% if (theme.ad){ %>
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
