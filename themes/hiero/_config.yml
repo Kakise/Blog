@@ -1,0 +1,118 @@
+# ---------------------------------------------------------------
+# Site Information Settings
+# ---------------------------------------------------------------
+
+# Header Menu
+menu:
+  Home: /
+  Archives: archives
+  Categories: categories
+  Tags: tags
+  About: about
+rss: /atom.xml
+
+since: 2018
+
+# Set default keywords (Use a comma to separate)
+keywords: ""
+
+# Put your favicon.ico into `hexo-site/themes/hiero/source/` directory.
+favicon: css/images/favicon.ico
+
+
+# Put your avatar.jpg into `hexo-site/themes/hiero/source/` directory.
+# url is target link (E.g. `url: https://hexo.io/logo.svg` or `url: css/images/mylogo.jpg`)
+avatar:
+  enable: false
+  width: 124
+  height: 124
+  bottom: 10
+  url: https://hexo.io/logo.svg
+
+
+# AboutPage background
+about_big_image: [css/images/pose.jpg, https://source.unsplash.com/collection/954550/1920x1080]
+
+
+# Homepage thumbnail
+random_thumb: false
+
+
+# Post Article's Content
+post_catalog:
+  enable: true
+
+# Sidebar like in homepage, is necessary to disable [post_catalog]
+post_sidebar:
+  enable: false
+
+# Content
+fancybox: true
+
+
+# Sidebar
+sidebar: right
+widgets:
+  - search
+  - social
+  - recent_posts
+  - category
+  - tagcloud
+  - archive
+
+# Social Links
+# Key is the name of FontAwsome icon.
+# Value is the target link (E.g. GitHub: https://github.com/iTimeTraveler)
+social:
+  Github: https://github.com/Kakise
+  Twitter: https://twitter.com/Kakise
+  email: mail@kakise.me
+
+disqus_shortname: kakise
+
+# Code Highlight theme
+# Available value:
+#    default | normal | night | night eighties | night blue | night bright
+# https://github.com/chriskempson/tomorrow-theme
+highlight_theme: default
+
+
+
+# display widgets at the bottom of index pages (pagination == 2)
+index_widgets:
+# - category
+# - tagcloud
+# - archive
+
+
+# widget behavior
+archive_type: 'monthly'
+show_count: true
+
+# Miscellaneous
+google_analytics: UA-39191129-2
+
+# Facebook SDK Support.
+# https://github.com/iissnan/hexo-theme-next/pull/410
+facebook_sdk:
+  enable: false
+  app_id:       #<app_id>
+  fb_admin:     #<user_id>
+  like_button:  #true
+  webmaster:    #true
+
+# donation button
+donate:
+  enable: false
+  message:
+  wechatImage:
+  alipayImage:
+
+# Automatic page load progress bar by PACE.js
+progressBar:
+  enable: false #switch
+  themeCSS: https://github.com/HubSpot/pace/raw/master/themes/orange/pace-theme-flash.css    #PATH to PACE theme CSS, support relative / absolute path
+
+# Ad
+ad:
+  google_adsense_ad_client_id: ca-pub-1368620516057306
