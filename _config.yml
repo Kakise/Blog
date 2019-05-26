@@ -86,14 +86,14 @@ criticalcss:
   replacementHtmlTrailer: </style></head>
 asset_pipeline:
   revisioning:
-    enable: true
+    enable: false
   clean_css:
     enable: true
   uglify_js:
     enable: true
     mangle: true
   imagemin:
-    enable: false
+    enable: true
     interlaced: true
     multipass: true
     optimizationLevel: 5
