@@ -4,7 +4,7 @@ const purify = require("purify-css")
 var content = []
 var css = []
 var options = {
-    output: 'public/css/hiero.css',
+    output: 'public/css/style-clean.css',
     info: true,
     minify: true
 };
@@ -42,7 +42,5 @@ fromDir('./public', /\.css$/, function (filename) {
     console.log('-- found: ', filename);
     css.push(path.relative('./', filename));
 });
-
-console.log(content)
 
 purify(content, css, options);
