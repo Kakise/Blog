@@ -78,7 +78,6 @@ pwa:
 criticalcss:
   critical:
     minify: true
-    css: public/css/style.css
   enable: true
   htmlTagToReplace: </\s*head>
   perPageCss: false
@@ -87,21 +86,22 @@ criticalcss:
   replacementHtmlTrailer: </style></head>
 asset_pipeline:
   revisioning:
-    enable: false
+    enable: true
   clean_css:
     enable: true
   uglify_js:
     enable: true
+    mangle: true
   imagemin:
-    enable: true
+    enable: false
     interlaced: true
     multipass: true
-    optimizationLevel: 3
+    optimizationLevel: 5
     pngquant: true
     progressive: true
   html_minifier:
     enable: true
-    ignore_error: true
+    ignore_error: false
 lazyload:
   enable: true
   loadingImg: /images/loading.gif
