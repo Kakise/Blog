@@ -54,7 +54,6 @@ sidebar: right
 widgets:
   - search
   - social
-  - category
   - tagcloud
   - archive
 
