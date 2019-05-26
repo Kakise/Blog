@@ -78,6 +78,10 @@ pwa:
 criticalcss:
   critical:
     minify: true
+    css:
+      - public/css/hiero.css
+      - public/css/glyphs.css
+      - public/css/style.css
   enable: true
   htmlTagToReplace: </\s*head>
   perPageCss: false
