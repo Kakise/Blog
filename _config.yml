@@ -111,9 +111,8 @@ lazyload:
   loadingImg: /images/loading.gif
   onlypost: true
 feed:
-  content_limit: 140
-  content_limit_delim: ' [...]'
-  limit: true
+  content: true
+  limit: false
   path: atom.xml
   type: atom
 nofollow:
